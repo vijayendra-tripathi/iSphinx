@@ -1,0 +1,6 @@
+framework module Pods_iSphinxDemo {
+  umbrella header "Pods-iSphinxDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

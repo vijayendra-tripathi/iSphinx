@@ -1,0 +1,1105 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01AA0A8258992098631CB296EE3F3830 /* means in Sources */ = {isa = PBXBuildFile; fileRef = 7179E037AA34AED17B1B04834ACB083E /* means */; };
+		035537172261E70C85A2009079125A01 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424670AE328DB688A0F1B8811386F7B8 /* Utilities.swift */; };
+		04025881F0DC1BF54A162CA45B1B057F /* hash_table.h in Headers */ = {isa = PBXBuildFile; fileRef = FD188515CDC1B3B35DB0AB2D99C66F27 /* hash_table.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0721806A9F89B97E3D9D5E872F8A5C2E /* ps_mllr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB77FDAB61BBC3E32361ECC02E68C00 /* ps_mllr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AB33477562DA781FEDD93EEFAA4D815 /* Pods-iSphinxDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFBBFAECDD72D54717C5F713D8B87A9 /* Pods-iSphinxDemo-dummy.m */; };
+		0C87249D530AB43B8083F3B85FA3907F /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213EA121A4C39F5664A5F6C7B73EEA5 /* Globals.swift */; };
+		16BD9540D7DF9F7C097A8673FE36B4E0 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E879774E304D73C8F941B816E490 /* module.modulemap */; };
+		1A3FF4C42BC9D7BBC4DA6980185EAF7B /* fsg_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D352B5D7CECB5320A6379182DC3B2B /* fsg_model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADD9D5BB600BDA2365E36A8736C577F /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E6EC8388A63BF875DFB5B00F3F24DFC /* bio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B2890857BD6039ECEAE314440A3C333 /* mmio.h in Headers */ = {isa = PBXBuildFile; fileRef = 300C13463C95A9444E3285FE3AA842D5 /* mmio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C16C3FB9D8D2D977ECE3715C3FE6A7F /* filename.h in Headers */ = {isa = PBXBuildFile; fileRef = 21758FBEA69F5FE3413364707B20E0A6 /* filename.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D543B9FEEC1C48FC8F490384FE57823 /* sphinx_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF28503035701337125D0DB5F14B4C4 /* sphinx_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EEEAB8270AAABA29A46F88B2D740CCD /* libsphinxad.a in Sources */ = {isa = PBXBuildFile; fileRef = 40054589A6CBBECF015D0ACFC05DFF93 /* libsphinxad.a */; };
+		23CFCD6E73FD29496E3A12E05F0E828B /* strfuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = 803860C98C186326900B665870944E6D /* strfuncs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		252E615017B1D1E14425AE4BFFC67450 /* NBest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29BFC3CC62FFCF69FF540B95646CF09 /* NBest.swift */; };
+		27D5F741612210CA4813196535A8673E /* iSphinx-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6BDD33F06719A6FC457BE0F0B2322A1 /* iSphinx-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2986BB1A3A28BF771D0AA50DD40B35E7 /* iRecognizerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B273961E0C5CCAA68388D22D1CD580 /* iRecognizerSetup.swift */; };
+		30FD47C505C4B714D4FB7EC2A2423498 /* noisedict in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B11B915724A8BC6C6D312E88CFFF6 /* noisedict */; };
+		31584E7CD397E2F6164726B8A6A72C7A /* cmudict-en-us.dict in Sources */ = {isa = PBXBuildFile; fileRef = EE94E3A5FB149FD1EC7B912ED6C5501B /* cmudict-en-us.dict */; };
+		31E53DBC5F829223C248F64E9F39B8DC /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFE35082683016147678D11E0947F7 /* Decoder.swift */; };
+		335E5DC54B620EF26E44204B61CEEF33 /* LogMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52391253BF31EE2085B7F92D2FB5C8F /* LogMath.swift */; };
+		34E4658CE6627B0894F38A2AADC403A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		38C292198F23A215D13D7174BB314454 /* feat.params in Sources */ = {isa = PBXBuildFile; fileRef = AF75522FE6EE1C2163E16F52399BD253 /* feat.params */; };
+		3A1B2329F8F0538D6374C35F2C118AA8 /* NGramModelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6A98F6534CC0CEE489E5AB98558EF /* NGramModelSet.swift */; };
+		3A570B5DC7E6F65097DF752B070AC8AD /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F8304207CC58331AF71E58A69543A /* Segment.swift */; };
+		3ADA8FB574F8EC10F43A6A2CE80527FD /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51196F40453736495ECB0A5321657C5F /* Feature.swift */; };
+		3AE594545DBF245A2D96C3D62BA2C986 /* mdef in Sources */ = {isa = PBXBuildFile; fileRef = CE2ECABA7D14F3EC9A6C3046C708C0C4 /* mdef */; };
+		3E1C434986A136331564B631B84B7BA0 /* clapack_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = 0539AB95C0C611A99DD4C07FA5140775 /* clapack_lite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4322E45A283FC46132FB1F94AD1CA975 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF94902D7BFC3A0747420B00EFB4224 /* matrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		442EBE9F6C9C0AC1AAEB2A918DC74AAD /* profile.h in Headers */ = {isa = PBXBuildFile; fileRef = 065A87C50A9079296FF2CD212BED52BC /* profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47792C104F9B4F56C61889012C046C2D /* iSphinx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A883E6389BF573611B2202C1D893E /* iSphinx.swift */; };
+		489ED1BC6B2718076B434EB62E4E4936 /* agc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEDC15A59DF1505C3B46497BE442438F /* agc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		493453D32C32FB4D417A6C726B3360F3 /* mulaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 690EEB84CF0E46A18EEA62E60FD76326 /* mulaw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F66A092F5A4838250AAE38F9A0CFD78 /* huff_code.h in Headers */ = {isa = PBXBuildFile; fileRef = CC31BFAEEA003417C23365B76714970C /* huff_code.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		500C7B825E4EB1CE8BFCDDCB141C210A /* iRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954B0091BDCDEC05A248A8D69CFC388 /* iRecognizer.swift */; };
+		51060765EDDABDDA91209201CB1CA6AC /* pio.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9BEC73064F2DD1C6A2B613788FE37F /* pio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		511599543D6867CC696501B8A89C6AA2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2082B4A0FB59CBABE890E89477D6F3 /* Config.swift */; };
+		52A6726B5384C27C81F93185C57DA853 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C340D8C127EB9D7D3EA051C0690A179 /* err.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52C3ECDED07F94FC774F6FEAEC4D15A3 /* README in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9F559255BF31A48FC740839DB5460 /* README */; };
+		56A9C15FFA56CCAE5B79CA9847E1FB8C /* NBestIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576CDD1281F6C7176425BBA87E7D2A8 /* NBestIterator.swift */; };
+		5B763FC4C230A8ECAA3A82C7EF6887D3 /* variances in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EC062B50F2B026BCD13E17E290662 /* variances */; };
+		5D26DBA95226A81C614148701977FD71 /* icaksama_rapidsphinx.wav in Sources */ = {isa = PBXBuildFile; fileRef = 040AD3E4D0F281DD19AD8A0F40A5EFD8 /* icaksama_rapidsphinx.wav */; };
+		5E8DFFBB322FC724A1124CA0F27AC5F5 /* ngram_model.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1D0825181496D8ED0A573AB4ED9EC2 /* ngram_model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FE3D528E7118D32D8BC0CB696CE5601 /* listelem_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 338B6DA120028D2B719181E642E08CB4 /* listelem_alloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		601B2684D4137BB634F35AF0E16228D0 /* pocketsphinx_export.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1662C5CDF9BBE420498E3E5D9395E1 /* pocketsphinx_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60EEA58C48EBFE2E45107700D1B31601 /* ad.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D94F2D9E9F93A02A0C780C3B14716FC /* ad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		618E698F410F0BA73C1140E796E7181D /* Lattice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25581B512041275D1449675D7A9CECD3 /* Lattice.swift */; };
+		6614AE3CF9EF189FC0BC7C467B6D86D3 /* ps_lattice.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D0C4DDE150218EDDE935DE915EA9C2 /* ps_lattice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66A24E09A650EAC6B75C954E914B1B78 /* cmn.h in Headers */ = {isa = PBXBuildFile; fileRef = 57995C5B28D100021DD14A781BFE27D4 /* cmn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69B13E4F77FDE10D7C14216FBAA9C136 /* libpocketsphinx.a in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B13B79FC10035760E140C04296119 /* libpocketsphinx.a */; };
+		707F80EF27A7A2001624A40962E9232B /* prim_type.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A81C6ECA4D197793FB308DAD4AC54A /* prim_type.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7303B2DE375475C46F1AB8251492F4BF /* NGramModelSetIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A54244281BE2948D3323516825CD11 /* NGramModelSetIterator.swift */; };
+		7ABB4D9ECA3E4167533A9F871420BA1E /* case.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E517CAA192EE54FCBE06998EECD3BA /* case.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F9EC6CE1E06597FEC2CAE17784CCA59 /* jsgf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3F6AD9E03EA608B6FF9596DF126984 /* jsgf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8268ABC8C1E1937F9AB30B554E108791 /* NGramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B5DB1D082A4877AF4914973B3C28D3 /* NGramModel.swift */; };
+		83FC826A9F81F58D705125DD08D07022 /* sphinxbase_export.h in Headers */ = {isa = PBXBuildFile; fileRef = B9993989A80935912367C35D3AB64D9E /* sphinxbase_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85B090E10317ADBF6754B296DD58A4CB /* FrontEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F649E15506037A8FB99ED65E154A845 /* FrontEnd.swift */; };
+		86937680E08DB9BD53DFAFB998D4273F /* iSphinx-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 138FBC137AA94EF8FD8C41DFB0A152C5 /* iSphinx-dummy.m */; };
+		8838D28BDE7C4CB9F767225F46232633 /* fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E411C73B177692F51615D76AD54313 /* fe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DA28B1E32288536B146E58A5AF0CE7A /* glist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5411055265CE5C1D800B1BB298A3822D /* glist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C1DAB5894A77618D13CAF4C5F58B2C /* SegmentIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B61E9F29488CBC80D25A262B82893C /* SegmentIterator.swift */; };
+		A71541EBE063F3A93CC272125E28FBD6 /* libsphinxbase.a in Sources */ = {isa = PBXBuildFile; fileRef = 44DABB18E0375ACEC00F3814CA4561B6 /* libsphinxbase.a */; };
+		A72AB17A212CF00C3A962E6A3F02BDBE /* cmdln_macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 91727C1D92F612CDA31209866B77997C /* cmdln_macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B09EC1D661DC9A122B0AFDF68C136F1E /* byteorder.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B61F2461B22F2F5D82522679DA9A6E /* byteorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1377985FE97204F6102E74075E02B31 /* Pods-iSphinxDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 993C0574C1D6CF6588376717E7B98A9C /* Pods-iSphinxDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B252DEA53FD30A8434EBE3DE5B28349A /* genrand.h in Headers */ = {isa = PBXBuildFile; fileRef = C88B9C87AA969436EF75A37B19D0D939 /* genrand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5360F3C71DD58B150489DAAF739B0FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B70B23E808E3A7C9253B3B37D38BCAD0 /* feat.h in Headers */ = {isa = PBXBuildFile; fileRef = CF78AAEFF806CE52664A5B6677407E29 /* feat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B74858DF16BF086CEEC84E96999D5B0D /* pocketsphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F68B4672203728227CA6D51698792C2 /* pocketsphinx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAE8321EC92A5AAC49A2A319476BFC42 /* fixpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BF65EA51F710172D1B4D90DA9AC249 /* fixpoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF851F95A0177EE1722D9A4AE82E503C /* FsgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B90E706F1743E53A069F6C441CF897 /* FsgModel.swift */; };
+		C08FCEC1C39BFA7624D502080841330A /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 95852B9732540CB74C27AB7B046A6E33 /* heap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C441405575D07DFFE7913363E07FDD35 /* bitvec.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8EB69BCB8B81A43AA8ED55011D2A25 /* bitvec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C64DC1619D6F4008E4B163090F879DB5 /* Hypotesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1531263D10F3BF7842CF7094B27C7 /* Hypotesis.swift */; };
+		C76460B86FA4EA54C1EEE6271BD11E80 /* logmath.h in Headers */ = {isa = PBXBuildFile; fileRef = CC6E36085467F6EFC61ED3E0007B9CCD /* logmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9F50DD3A790B243F297398A4180CE8C /* icaksama.arpa in Sources */ = {isa = PBXBuildFile; fileRef = 0666097FAD5C19483C4E79F715EAE5A0 /* icaksama.arpa */; };
+		DAF76EFF2D20F2A00805A1E362F461A6 /* iSphinxDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E5ECF26158D2553907B7863639ADAC /* iSphinxDelegete.swift */; };
+		DCB116AF13F2C2208A8ADC264761D441 /* sbthread.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9F199C1AE90845EFCE980ACD81D68 /* sbthread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D2C78F34D0B18A1D472F951C9034C2 /* ps_search.h in Headers */ = {isa = PBXBuildFile; fileRef = EA768703609F250078D68E3CA6B7E5E4 /* ps_search.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB71FD63F099BDD7B9DE11A5FB22D7C7 /* iSphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A5DC8D34C347A1BED4A261A48CA4EE /* iSphinx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1E49DFB86561AFB618290B0FB576391 /* yin.h in Headers */ = {isa = PBXBuildFile; fileRef = AA883100DAB7F2F191127B515A0A8310 /* yin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3A00E7C0281166A4BF047DEF4B8ED69 /* sendump in Sources */ = {isa = PBXBuildFile; fileRef = D9DA3B1DD4C66D3BC55EB49A6DB9C064 /* sendump */; };
+		F4342922BE8199813ECE86EFD98DBD12 /* iRecognizerDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083805EA558F79E5914C7F6F57A99C6 /* iRecognizerDelegete.swift */; };
+		F591EB9783E328250135C3E1C1A79CB6 /* cmd_ln.h in Headers */ = {isa = PBXBuildFile; fileRef = A759DC84C73E2F45C65A56625DD270CE /* cmd_ln.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8724A21780C86EF34D2B7EFA72B69A3 /* f2c.h in Headers */ = {isa = PBXBuildFile; fileRef = C92FBC4992407766DEB3F0B266A9CA1D /* f2c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAC5F8B374C7E6A124671CB12A1F9280 /* transition_matrices in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E923FAC73AB6F048E946AD988E78 /* transition_matrices */; };
+		FE44B9688F2BE31821C1C12D8C1FB9E6 /* ckd_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A3E5F785C158DC6A43FF58C904A959 /* ckd_alloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C1B9DF0584EA6CC8FA9DE35683CC6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB327941F8E5CB416698D19B8B967A6D;
+			remoteInfo = iSphinx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040AD3E4D0F281DD19AD8A0F40A5EFD8 /* icaksama_rapidsphinx.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; path = icaksama_rapidsphinx.wav; sourceTree = "<group>"; };
+		0539AB95C0C611A99DD4C07FA5140775 /* clapack_lite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clapack_lite.h; sourceTree = "<group>"; };
+		065A87C50A9079296FF2CD212BED52BC /* profile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = profile.h; sourceTree = "<group>"; };
+		0666097FAD5C19483C4E79F715EAE5A0 /* icaksama.arpa */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = icaksama.arpa; sourceTree = "<group>"; };
+		08E6A98F6534CC0CEE489E5AB98558EF /* NGramModelSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NGramModelSet.swift; sourceTree = "<group>"; };
+		0EA9F559255BF31A48FC740839DB5460 /* README */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		10DBE7B0A5E98A32D1E3CCF38E56B025 /* libsphinxad.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxad.a; sourceTree = "<group>"; };
+		138FBC137AA94EF8FD8C41DFB0A152C5 /* iSphinx-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iSphinx-dummy.m"; sourceTree = "<group>"; };
+		14F6496F2D26C88CF492EF9172AA0C3F /* Pods-iSphinxDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iSphinxDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A123A58EEAF907005B2D2A3FD0009D1 /* Pods-iSphinxDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iSphinxDemo-frameworks.sh"; sourceTree = "<group>"; };
+		1CF28503035701337125D0DB5F14B4C4 /* sphinx_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sphinx_config.h; sourceTree = "<group>"; };
+		21758FBEA69F5FE3413364707B20E0A6 /* filename.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = filename.h; sourceTree = "<group>"; };
+		22137A89CA6F1F7433776CC43977AA60 /* Pods-iSphinxDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iSphinxDemo.modulemap"; sourceTree = "<group>"; };
+		25581B512041275D1449675D7A9CECD3 /* Lattice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Lattice.swift; sourceTree = "<group>"; };
+		25D352B5D7CECB5320A6379182DC3B2B /* fsg_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fsg_model.h; sourceTree = "<group>"; };
+		2D21D98CD3146A523176319195D47AA6 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		2D3B13B79FC10035760E140C04296119 /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		2E6EC8388A63BF875DFB5B00F3F24DFC /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		2E8EC062B50F2B026BCD13E17E290662 /* variances */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
+		2F5A883E6389BF573611B2202C1D893E /* iSphinx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iSphinx.swift; sourceTree = "<group>"; };
+		300C13463C95A9444E3285FE3AA842D5 /* mmio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mmio.h; sourceTree = "<group>"; };
+		3213EA121A4C39F5664A5F6C7B73EEA5 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		338B6DA120028D2B719181E642E08CB4 /* listelem_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = listelem_alloc.h; sourceTree = "<group>"; };
+		35A81C6ECA4D197793FB308DAD4AC54A /* prim_type.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = prim_type.h; sourceTree = "<group>"; };
+		35B273961E0C5CCAA68388D22D1CD580 /* iRecognizerSetup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iRecognizerSetup.swift; sourceTree = "<group>"; };
+		3F9B11B915724A8BC6C6D312E88CFFF6 /* noisedict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
+		40054589A6CBBECF015D0ACFC05DFF93 /* libsphinxad.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxad.a; sourceTree = "<group>"; };
+		424670AE328DB688A0F1B8811386F7B8 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		44DABB18E0375ACEC00F3814CA4561B6 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		48D0C4DDE150218EDDE935DE915EA9C2 /* ps_lattice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ps_lattice.h; sourceTree = "<group>"; };
+		4954B0091BDCDEC05A248A8D69CFC388 /* iRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iRecognizer.swift; sourceTree = "<group>"; };
+		4A3F6AD9E03EA608B6FF9596DF126984 /* jsgf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jsgf.h; sourceTree = "<group>"; };
+		4C31339AF3F0B6A7C0A3640457342E43 /* Pods_iSphinxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSphinxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB77FDAB61BBC3E32361ECC02E68C00 /* ps_mllr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ps_mllr.h; sourceTree = "<group>"; };
+		51196F40453736495ECB0A5321657C5F /* Feature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		5411055265CE5C1D800B1BB298A3822D /* glist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = glist.h; sourceTree = "<group>"; };
+		5432013B7DA580BA9B3D5D76DD3D2724 /* libsphinxad.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxad.a; sourceTree = "<group>"; };
+		54A7E923FAC73AB6F048E946AD988E78 /* transition_matrices */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
+		56BF65EA51F710172D1B4D90DA9AC249 /* fixpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fixpoint.h; sourceTree = "<group>"; };
+		57995C5B28D100021DD14A781BFE27D4 /* cmn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cmn.h; sourceTree = "<group>"; };
+		57FDC29FCDB3F69A405BEAAF8B773D2E /* iSphinx-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-prefix.pch"; sourceTree = "<group>"; };
+		61A1531263D10F3BF7842CF7094B27C7 /* Hypotesis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hypotesis.swift; sourceTree = "<group>"; };
+		61E411C73B177692F51615D76AD54313 /* fe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fe.h; sourceTree = "<group>"; };
+		6576CDD1281F6C7176425BBA87E7D2A8 /* NBestIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBestIterator.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		690EEB84CF0E46A18EEA62E60FD76326 /* mulaw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mulaw.h; sourceTree = "<group>"; };
+		6A15685F6000DA073FB0376ACAFACAD6 /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		6C340D8C127EB9D7D3EA051C0690A179 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		6DD611E30A73250CD1147788946C6206 /* Pods-iSphinxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iSphinxDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6EB2F54BCCCF2DDB98668962AFD10B12 /* libsphinxad.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxad.a; sourceTree = "<group>"; };
+		7083805EA558F79E5914C7F6F57A99C6 /* iRecognizerDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iRecognizerDelegete.swift; sourceTree = "<group>"; };
+		7179E037AA34AED17B1B04834ACB083E /* means */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
+		720A5D452FF6C680B6A432A56BBBA6EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B90E706F1743E53A069F6C441CF897 /* FsgModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FsgModel.swift; sourceTree = "<group>"; };
+		74B0E879774E304D73C8F941B816E490 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		7D94F2D9E9F93A02A0C780C3B14716FC /* ad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ad.h; sourceTree = "<group>"; };
+		7F68B4672203728227CA6D51698792C2 /* pocketsphinx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pocketsphinx.h; sourceTree = "<group>"; };
+		803860C98C186326900B665870944E6D /* strfuncs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = strfuncs.h; sourceTree = "<group>"; };
+		82E517CAA192EE54FCBE06998EECD3BA /* case.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = case.h; sourceTree = "<group>"; };
+		872B44304CEE6581DBB0DB137573CBE3 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		8A8EB69BCB8B81A43AA8ED55011D2A25 /* bitvec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bitvec.h; sourceTree = "<group>"; };
+		8A9F8304207CC58331AF71E58A69543A /* Segment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		8B9BEC73064F2DD1C6A2B613788FE37F /* pio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pio.h; sourceTree = "<group>"; };
+		90B5DB1D082A4877AF4914973B3C28D3 /* NGramModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NGramModel.swift; sourceTree = "<group>"; };
+		91663ECD556832FFDC2E058936DA50BD /* iSphinx.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iSphinx.modulemap; sourceTree = "<group>"; };
+		91727C1D92F612CDA31209866B77997C /* cmdln_macro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cmdln_macro.h; sourceTree = "<group>"; };
+		93A3E5F785C158DC6A43FF58C904A959 /* ckd_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ckd_alloc.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95852B9732540CB74C27AB7B046A6E33 /* heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		993C0574C1D6CF6588376717E7B98A9C /* Pods-iSphinxDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iSphinxDemo-umbrella.h"; sourceTree = "<group>"; };
+		9F649E15506037A8FB99ED65E154A845 /* FrontEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrontEnd.swift; sourceTree = "<group>"; };
+		A0D73D2E7AF6440C9D1CC4C5BEDEC23B /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		A759DC84C73E2F45C65A56625DD270CE /* cmd_ln.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cmd_ln.h; sourceTree = "<group>"; };
+		A9CB56124AB2C576FF88E2CAB1E87A9F /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		AA883100DAB7F2F191127B515A0A8310 /* yin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = yin.h; sourceTree = "<group>"; };
+		AF75522FE6EE1C2163E16F52399BD253 /* feat.params */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
+		AFA6D5190774C795C49723A2D0E41598 /* Pods-iSphinxDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iSphinxDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		B2BFE35082683016147678D11E0947F7 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		B5A2F4F612F002DF752D89597D5E8887 /* libsphinxad.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxad.a; sourceTree = "<group>"; };
+		B9993989A80935912367C35D3AB64D9E /* sphinxbase_export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sphinxbase_export.h; sourceTree = "<group>"; };
+		BEF9F199C1AE90845EFCE980ACD81D68 /* sbthread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sbthread.h; sourceTree = "<group>"; };
+		BF1D0825181496D8ED0A573AB4ED9EC2 /* ngram_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ngram_model.h; sourceTree = "<group>"; };
+		C4B61F2461B22F2F5D82522679DA9A6E /* byteorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = byteorder.h; sourceTree = "<group>"; };
+		C55EEBA30D24FC21F1A497EB77431096 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		C61AE17B82A2AA7D8E16D356659367E0 /* Pods-iSphinxDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iSphinxDemo-resources.sh"; sourceTree = "<group>"; };
+		C659D635EF037F6674CADC00330BB749 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		C6BDD33F06719A6FC457BE0F0B2322A1 /* iSphinx-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-umbrella.h"; sourceTree = "<group>"; };
+		C7C5EDA0706C30940022B3E16FABAAEC /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		C88B9C87AA969436EF75A37B19D0D939 /* genrand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = genrand.h; sourceTree = "<group>"; };
+		C92FBC4992407766DEB3F0B266A9CA1D /* f2c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = f2c.h; sourceTree = "<group>"; };
+		CC31BFAEEA003417C23365B76714970C /* huff_code.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = huff_code.h; sourceTree = "<group>"; };
+		CC6E36085467F6EFC61ED3E0007B9CCD /* logmath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = logmath.h; sourceTree = "<group>"; };
+		CE2ECABA7D14F3EC9A6C3046C708C0C4 /* mdef */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
+		CF78AAEFF806CE52664A5B6677407E29 /* feat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = feat.h; sourceTree = "<group>"; };
+		CFFBBFAECDD72D54717C5F713D8B87A9 /* Pods-iSphinxDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iSphinxDemo-dummy.m"; sourceTree = "<group>"; };
+		D0C89EADE4855046840E501F4481A1DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1859C7ED79AE1DAE48FB63242C728AD /* iSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B61E9F29488CBC80D25A262B82893C /* SegmentIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentIterator.swift; sourceTree = "<group>"; };
+		D9DA3B1DD4C66D3BC55EB49A6DB9C064 /* sendump */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
+		DAF94902D7BFC3A0747420B00EFB4224 /* matrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		DC2082B4A0FB59CBABE890E89477D6F3 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		DF1662C5CDF9BBE420498E3E5D9395E1 /* pocketsphinx_export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pocketsphinx_export.h; sourceTree = "<group>"; };
+		E03B1D010A7665449FF2869416F86123 /* Pods-iSphinxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iSphinxDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E29BFC3CC62FFCF69FF540B95646CF09 /* NBest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBest.swift; sourceTree = "<group>"; };
+		E52391253BF31EE2085B7F92D2FB5C8F /* LogMath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogMath.swift; sourceTree = "<group>"; };
+		E7E5ECF26158D2553907B7863639ADAC /* iSphinxDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iSphinxDelegete.swift; sourceTree = "<group>"; };
+		EA768703609F250078D68E3CA6B7E5E4 /* ps_search.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ps_search.h; sourceTree = "<group>"; };
+		EB2191764F1E9BE165BFED71EE3895C5 /* iSphinx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iSphinx.xcconfig; sourceTree = "<group>"; };
+		EE94E3A5FB149FD1EC7B912ED6C5501B /* cmudict-en-us.dict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist; path = "cmudict-en-us.dict"; sourceTree = "<group>"; };
+		EEDC15A59DF1505C3B46497BE442438F /* agc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = agc.h; sourceTree = "<group>"; };
+		F1B781587FEB99B3B6CBCA75C6AB373E /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		F3CFC500132B5DFFA131E8B9B0C3BF60 /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		F5A5DC8D34C347A1BED4A261A48CA4EE /* iSphinx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = iSphinx.h; sourceTree = "<group>"; };
+		F8A54244281BE2948D3323516825CD11 /* NGramModelSetIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NGramModelSetIterator.swift; sourceTree = "<group>"; };
+		FD188515CDC1B3B35DB0AB2D99C66F27 /* hash_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hash_table.h; sourceTree = "<group>"; };
+		FDDC72FDF1AE3CE91BB5128D6185C6EB /* libsphinxad.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libsphinxad.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D15B93E4FF70D5FB1CBF2D15E09BD26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5360F3C71DD58B150489DAAF739B0FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C582BB8F3F565966BC01CCFD9086AA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E4658CE6627B0894F38A2AADC403A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0321F0EB36E355C164CD56A159EF082E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83571DBEC924E14996A08993E8A639D5 /* Pods-iSphinxDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		09CFA2A431CFD575CAB559298F1E05D7 /* iSphinx */ = {
+			isa = PBXGroup;
+			children = (
+				160AC642B5E54768BF4F70D056E642D1 /* iSphinx */,
+				D0AA435769CD7AB4F43FDCE44AC11562 /* Sphinx */,
+				B03829CD6645B4E967559DE538EA6571 /* Support Files */,
+			);
+			name = iSphinx;
+			path = /Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx;
+			sourceTree = "<absolute>";
+		};
+		160AC642B5E54768BF4F70D056E642D1 /* iSphinx */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5DC8D34C347A1BED4A261A48CA4EE /* iSphinx.h */,
+				2F5A883E6389BF573611B2202C1D893E /* iSphinx.swift */,
+				E7E5ECF26158D2553907B7863639ADAC /* iSphinxDelegete.swift */,
+				663530CC77B26D4990BA6D5DFF7F7FDC /* Assets */,
+				2083E67C30E18F50271DED3F549C634C /* iSphinx Utilities */,
+			);
+			name = iSphinx;
+			path = iSphinx/iSphinx;
+			sourceTree = "<group>";
+		};
+		207E0C944428870A9FA389159E1C063E /* pocketsphinx */ = {
+			isa = PBXGroup;
+			children = (
+				91727C1D92F612CDA31209866B77997C /* cmdln_macro.h */,
+				7F68B4672203728227CA6D51698792C2 /* pocketsphinx.h */,
+				DF1662C5CDF9BBE420498E3E5D9395E1 /* pocketsphinx_export.h */,
+				48D0C4DDE150218EDDE935DE915EA9C2 /* ps_lattice.h */,
+				4DB77FDAB61BBC3E32361ECC02E68C00 /* ps_mllr.h */,
+				EA768703609F250078D68E3CA6B7E5E4 /* ps_search.h */,
+			);
+			path = pocketsphinx;
+			sourceTree = "<group>";
+		};
+		2083E67C30E18F50271DED3F549C634C /* iSphinx Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DC2082B4A0FB59CBABE890E89477D6F3 /* Config.swift */,
+				B2BFE35082683016147678D11E0947F7 /* Decoder.swift */,
+				51196F40453736495ECB0A5321657C5F /* Feature.swift */,
+				9F649E15506037A8FB99ED65E154A845 /* FrontEnd.swift */,
+				72B90E706F1743E53A069F6C441CF897 /* FsgModel.swift */,
+				3213EA121A4C39F5664A5F6C7B73EEA5 /* Globals.swift */,
+				61A1531263D10F3BF7842CF7094B27C7 /* Hypotesis.swift */,
+				4954B0091BDCDEC05A248A8D69CFC388 /* iRecognizer.swift */,
+				7083805EA558F79E5914C7F6F57A99C6 /* iRecognizerDelegete.swift */,
+				35B273961E0C5CCAA68388D22D1CD580 /* iRecognizerSetup.swift */,
+				25581B512041275D1449675D7A9CECD3 /* Lattice.swift */,
+				E52391253BF31EE2085B7F92D2FB5C8F /* LogMath.swift */,
+				E29BFC3CC62FFCF69FF540B95646CF09 /* NBest.swift */,
+				6576CDD1281F6C7176425BBA87E7D2A8 /* NBestIterator.swift */,
+				90B5DB1D082A4877AF4914973B3C28D3 /* NGramModel.swift */,
+				08E6A98F6534CC0CEE489E5AB98558EF /* NGramModelSet.swift */,
+				F8A54244281BE2948D3323516825CD11 /* NGramModelSetIterator.swift */,
+				8A9F8304207CC58331AF71E58A69543A /* Segment.swift */,
+				D7B61E9F29488CBC80D25A262B82893C /* SegmentIterator.swift */,
+				424670AE328DB688A0F1B8811386F7B8 /* Utilities.swift */,
+			);
+			path = "iSphinx Utilities";
+			sourceTree = "<group>";
+		};
+		211A24EFD8F1B1F8C4147160F6D75EF9 /* en-us-ptm */ = {
+			isa = PBXGroup;
+			children = (
+				AF75522FE6EE1C2163E16F52399BD253 /* feat.params */,
+				CE2ECABA7D14F3EC9A6C3046C708C0C4 /* mdef */,
+				7179E037AA34AED17B1B04834ACB083E /* means */,
+				3F9B11B915724A8BC6C6D312E88CFFF6 /* noisedict */,
+				0EA9F559255BF31A48FC740839DB5460 /* README */,
+				D9DA3B1DD4C66D3BC55EB49A6DB9C064 /* sendump */,
+				54A7E923FAC73AB6F048E946AD988E78 /* transition_matrices */,
+				2E8EC062B50F2B026BCD13E17E290662 /* variances */,
+			);
+			path = "en-us-ptm";
+			sourceTree = "<group>";
+		};
+		2A78EFD4634342FFFFED63292F0AD58D /* pocketsphinx */ = {
+			isa = PBXGroup;
+			children = (
+				6A15685F6000DA073FB0376ACAFACAD6 /* libpocketsphinx.a */,
+				3CB2A88BE3D8ACEEE2A6FB3D297D3E21 /* arm64 */,
+				553295666697C2FADBE4F9E737D1EB67 /* armv7 */,
+				65DD7C3B419B9339ED01298E86BBA017 /* armv7s */,
+				E1B57FB826A2E820FA18712999635EC9 /* i386 */,
+				6ACB948552EC02464D893B552F817EF4 /* x86_64 */,
+			);
+			path = pocketsphinx;
+			sourceTree = "<group>";
+		};
+		3CB2A88BE3D8ACEEE2A6FB3D297D3E21 /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				C7C5EDA0706C30940022B3E16FABAAEC /* libpocketsphinx.a */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		3F9EEDFF695FFC683615C3162A7AE674 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				74B0E879774E304D73C8F941B816E490 /* module.modulemap */,
+				207E0C944428870A9FA389159E1C063E /* pocketsphinx */,
+				F8F092CEA10A7A4B236E6F7FD9B2E2FB /* sphinxbase */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4AEF4F8DC722775AD3276BA9DB9CD85E /* armv7 */ = {
+			isa = PBXGroup;
+			children = (
+				10DBE7B0A5E98A32D1E3CCF38E56B025 /* libsphinxad.a */,
+				C659D635EF037F6674CADC00330BB749 /* libsphinxbase.a */,
+			);
+			path = armv7;
+			sourceTree = "<group>";
+		};
+		553295666697C2FADBE4F9E737D1EB67 /* armv7 */ = {
+			isa = PBXGroup;
+			children = (
+				A0D73D2E7AF6440C9D1CC4C5BEDEC23B /* libpocketsphinx.a */,
+			);
+			path = armv7;
+			sourceTree = "<group>";
+		};
+		6479C7540A780197AB5ADCA4238B72BE /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC72FDF1AE3CE91BB5128D6185C6EB /* libsphinxad.a */,
+				872B44304CEE6581DBB0DB137573CBE3 /* libsphinxbase.a */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
+		65DD7C3B419B9339ED01298E86BBA017 /* armv7s */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFC500132B5DFFA131E8B9B0C3BF60 /* libpocketsphinx.a */,
+			);
+			path = armv7s;
+			sourceTree = "<group>";
+		};
+		663530CC77B26D4990BA6D5DFF7F7FDC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EE94E3A5FB149FD1EC7B912ED6C5501B /* cmudict-en-us.dict */,
+				0666097FAD5C19483C4E79F715EAE5A0 /* icaksama.arpa */,
+				040AD3E4D0F281DD19AD8A0F40A5EFD8 /* icaksama_rapidsphinx.wav */,
+				211A24EFD8F1B1F8C4147160F6D75EF9 /* en-us-ptm */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6ACB948552EC02464D893B552F817EF4 /* x86_64 */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B13B79FC10035760E140C04296119 /* libpocketsphinx.a */,
+			);
+			path = x86_64;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				98CDCE42944CA3BDF4FFA7CEDDA1D3EE /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8E5447067A224238E64439499CED0292 /* Products */,
+				0321F0EB36E355C164CD56A159EF082E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F95DE306B56F2DD7F4E19ADF59DFC67 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2A78EFD4634342FFFFED63292F0AD58D /* pocketsphinx */,
+				8C368A44C8E6702C72090C86903331F2 /* sphinxbase */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		83571DBEC924E14996A08993E8A639D5 /* Pods-iSphinxDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0C89EADE4855046840E501F4481A1DF /* Info.plist */,
+				22137A89CA6F1F7433776CC43977AA60 /* Pods-iSphinxDemo.modulemap */,
+				14F6496F2D26C88CF492EF9172AA0C3F /* Pods-iSphinxDemo-acknowledgements.markdown */,
+				AFA6D5190774C795C49723A2D0E41598 /* Pods-iSphinxDemo-acknowledgements.plist */,
+				CFFBBFAECDD72D54717C5F713D8B87A9 /* Pods-iSphinxDemo-dummy.m */,
+				1A123A58EEAF907005B2D2A3FD0009D1 /* Pods-iSphinxDemo-frameworks.sh */,
+				C61AE17B82A2AA7D8E16D356659367E0 /* Pods-iSphinxDemo-resources.sh */,
+				993C0574C1D6CF6588376717E7B98A9C /* Pods-iSphinxDemo-umbrella.h */,
+				6DD611E30A73250CD1147788946C6206 /* Pods-iSphinxDemo.debug.xcconfig */,
+				E03B1D010A7665449FF2869416F86123 /* Pods-iSphinxDemo.release.xcconfig */,
+			);
+			name = "Pods-iSphinxDemo";
+			path = "Target Support Files/Pods-iSphinxDemo";
+			sourceTree = "<group>";
+		};
+		8C368A44C8E6702C72090C86903331F2 /* sphinxbase */ = {
+			isa = PBXGroup;
+			children = (
+				5432013B7DA580BA9B3D5D76DD3D2724 /* libsphinxad.a */,
+				2D21D98CD3146A523176319195D47AA6 /* libsphinxbase.a */,
+				95ED6E1364928051F289F7B5DF59BDB4 /* arm64 */,
+				4AEF4F8DC722775AD3276BA9DB9CD85E /* armv7 */,
+				F9A2E50701D27E2AC7F17312E155EBD6 /* armv7s */,
+				6479C7540A780197AB5ADCA4238B72BE /* i386 */,
+				DA1B590DEE05452F28452E5DAD16306E /* x86_64 */,
+			);
+			path = sphinxbase;
+			sourceTree = "<group>";
+		};
+		8E5447067A224238E64439499CED0292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1859C7ED79AE1DAE48FB63242C728AD /* iSphinx.framework */,
+				4C31339AF3F0B6A7C0A3640457342E43 /* Pods_iSphinxDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95ED6E1364928051F289F7B5DF59BDB4 /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				6EB2F54BCCCF2DDB98668962AFD10B12 /* libsphinxad.a */,
+				C55EEBA30D24FC21F1A497EB77431096 /* libsphinxbase.a */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		98CDCE42944CA3BDF4FFA7CEDDA1D3EE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09CFA2A431CFD575CAB559298F1E05D7 /* iSphinx */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B03829CD6645B4E967559DE538EA6571 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				720A5D452FF6C680B6A432A56BBBA6EB /* Info.plist */,
+				91663ECD556832FFDC2E058936DA50BD /* iSphinx.modulemap */,
+				EB2191764F1E9BE165BFED71EE3895C5 /* iSphinx.xcconfig */,
+				138FBC137AA94EF8FD8C41DFB0A152C5 /* iSphinx-dummy.m */,
+				57FDC29FCDB3F69A405BEAAF8B773D2E /* iSphinx-prefix.pch */,
+				C6BDD33F06719A6FC457BE0F0B2322A1 /* iSphinx-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "iSphinxDemo/Pods/Target Support Files/iSphinx";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0AA435769CD7AB4F43FDCE44AC11562 /* Sphinx */ = {
+			isa = PBXGroup;
+			children = (
+				3F9EEDFF695FFC683615C3162A7AE674 /* include */,
+				7F95DE306B56F2DD7F4E19ADF59DFC67 /* lib */,
+			);
+			name = Sphinx;
+			path = iSphinx/Sphinx;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DA1B590DEE05452F28452E5DAD16306E /* x86_64 */ = {
+			isa = PBXGroup;
+			children = (
+				40054589A6CBBECF015D0ACFC05DFF93 /* libsphinxad.a */,
+				44DABB18E0375ACEC00F3814CA4561B6 /* libsphinxbase.a */,
+			);
+			path = x86_64;
+			sourceTree = "<group>";
+		};
+		E1B57FB826A2E820FA18712999635EC9 /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				F1B781587FEB99B3B6CBCA75C6AB373E /* libpocketsphinx.a */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
+		F8F092CEA10A7A4B236E6F7FD9B2E2FB /* sphinxbase */ = {
+			isa = PBXGroup;
+			children = (
+				7D94F2D9E9F93A02A0C780C3B14716FC /* ad.h */,
+				EEDC15A59DF1505C3B46497BE442438F /* agc.h */,
+				2E6EC8388A63BF875DFB5B00F3F24DFC /* bio.h */,
+				8A8EB69BCB8B81A43AA8ED55011D2A25 /* bitvec.h */,
+				C4B61F2461B22F2F5D82522679DA9A6E /* byteorder.h */,
+				82E517CAA192EE54FCBE06998EECD3BA /* case.h */,
+				93A3E5F785C158DC6A43FF58C904A959 /* ckd_alloc.h */,
+				0539AB95C0C611A99DD4C07FA5140775 /* clapack_lite.h */,
+				A759DC84C73E2F45C65A56625DD270CE /* cmd_ln.h */,
+				57995C5B28D100021DD14A781BFE27D4 /* cmn.h */,
+				6C340D8C127EB9D7D3EA051C0690A179 /* err.h */,
+				C92FBC4992407766DEB3F0B266A9CA1D /* f2c.h */,
+				61E411C73B177692F51615D76AD54313 /* fe.h */,
+				CF78AAEFF806CE52664A5B6677407E29 /* feat.h */,
+				21758FBEA69F5FE3413364707B20E0A6 /* filename.h */,
+				56BF65EA51F710172D1B4D90DA9AC249 /* fixpoint.h */,
+				25D352B5D7CECB5320A6379182DC3B2B /* fsg_model.h */,
+				C88B9C87AA969436EF75A37B19D0D939 /* genrand.h */,
+				5411055265CE5C1D800B1BB298A3822D /* glist.h */,
+				FD188515CDC1B3B35DB0AB2D99C66F27 /* hash_table.h */,
+				95852B9732540CB74C27AB7B046A6E33 /* heap.h */,
+				CC31BFAEEA003417C23365B76714970C /* huff_code.h */,
+				4A3F6AD9E03EA608B6FF9596DF126984 /* jsgf.h */,
+				338B6DA120028D2B719181E642E08CB4 /* listelem_alloc.h */,
+				CC6E36085467F6EFC61ED3E0007B9CCD /* logmath.h */,
+				DAF94902D7BFC3A0747420B00EFB4224 /* matrix.h */,
+				300C13463C95A9444E3285FE3AA842D5 /* mmio.h */,
+				690EEB84CF0E46A18EEA62E60FD76326 /* mulaw.h */,
+				BF1D0825181496D8ED0A573AB4ED9EC2 /* ngram_model.h */,
+				8B9BEC73064F2DD1C6A2B613788FE37F /* pio.h */,
+				35A81C6ECA4D197793FB308DAD4AC54A /* prim_type.h */,
+				065A87C50A9079296FF2CD212BED52BC /* profile.h */,
+				BEF9F199C1AE90845EFCE980ACD81D68 /* sbthread.h */,
+				1CF28503035701337125D0DB5F14B4C4 /* sphinx_config.h */,
+				B9993989A80935912367C35D3AB64D9E /* sphinxbase_export.h */,
+				803860C98C186326900B665870944E6D /* strfuncs.h */,
+				AA883100DAB7F2F191127B515A0A8310 /* yin.h */,
+			);
+			path = sphinxbase;
+			sourceTree = "<group>";
+		};
+		F9A2E50701D27E2AC7F17312E155EBD6 /* armv7s */ = {
+			isa = PBXGroup;
+			children = (
+				B5A2F4F612F002DF752D89597D5E8887 /* libsphinxad.a */,
+				A9CB56124AB2C576FF88E2CAB1E87A9F /* libsphinxbase.a */,
+			);
+			path = armv7s;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DF82C5BC258B05461E51ECD5A64A728 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1377985FE97204F6102E74075E02B31 /* Pods-iSphinxDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E5AF97BB5D0B4FBF1DC919E6E9441C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60EEA58C48EBFE2E45107700D1B31601 /* ad.h in Headers */,
+				489ED1BC6B2718076B434EB62E4E4936 /* agc.h in Headers */,
+				1ADD9D5BB600BDA2365E36A8736C577F /* bio.h in Headers */,
+				C441405575D07DFFE7913363E07FDD35 /* bitvec.h in Headers */,
+				B09EC1D661DC9A122B0AFDF68C136F1E /* byteorder.h in Headers */,
+				7ABB4D9ECA3E4167533A9F871420BA1E /* case.h in Headers */,
+				FE44B9688F2BE31821C1C12D8C1FB9E6 /* ckd_alloc.h in Headers */,
+				3E1C434986A136331564B631B84B7BA0 /* clapack_lite.h in Headers */,
+				F591EB9783E328250135C3E1C1A79CB6 /* cmd_ln.h in Headers */,
+				A72AB17A212CF00C3A962E6A3F02BDBE /* cmdln_macro.h in Headers */,
+				66A24E09A650EAC6B75C954E914B1B78 /* cmn.h in Headers */,
+				52A6726B5384C27C81F93185C57DA853 /* err.h in Headers */,
+				F8724A21780C86EF34D2B7EFA72B69A3 /* f2c.h in Headers */,
+				8838D28BDE7C4CB9F767225F46232633 /* fe.h in Headers */,
+				B70B23E808E3A7C9253B3B37D38BCAD0 /* feat.h in Headers */,
+				1C16C3FB9D8D2D977ECE3715C3FE6A7F /* filename.h in Headers */,
+				BAE8321EC92A5AAC49A2A319476BFC42 /* fixpoint.h in Headers */,
+				1A3FF4C42BC9D7BBC4DA6980185EAF7B /* fsg_model.h in Headers */,
+				B252DEA53FD30A8434EBE3DE5B28349A /* genrand.h in Headers */,
+				8DA28B1E32288536B146E58A5AF0CE7A /* glist.h in Headers */,
+				04025881F0DC1BF54A162CA45B1B057F /* hash_table.h in Headers */,
+				C08FCEC1C39BFA7624D502080841330A /* heap.h in Headers */,
+				4F66A092F5A4838250AAE38F9A0CFD78 /* huff_code.h in Headers */,
+				27D5F741612210CA4813196535A8673E /* iSphinx-umbrella.h in Headers */,
+				EB71FD63F099BDD7B9DE11A5FB22D7C7 /* iSphinx.h in Headers */,
+				7F9EC6CE1E06597FEC2CAE17784CCA59 /* jsgf.h in Headers */,
+				5FE3D528E7118D32D8BC0CB696CE5601 /* listelem_alloc.h in Headers */,
+				C76460B86FA4EA54C1EEE6271BD11E80 /* logmath.h in Headers */,
+				4322E45A283FC46132FB1F94AD1CA975 /* matrix.h in Headers */,
+				1B2890857BD6039ECEAE314440A3C333 /* mmio.h in Headers */,
+				493453D32C32FB4D417A6C726B3360F3 /* mulaw.h in Headers */,
+				5E8DFFBB322FC724A1124CA0F27AC5F5 /* ngram_model.h in Headers */,
+				51060765EDDABDDA91209201CB1CA6AC /* pio.h in Headers */,
+				B74858DF16BF086CEEC84E96999D5B0D /* pocketsphinx.h in Headers */,
+				601B2684D4137BB634F35AF0E16228D0 /* pocketsphinx_export.h in Headers */,
+				707F80EF27A7A2001624A40962E9232B /* prim_type.h in Headers */,
+				442EBE9F6C9C0AC1AAEB2A918DC74AAD /* profile.h in Headers */,
+				6614AE3CF9EF189FC0BC7C467B6D86D3 /* ps_lattice.h in Headers */,
+				0721806A9F89B97E3D9D5E872F8A5C2E /* ps_mllr.h in Headers */,
+				E4D2C78F34D0B18A1D472F951C9034C2 /* ps_search.h in Headers */,
+				DCB116AF13F2C2208A8ADC264761D441 /* sbthread.h in Headers */,
+				1D543B9FEEC1C48FC8F490384FE57823 /* sphinx_config.h in Headers */,
+				83FC826A9F81F58D705125DD08D07022 /* sphinxbase_export.h in Headers */,
+				23CFCD6E73FD29496E3A12E05F0E828B /* strfuncs.h in Headers */,
+				F1E49DFB86561AFB618290B0FB576391 /* yin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B27C8460C356C1881D8A8AADE24C5623 /* Pods-iSphinxDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9ACBD1731D5E13901DA6349439FB73F /* Build configuration list for PBXNativeTarget "Pods-iSphinxDemo" */;
+			buildPhases = (
+				7F20538613538089182C67DF88BC5C16 /* Sources */,
+				C582BB8F3F565966BC01CCFD9086AA84 /* Frameworks */,
+				3DF82C5BC258B05461E51ECD5A64A728 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBCA58E86DAB1CA101A30B1336829DC7 /* PBXTargetDependency */,
+			);
+			name = "Pods-iSphinxDemo";
+			productName = "Pods-iSphinxDemo";
+			productReference = 4C31339AF3F0B6A7C0A3640457342E43 /* Pods_iSphinxDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB327941F8E5CB416698D19B8B967A6D /* iSphinx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737A71F69A990C11AC49F2CEAA12D10C /* Build configuration list for PBXNativeTarget "iSphinx" */;
+			buildPhases = (
+				9559066F50A7F89F49E8DD3192763A2E /* Sources */,
+				3D15B93E4FF70D5FB1CBF2D15E09BD26 /* Frameworks */,
+				95E5AF97BB5D0B4FBF1DC919E6E9441C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSphinx;
+			productName = iSphinx;
+			productReference = D1859C7ED79AE1DAE48FB63242C728AD /* iSphinx.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8E5447067A224238E64439499CED0292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB327941F8E5CB416698D19B8B967A6D /* iSphinx */,
+				B27C8460C356C1881D8A8AADE24C5623 /* Pods-iSphinxDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F20538613538089182C67DF88BC5C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB33477562DA781FEDD93EEFAA4D815 /* Pods-iSphinxDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9559066F50A7F89F49E8DD3192763A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31584E7CD397E2F6164726B8A6A72C7A /* cmudict-en-us.dict in Sources */,
+				511599543D6867CC696501B8A89C6AA2 /* Config.swift in Sources */,
+				31E53DBC5F829223C248F64E9F39B8DC /* Decoder.swift in Sources */,
+				38C292198F23A215D13D7174BB314454 /* feat.params in Sources */,
+				3ADA8FB574F8EC10F43A6A2CE80527FD /* Feature.swift in Sources */,
+				85B090E10317ADBF6754B296DD58A4CB /* FrontEnd.swift in Sources */,
+				BF851F95A0177EE1722D9A4AE82E503C /* FsgModel.swift in Sources */,
+				0C87249D530AB43B8083F3B85FA3907F /* Globals.swift in Sources */,
+				C64DC1619D6F4008E4B163090F879DB5 /* Hypotesis.swift in Sources */,
+				D9F50DD3A790B243F297398A4180CE8C /* icaksama.arpa in Sources */,
+				5D26DBA95226A81C614148701977FD71 /* icaksama_rapidsphinx.wav in Sources */,
+				500C7B825E4EB1CE8BFCDDCB141C210A /* iRecognizer.swift in Sources */,
+				F4342922BE8199813ECE86EFD98DBD12 /* iRecognizerDelegete.swift in Sources */,
+				2986BB1A3A28BF771D0AA50DD40B35E7 /* iRecognizerSetup.swift in Sources */,
+				86937680E08DB9BD53DFAFB998D4273F /* iSphinx-dummy.m in Sources */,
+				47792C104F9B4F56C61889012C046C2D /* iSphinx.swift in Sources */,
+				DAF76EFF2D20F2A00805A1E362F461A6 /* iSphinxDelegete.swift in Sources */,
+				618E698F410F0BA73C1140E796E7181D /* Lattice.swift in Sources */,
+				69B13E4F77FDE10D7C14216FBAA9C136 /* libpocketsphinx.a in Sources */,
+				69B13E4F77FDE10D7C14216FBAA9C136 /* libpocketsphinx.a in Sources */,
+				69B13E4F77FDE10D7C14216FBAA9C136 /* libpocketsphinx.a in Sources */,
+				69B13E4F77FDE10D7C14216FBAA9C136 /* libpocketsphinx.a in Sources */,
+				69B13E4F77FDE10D7C14216FBAA9C136 /* libpocketsphinx.a in Sources */,
+				69B13E4F77FDE10D7C14216FBAA9C136 /* libpocketsphinx.a in Sources */,
+				1EEEAB8270AAABA29A46F88B2D740CCD /* libsphinxad.a in Sources */,
+				1EEEAB8270AAABA29A46F88B2D740CCD /* libsphinxad.a in Sources */,
+				1EEEAB8270AAABA29A46F88B2D740CCD /* libsphinxad.a in Sources */,
+				1EEEAB8270AAABA29A46F88B2D740CCD /* libsphinxad.a in Sources */,
+				1EEEAB8270AAABA29A46F88B2D740CCD /* libsphinxad.a in Sources */,
+				1EEEAB8270AAABA29A46F88B2D740CCD /* libsphinxad.a in Sources */,
+				A71541EBE063F3A93CC272125E28FBD6 /* libsphinxbase.a in Sources */,
+				A71541EBE063F3A93CC272125E28FBD6 /* libsphinxbase.a in Sources */,
+				A71541EBE063F3A93CC272125E28FBD6 /* libsphinxbase.a in Sources */,
+				A71541EBE063F3A93CC272125E28FBD6 /* libsphinxbase.a in Sources */,
+				A71541EBE063F3A93CC272125E28FBD6 /* libsphinxbase.a in Sources */,
+				A71541EBE063F3A93CC272125E28FBD6 /* libsphinxbase.a in Sources */,
+				335E5DC54B620EF26E44204B61CEEF33 /* LogMath.swift in Sources */,
+				3AE594545DBF245A2D96C3D62BA2C986 /* mdef in Sources */,
+				01AA0A8258992098631CB296EE3F3830 /* means in Sources */,
+				16BD9540D7DF9F7C097A8673FE36B4E0 /* module.modulemap in Sources */,
+				252E615017B1D1E14425AE4BFFC67450 /* NBest.swift in Sources */,
+				56A9C15FFA56CCAE5B79CA9847E1FB8C /* NBestIterator.swift in Sources */,
+				8268ABC8C1E1937F9AB30B554E108791 /* NGramModel.swift in Sources */,
+				3A1B2329F8F0538D6374C35F2C118AA8 /* NGramModelSet.swift in Sources */,
+				7303B2DE375475C46F1AB8251492F4BF /* NGramModelSetIterator.swift in Sources */,
+				30FD47C505C4B714D4FB7EC2A2423498 /* noisedict in Sources */,
+				52C3ECDED07F94FC774F6FEAEC4D15A3 /* README in Sources */,
+				3A570B5DC7E6F65097DF752B070AC8AD /* Segment.swift in Sources */,
+				A1C1DAB5894A77618D13CAF4C5F58B2C /* SegmentIterator.swift in Sources */,
+				F3A00E7C0281166A4BF047DEF4B8ED69 /* sendump in Sources */,
+				FAC5F8B374C7E6A124671CB12A1F9280 /* transition_matrices in Sources */,
+				035537172261E70C85A2009079125A01 /* Utilities.swift in Sources */,
+				5B763FC4C230A8ECAA3A82C7EF6887D3 /* variances in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBCA58E86DAB1CA101A30B1336829DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iSphinx;
+			target = FB327941F8E5CB416698D19B8B967A6D /* iSphinx */;
+			targetProxy = 9C1B9DF0584EA6CC8FA9DE35683CC6E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07152BFE1B50E6A222F85D5A06DDC184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E03B1D010A7665449FF2869416F86123 /* Pods-iSphinxDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iSphinxDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iSphinxDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53096D5CEFAF7ECBA5EB63948D60F22F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2191764F1E9BE165BFED71EE3895C5 /* iSphinx.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iSphinx/iSphinx-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iSphinx/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Sphinx/lib/pocketsphinx",
+					"${PODS_ROOT}/Sphinx/lib/sphinxbase",
+				);
+				MODULEMAP_FILE = "Target Support Files/iSphinx/iSphinx.modulemap";
+				PRODUCT_NAME = iSphinx;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8399B1676DD3CDD529A808928667EFD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2191764F1E9BE165BFED71EE3895C5 /* iSphinx.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iSphinx/iSphinx-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iSphinx/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Sphinx/lib/pocketsphinx",
+					"${PODS_ROOT}/Sphinx/lib/sphinxbase",
+				);
+				MODULEMAP_FILE = "Target Support Files/iSphinx/iSphinx.modulemap";
+				PRODUCT_NAME = iSphinx;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3E651356932C12813BC6634AA510BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD611E30A73250CD1147788946C6206 /* Pods-iSphinxDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iSphinxDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iSphinxDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		737A71F69A990C11AC49F2CEAA12D10C /* Build configuration list for PBXNativeTarget "iSphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53096D5CEFAF7ECBA5EB63948D60F22F /* Debug */,
+				8399B1676DD3CDD529A808928667EFD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9ACBD1731D5E13901DA6349439FB73F /* Build configuration list for PBXNativeTarget "Pods-iSphinxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E651356932C12813BC6634AA510BB4 /* Debug */,
+				07152BFE1B50E6A222F85D5A06DDC184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module iSphinx {
+  umbrella header "iSphinx-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "iSphinx",
+  "version": "1.1.1",
+  "license": "MIT",
+  "summary": "iOS library with swift for offline speech recognition base on Pocketsphinx engine.",
+  "homepage": "https://github.com/icaksama/iSphinx",
+  "social_media_url": "http://twitter.com/icaksama",
+  "authors": {
+    "icaksama": "icaksama@gmail.org"
+  },
+  "source": {
+    "git": "https://github.com/icaksama/iSphinx.git",
+    "tag": "1.1.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.0",
+    "HEADER_SEARCH_PATHS": "${PODS_ROOT}/Sphinx/Include/**",
+    "SWIFT_INCLUDE_PATHS": "${PODS_ROOT}/Sphinx/Include",
+    "LIBRARY_SEARCH_PATHS": "${PODS_ROOT}/Sphinx/lib/pocketsphinx ${PODS_ROOT}/iSphinx/Sphinx/lib/sphinxbase"
+  },
+  "source_files": [
+    "iSphinx/iSphinx/*.{swift,h}",
+    "iSphinx/iSphinx/iSphinx Utilities/*.{swift}",
+    "iSphinx/iSphinx/Assets/*.{arpa,dict,wav}",
+    "iSphinx/iSphinx/Assets/en-us-ptm/*.{params}",
+    "iSphinx/iSphinx/Assets/en-us-ptm/*",
+    "iSphinx/Sphinx/include/*.{modulemap}",
+    "iSphinx/Sphinx/include/**/*.{h}",
+    "iSphinx/Sphinx/lib/**/*.{a}",
+    "iSphinx/Sphinx/lib/**/**/*.{a}"
+  ]
+}
