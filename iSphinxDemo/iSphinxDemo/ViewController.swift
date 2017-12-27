@@ -15,6 +15,7 @@ class ViewController: UIViewController, iSphinxDelegete {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        isphinx.delegete = self
         isphinx.prepareISphinx(onPreExecute: { (config) in
             
         }) { (isSuccess) in

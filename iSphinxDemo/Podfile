@@ -2,6 +2,5 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'iSphinxDemo' do
-    inherit! :search_paths
     pod 'iSphinx', :path => '~/Documents/icaksama/GIT/iSphinx'
 end
