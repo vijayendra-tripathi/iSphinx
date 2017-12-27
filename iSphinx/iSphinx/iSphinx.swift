@@ -19,7 +19,7 @@ open class iSphinx: iRecognizerDelegete {
     open var delegete: iSphinxDelegete!
     
     fileprivate func getAssetPath() -> String? {
-        return Bundle(for: iSphinx.self).path(forResource: "Assets", ofType: nil)
+        return Bundle(for: iSphinx.self).path(forResource: "Resources", ofType: nil)
     }
     
     public init() {}

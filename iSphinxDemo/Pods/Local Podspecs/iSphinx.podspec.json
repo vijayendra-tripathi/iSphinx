@@ -46,6 +46,7 @@
   ],
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "4.0",
+    "ENABLE_BITCODE": "NO",
     "EXCLUDED_SOURCE_FILE_NAMES": "cmudict-en-us.dict",
     "HEADER_SEARCH_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
     "SWIFT_INCLUDE_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include",
@@ -53,6 +54,7 @@
     "OTHER_LDFLAGS": "-lObjC -lC -lsphinxbase -lsphinxad -lpocketsphinx"
   },
   "xcconfig": {
-    "HEADER_SEARCH_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**"
+    "HEADER_SEARCH_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
+    "ENABLE_BITCODE": "NO"
   }
 }

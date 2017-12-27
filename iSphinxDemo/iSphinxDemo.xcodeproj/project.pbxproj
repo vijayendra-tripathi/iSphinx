@@ -363,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 84724763J4;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iSphinxDemo/Info.plist;
 				LD_DYLIB_INSTALL_NAME = "@rpath";
@@ -390,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 84724763J4;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iSphinxDemo/Info.plist;
 				LD_DYLIB_INSTALL_NAME = "@rpath";

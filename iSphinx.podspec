@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'iSphinx'
-  s.version = '1.1.1'
+  s.version = '1.1.2'
   s.license = 'MIT'
   s.summary = 'iOS library with swift for offline speech recognition base on Pocketsphinx engine.'
   s.homepage = 'https://github.com/icaksama/iSphinx'
@@ -20,12 +20,15 @@ Pod::Spec.new do |s|
   s.source_files = 'iSphinx/iSphinx/*.{swift,h}',
                    'iSphinx/iSphinx/iSphinx Utilities/*.{swift}'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0',
+                            'ENABLE_BITCODE' => 'NO',
                             'EXCLUDED_SOURCE_FILE_NAMES' => 'cmudict-en-us.dict',
                             'HEADER_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**',
                             'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include',
                             'LIBRARY_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/pocketsphinx ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/sphinxbase',
                             'OTHER_LDFLAGS' => '-lObjC -lC -lsphinxbase -lsphinxad -lpocketsphinx'
                           }
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**" }
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
+                 'ENABLE_BITCODE' => 'NO'
+               }
   # PODS_ROOT, PODS_TARGET_SRCROOT
 end
