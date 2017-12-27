@@ -24,7 +24,7 @@ pod 'iSphinx', '~> 1.1.1'
 - Gives request permission for recording
 
 ## Add The Listener
-First, impletent the RapidSphinxListener in your class/activity :
+First, impletent the iSphinxDelegete in your class/ViewController :
 ```swift
 import iSphinx
 
@@ -37,7 +37,7 @@ class ViewController: UIViewController, iSphinxDelegete {
     }
 }
 ```
-RapidSphinxListener have some methods must be @Override in your class/activity :
+iSphinxDelegete have some methods must be implement in your class/ViewController :
 ```swift
 func iSphinxDidStop(reason: String, code: Int) {
     if code == 500 { // 500 code for error
@@ -84,7 +84,7 @@ func iSphinxDidSpeechDetected() {
 ```
 
 ## Prepare Speech Recognition
-You need to prepare speech recognition before use that. You can add new parameters in rapidPreExecute to increase accuracy or performance.
+You need to prepare speech recognition before use that. You can add new parameters in onPreExecute to increase accuracy or performance.
 ```swift
 isphinx.prepareISphinx(onPreExecute: { (config) in
     config.setString("-parameter", "value")
