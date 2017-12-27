@@ -7,19 +7,47 @@
 //
 
 import UIKit
+import iSphinx
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, iSphinxDelegete {
+    
+    var isphinx: iSphinx = iSphinx()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        isphinx.prepareISphinx(onPreExecute: { (config) in
+            
+        }) { (isSuccess) in
+            
+        }
+        
+        isphinx.updateVocabulary(text: "") {
+            
+        }
+        
+        isphinx.startISphinx(timeoutInSec: 10)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func iSphinxDidStop(reason: String, code: Int) {
+        
     }
-
+    
+    func iSphinxFinalResult(result: String, hypArr: [String], scores: [Double]) {
+        
+    }
+    
+    func iSphinxPartialResult(partialResult: String) {
+        
+    }
+    
+    func iSphinxUnsupportedWords(words: [String]) {
+        
+    }
+    
+    func iSphinxDidSpeechDetected() {
+        
+    }
 
 }
 

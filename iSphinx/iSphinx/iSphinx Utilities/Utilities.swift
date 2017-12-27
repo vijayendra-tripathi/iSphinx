@@ -33,7 +33,7 @@ internal class Utilities {
         let audioFormat = AVAudioFormat(commonFormat: AVAudioCommonFormat.pcmFormatFloat32, sampleRate: 8000, channels: 1, interleaved: false)  // given NSData audio format
         let PCMBuffer = AVAudioPCMBuffer(pcmFormat: audioFormat!, frameCapacity: UInt32(data.length) / (audioFormat?.streamDescription.pointee.mBytesPerFrame)!)
         PCMBuffer?.frameLength = (PCMBuffer?.frameCapacity)!
-        let channels = UnsafeBufferPointer(start: PCMBuffer?.floatChannelData, count: (PCMBuffer?.format.accessibilityElementCount())!)
+        let channels = UnsafeBufferPointer(start: PCMBuffer?.floatChannelData, count: Int((PCMBuffer?.format.channelCount)!))
         data.getBytes(UnsafeMutableRawPointer(channels[0]) , length: data.length)
         return PCMBuffer!
     }

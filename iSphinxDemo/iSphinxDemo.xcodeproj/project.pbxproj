@@ -13,11 +13,12 @@
 		6F6D32301FE8CA6E0088E895 /* iSphinxDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D322E1FE8CA6E0088E895 /* iSphinxDemo.xcdatamodeld */; };
 		6F6D32321FE8CA6E0088E895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D32311FE8CA6E0088E895 /* Assets.xcassets */; };
 		6F6D32351FE8CA6E0088E895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D32331FE8CA6E0088E895 /* LaunchScreen.storyboard */; };
-		FE9846FC25D4480626F76EC4 /* Pods_iSphinxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8F9AE30F8E905971B9174A /* Pods_iSphinxDemo.framework */; };
+		7D96D0411947252DE92694CD /* Pods_iSphinxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E691B3D7BDBF423989BFAF6 /* Pods_iSphinxDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4BB012043679C515F74405EA /* Pods-iSphinxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSphinxDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2E691B3D7BDBF423989BFAF6 /* Pods_iSphinxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSphinxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AA74C64A208E2E25E04F30 /* Pods-iSphinxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSphinxDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6D32241FE8CA6E0088E895 /* iSphinxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSphinxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6D32271FE8CA6E0088E895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F6D32291FE8CA6E0088E895 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +27,7 @@
 		6F6D32311FE8CA6E0088E895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F6D32341FE8CA6E0088E895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F6D32361FE8CA6F0088E895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D8F9AE30F8E905971B9174A /* Pods_iSphinxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSphinxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEF88C3F226C9D052F929B82 /* Pods-iSphinxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSphinxDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7EAD507F10ED94850EE2086D /* Pods-iSphinxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSphinxDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,20 +35,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE9846FC25D4480626F76EC4 /* Pods_iSphinxDemo.framework in Frameworks */,
+				7D96D0411947252DE92694CD /* Pods_iSphinxDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08D52403BA5B6DAB3C371F4C /* Pods */ = {
+		44DDD6023BA106BD97DEAAD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEF88C3F226C9D052F929B82 /* Pods-iSphinxDemo.debug.xcconfig */,
-				4BB012043679C515F74405EA /* Pods-iSphinxDemo.release.xcconfig */,
+				2E691B3D7BDBF423989BFAF6 /* Pods_iSphinxDemo.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6F6D321B1FE8CA6E0088E895 = {
@@ -56,8 +55,8 @@
 			children = (
 				6F6D32261FE8CA6E0088E895 /* iSphinxDemo */,
 				6F6D32251FE8CA6E0088E895 /* Products */,
-				08D52403BA5B6DAB3C371F4C /* Pods */,
-				7CACFE500CEFE81FFC100784 /* Frameworks */,
+				9A2C6CFC13DFDD84A89281B9 /* Pods */,
+				44DDD6023BA106BD97DEAAD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +82,13 @@
 			path = iSphinxDemo;
 			sourceTree = "<group>";
 		};
-		7CACFE500CEFE81FFC100784 /* Frameworks */ = {
+		9A2C6CFC13DFDD84A89281B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8D8F9AE30F8E905971B9174A /* Pods_iSphinxDemo.framework */,
+				58AA74C64A208E2E25E04F30 /* Pods-iSphinxDemo.debug.xcconfig */,
+				7EAD507F10ED94850EE2086D /* Pods-iSphinxDemo.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,12 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F6D32391FE8CA6F0088E895 /* Build configuration list for PBXNativeTarget "iSphinxDemo" */;
 			buildPhases = (
-				EC88664BF28B185435451172 /* [CP] Check Pods Manifest.lock */,
+				88E230AD02A446F34751B159 /* [CP] Check Pods Manifest.lock */,
 				6F6D32201FE8CA6E0088E895 /* Sources */,
 				6F6D32211FE8CA6E0088E895 /* Frameworks */,
 				6F6D32221FE8CA6E0088E895 /* Resources */,
-				33BA1B838DA7B69EB60C925D /* [CP] Embed Pods Frameworks */,
-				D63A345305D4B044CAAB3147 /* [CP] Copy Pods Resources */,
+				8DA011642FDCAE1EA00076E0 /* [CP] Embed Pods Frameworks */,
+				9806A3D01C06456FAF81D860 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,7 +162,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		33BA1B838DA7B69EB60C925D /* [CP] Embed Pods Frameworks */ = {
+		88E230AD02A446F34751B159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iSphinxDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA011642FDCAE1EA00076E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,7 +198,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D63A345305D4B044CAAB3147 /* [CP] Copy Pods Resources */ = {
+		9806A3D01C06456FAF81D860 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,24 +211,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSphinxDemo/Pods-iSphinxDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC88664BF28B185435451172 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iSphinxDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -357,18 +357,26 @@
 		};
 		6F6D323A1FE8CA6F0088E895 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEF88C3F226C9D052F929B82 /* Pods-iSphinxDemo.debug.xcconfig */;
+			baseConfigurationReference = 58AA74C64A208E2E25E04F30 /* Pods-iSphinxDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 84724763J4;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iSphinxDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"iSphinx\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icaksama.iSphinxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${PODS_ROOT}/iSphinx/Sphinx/Include";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,18 +384,26 @@
 		};
 		6F6D323B1FE8CA6F0088E895 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BB012043679C515F74405EA /* Pods-iSphinxDemo.release.xcconfig */;
+			baseConfigurationReference = 7EAD507F10ED94850EE2086D /* Pods-iSphinxDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 84724763J4;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iSphinxDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"iSphinx\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icaksama.iSphinxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${PODS_ROOT}/iSphinx/Sphinx/Include";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

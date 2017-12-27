@@ -24,6 +24,14 @@ open class iSphinx: iRecognizerDelegete {
     
     public init() {}
     
+    open func startISphinx() {
+        recognizer.startIRecognizer()
+    }
+    
+    open func startISphinx(timeoutInSec: Int) {
+        recognizer.startIRecognizer(timeoutInSec: timeoutInSec)
+    }
+    
     open func prepareISphinx(onPreExecute: @escaping(_ config: Config) -> (),
                              onPostExecute: @escaping(_ isSuccess: Bool) -> ()) {
         let acousticModel = getAssetPath()?.appending("en-us-ptm")
