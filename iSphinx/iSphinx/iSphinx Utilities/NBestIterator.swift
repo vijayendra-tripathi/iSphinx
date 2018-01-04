@@ -18,7 +18,7 @@ open class NBestIterator {
     internal init() {}
     
     public init(decoder: Decoder) {
-        self.pointer = ps_nbest(decoder.getPointer(), 0, -1, nil, nil)
+        self.pointer = ps_nbest(decoder.getPointer())
     }
     
     internal func getPointer() -> OpaquePointer {

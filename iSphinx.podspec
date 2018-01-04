@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'Foundation', 'CoreAudio', 'AVFoundation', 'CoreMedia'
   s.preserve_paths = 'iSphinx/Sphinx/include/**/*.{h}', 'iSphinx/Sphinx/include/*.{modulemap}'
-  s.vendored_libraries = 'iSphinx/Sphinx/lib/pocketsphinx/libpocketsphinx.a', 'iSphinx/Sphinx/lib/sphinxbase/libsphinxbase.a', 'iSphinx/Sphinx/lib/sphinxbase/libsphinxad.a'
-  s.libraries = 'pocketsphinx', 'sphinxad', 'sphinxbase'
-  s.resources = 'iSphinx/iSphinx/Assets/*.{arpa,wav,dict}',
-                'iSphinx/iSphinx/Assets/en-us-ptm/*'
+  s.vendored_libraries = 'iSphinx/Sphinx/lib/pocketsphinx/libpocketsphinx.a', 'iSphinx/Sphinx/lib/sphinxbase/libsphinxbase.a'
+  s.libraries = 'pocketsphinx', 'sphinxbase'
+  s.resource_bundles = { 'Assets' => ['iSphinx/iSphinx/Assets/*.{arpa,wav,txt}'],
+                         'AcousticModel' => 'iSphinx/iSphinx/Assets/en-us-ptm/*' }
   s.source_files = 'iSphinx/iSphinx/*.{swift,h}',
                    'iSphinx/iSphinx/iSphinx Utilities/*.{swift}'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0',
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
                             'HEADER_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**',
                             'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include',
                             'LIBRARY_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/pocketsphinx ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/sphinxbase',
-                            'OTHER_LDFLAGS' => '-lObjC -lC -lsphinxbase -lsphinxad -lpocketsphinx'
+                            'OTHER_LDFLAGS' => '-lObjC -lC -lsphinxbase -lpocketsphinx'
                           }
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
                  'ENABLE_BITCODE' => 'NO'

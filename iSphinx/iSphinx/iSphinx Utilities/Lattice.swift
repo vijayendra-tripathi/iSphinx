@@ -27,19 +27,19 @@ open class Lattice {
     }
     
     open func delete() {
-        if ps_lattice_free(pointer) == 0 {
+        if ps_lattice_free(pointer) < 0 {
             print("Cannot delete lattice")
         }
     }
     
     open func write(toFile: String) {
-        if ps_lattice_write(pointer, toFile) == 0 {
+        if ps_lattice_write(pointer, toFile) < 0 {
             print("Cannot write lattice")
         }
     }
     
     open func writeHtk(toFile: String) {
-        if ps_lattice_write_htk(pointer, toFile) == 0 {
+        if ps_lattice_write_htk(pointer, toFile) < 0 {
             print("Caanot write lattice to htk")
         }
     }

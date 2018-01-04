@@ -124,25 +124,12 @@ extern "C" {
 #define E_INFO_NOFN(...)  err_msg(ERR_INFO, NULL, 0, __VA_ARGS__)
 
 /**
- * Print debugging information to standard error stream.
- *
- * This will only print a message if:
- *  1. Debugging is enabled at compile time
- *  2. The debug level is greater than or equal to \a level
- *
- * Note that for portability reasons the format and arguments must be
- * enclosed in an extra set of parentheses.
+ * Debug is disabled by default
  */
 #ifdef SPHINX_DEBUG
-#define E_DEBUG(level, ...) \
-    if (err_get_debug_level() >= level) \
-        err_msg(ERR_DEBUG, FILELINE, __VA_ARGS__)
-#define E_DEBUGCONT(level, ...) \
-    if (err_get_debug_level() >= level) \
-        err_msg(ERR_DEBUG, NULL, 0, __VA_ARGS__)
+#define E_DEBUG(...) err_msg(ERR_DEBUG, NULL, 0, __VA_ARGS__)
 #else
-#define E_DEBUG(level,x)
-#define E_DEBUGCONT(level,x)
+#define E_DEBUG(...)
 #endif
 
 typedef enum err_e {
@@ -171,7 +158,8 @@ typedef void (*err_cb_f)(void* user_data, err_lvl_t, const char *, ...);
  * to your application. By default the handler which dumps messages to
  * stderr is set.
  *
- * @param - callback to pass messages too.
+ * @param callback callback to pass messages too
+ * @param user_data data to pass to callback
  */
 SPHINXBASE_EXPORT void
 err_set_callback(err_cb_f callback, void *user_data);
@@ -179,7 +167,7 @@ err_set_callback(err_cb_f callback, void *user_data);
 /**
  * Direct all logging to a given filehandle if default logfp callback is set.
  *
- * @param logfp Filehandle to send log messages to, or NULL to disable logging.
+ * @param stream Filehandle to send log messages to, or NULL to disable logging.
  */
 SPHINXBASE_EXPORT void
 err_set_logfp(FILE *stream);
@@ -198,29 +186,11 @@ err_get_logfp(void);
  *
  * Previous logging filehandle is closed (unless it was stdout or stderr).
  *
- * @param file File path to send log messages to
+ * @param path File path to send log messages to
  * @return 0 for success, <0 for failure (e.g. if file does not exist)
  */
 SPHINXBASE_EXPORT int
 err_set_logfile(const char *path);
-
-/**
- * Set debugging verbosity level.
- *
- * Note that debugging messages are only enabled when compiled with -DDEBUG.
- *
- * @param level Verbosity level to set, or 0 to disable debug messages.
- */
-SPHINXBASE_EXPORT
-int err_set_debug_level(int level);
-
-/**
- * Get debugging verbosity level.
- *
- * Note that debugging messages are only enabled when compiled with -DDEBUG.
- */
-SPHINXBASE_EXPORT
-int err_get_debug_level(void);
 
 #ifdef __cplusplus
 }

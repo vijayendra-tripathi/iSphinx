@@ -9,7 +9,7 @@
 import UIKit
 import iSphinx
 
-class ViewController: UIViewController, iSphinxDelegete {
+class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
     
     @IBOutlet weak var txtVocabularies: UITextField!
     @IBOutlet weak var txtWordDistractor: UITextField!
@@ -26,11 +26,14 @@ class ViewController: UIViewController, iSphinxDelegete {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupProgress()
+        self.txtVocabularies.delegate = self
+        self.txtWordDistractor.delegate = self
         self.isphinx.delegete = self
         self.indicator.startAnimating()
         self.isphinx.prepareISphinx(onPreExecute: { (config) in
             
         }) { (isSuccess) in
+            print("Preparation success!")
             if isSuccess {
                 self.indicator.stopAnimating()
             }
@@ -42,6 +45,7 @@ class ViewController: UIViewController, iSphinxDelegete {
         indicator.frame = CGRect(x: 0.0, y: 0.0, width: 40, height: 40)
         indicator.center = view.center
         view.addSubview(indicator)
+        indicator.alpha = 0.5
         indicator.bringSubview(toFront: view)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
@@ -54,6 +58,9 @@ class ViewController: UIViewController, iSphinxDelegete {
     }
     
     @IBAction func btnStartRecognizerOnTouch(_ sender: Any) {
+        lblPartialResult.text = ""
+        lblFinalResult.text = ""
+        lblUnsupportedWords.text = ""
         isphinx.startISphinx(timeoutInSec: 10)
     }
     
@@ -91,6 +98,10 @@ class ViewController: UIViewController, iSphinxDelegete {
     func iSphinxDidSpeechDetected() {
         print("Speech detected!")
     }
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
 

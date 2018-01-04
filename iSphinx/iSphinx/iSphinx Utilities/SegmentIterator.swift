@@ -18,7 +18,7 @@ open class SegmentIterator {
     internal init() {}
     
     public init(decoder: Decoder) {
-        self.pointer = ps_seg_iter(decoder.getPointer(), &bestScore)
+        self.pointer = ps_seg_iter(decoder.getPointer())
     }
     
     internal func getPointer() -> OpaquePointer {

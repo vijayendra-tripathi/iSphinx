@@ -44,16 +44,15 @@
 		6F8772E41FE91A56000D6791 /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		6F8772E51FE91A56000D6791 /* Hypotesis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hypotesis.swift; sourceTree = "<group>"; };
 		6F8772EC1FE9329F000D6791 /* icaksama.arpa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icaksama.arpa; sourceTree = "<group>"; };
-		6F8772EE1FE9329F000D6791 /* cmudict-en-us.dict */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "cmudict-en-us.dict"; sourceTree = "<group>"; };
+		6F8772EE1FE9329F000D6791 /* icaksama.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = icaksama.txt; sourceTree = "<group>"; };
 		6F8772F01FE9329F000D6791 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
 		6F8772F11FE9329F000D6791 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
 		6F8772F31FE9329F000D6791 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
-		6F8772F51FE9329F000D6791 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		6F8772F71FE9329F000D6791 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
 		6F8772FC1FE9329F000D6791 /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
 		6F8772FE1FE9329F000D6791 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
 		6F8772FF1FE932A0000D6791 /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
-		6F8773051FE932A0000D6791 /* icaksama_rapidsphinx.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = icaksama_rapidsphinx.wav; sourceTree = "<group>"; };
+		6F8773051FE932A0000D6791 /* icaksama.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = icaksama.wav; sourceTree = "<group>"; };
 		6F87731F1FEA2973000D6791 /* iRecognizerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRecognizerSetup.swift; sourceTree = "<group>"; };
 		6F8773211FEA3584000D6791 /* iRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRecognizer.swift; sourceTree = "<group>"; };
 		6F8773231FEA39C4000D6791 /* LogMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMath.swift; sourceTree = "<group>"; };
@@ -142,8 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				6F8772EF1FE9329F000D6791 /* en-us-ptm */,
-				6F8772EE1FE9329F000D6791 /* cmudict-en-us.dict */,
-				6F8773051FE932A0000D6791 /* icaksama_rapidsphinx.wav */,
+				6F8772EE1FE9329F000D6791 /* icaksama.txt */,
+				6F8773051FE932A0000D6791 /* icaksama.wav */,
 				6F8772EC1FE9329F000D6791 /* icaksama.arpa */,
 			);
 			path = Assets;
@@ -155,7 +154,6 @@
 				6F8772F01FE9329F000D6791 /* sendump */,
 				6F8772F11FE9329F000D6791 /* noisedict */,
 				6F8772F31FE9329F000D6791 /* means */,
-				6F8772F51FE9329F000D6791 /* README */,
 				6F8772F71FE9329F000D6791 /* mdef */,
 				6F8772FC1FE9329F000D6791 /* transition_matrices */,
 				6F8772FE1FE9329F000D6791 /* feat.params */,
@@ -396,6 +394,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sphinx/include/**",
@@ -428,6 +427,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sphinx/include/**",

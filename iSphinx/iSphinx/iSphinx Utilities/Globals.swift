@@ -9,26 +9,30 @@
 import Foundation
 import AVFoundation
 
-extension FileHandle {
+internal let SEARCH_ID = "icaksama"
+
+internal extension FileHandle {
     
-    func reduceChunks<T>(size: Int, reducer: (NSData) -> T) {
-        var chuckData = readData(ofLength: size)
-        while chuckData.count > 0 {
-            var _ = reducer(chuckData as NSData)
-            chuckData = readData(ofLength: size)
-        }
+    func reduceChunks(size: Int, reducer: @escaping(NSData) -> ()) {
+//        var chuckData = readData(ofLength: size)
+//        while chuckData.count > 0 {
+//            reducer(chuckData as NSData)
+//            chuckData = readData(ofLength: size)
+//        }
     }
 }
 
-extension AVAudioPCMBuffer {
-    func toNSDate() -> NSData {
+internal extension AVAudioPCMBuffer {
+    
+    func toNSData() -> NSData {
         let channels = UnsafeBufferPointer(start: int16ChannelData, count: 1)
         let ch0Data = NSData(bytes: channels[0], length:Int(frameCapacity * format.streamDescription.pointee.mBytesPerFrame))
         return ch0Data
     }
+    
 }
 
-extension Array where Element: Equatable {
+internal extension Array where Element: Equatable {
     func removeDuplicates() -> [Element] {
         var result = [Element]()
         

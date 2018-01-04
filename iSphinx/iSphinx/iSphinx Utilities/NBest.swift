@@ -19,7 +19,7 @@ open class NBest {
     internal init(pointer: OpaquePointer) {
         self.pointer = pointer
         ps_nbest_hyp(pointer, &hypotesisScore)
-        ps_nbest_seg(pointer, &segmentScore)
+        ps_nbest_seg(pointer)
     }
     
     internal func getPointer() -> OpaquePointer {
