@@ -1,7 +1,9 @@
-# iSphinx (Pre-Release)
+# iSphinx
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
 ## Features
+- [x] Support swift 4 and iOS 9 above
+- [x] High accuracy
 - [x] Build dictionary on the fly
 - [x] Build language model (Arpa File) on the fly
 - [x] Build JSGF Grammar on the fly
@@ -12,16 +14,22 @@ iOS library for offline speech recognition base on Pocketsphinx engine. Add spee
 - [x] Speaker Adaptation (in progress)
 - [x] SIMPLE TO USE & FAST!
 
+## Preview
+I have tried to speak in different word order:
+<p align="center">
+<img width="350" src="https://github.com/icaksama/iSphinx/blob/master/iSphinxPreview.gif?raw=true">
+</p>
+
 ## Cocoapods
 Add to build.gradle :
 ```groovy
-pod 'iSphinx', '~> 1.1.1'
+pod 'iSphinx', '~> 1.1.2'
 ```
 
 # How to Use
 
 ## Add Request Permissions
-- Gives request permission for recording
+- Add request permission for recording in your `Info.plist`
 
 ## Add The Listener
 First, impletent the iSphinxDelegete in your class/ViewController :
@@ -75,7 +83,7 @@ func iSphinxUnsupportedWords(words: [String]) {
     for word in words {
         unsupportedWords += word + ", "
     }
-    print("Unsupported words : \n \(unsupportedWords)")
+    print("Unsupported words : \(unsupportedWords)")
 }
 
 func iSphinxDidSpeechDetected() {
@@ -87,10 +95,12 @@ func iSphinxDidSpeechDetected() {
 You need to prepare speech recognition before use that. You can add new parameters in onPreExecute to increase accuracy or performance.
 ```swift
 isphinx.prepareISphinx(onPreExecute: { (config) in
-    config.setString("-parameter", "value")
+    // You can add new parameter pocketshinx here
+    isphinx.setSilentToDetect(seconds: 1)
+    config.setString(key: "-parameter", value: "value")
 }) { (isSuccess) in
     if isSuccess {
-        print("Preparation was done!")
+        print("Preparation success!")
     }
 }
 ```
@@ -99,8 +109,19 @@ isphinx.prepareISphinx(onPreExecute: { (config) in
 You can update the vocabulary with language model or JSGF Grammar on the fly.
 Make sure to remove the punctuation before update vocabulary/grammar.
 ```swift
-isphinx.updateVocabulary(text: "YOUR TEXT HERE!") {
+// Update vocabulary with language model from single string
+isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
     print("Vocabulary updated!")
+}
+
+// Update vocabulary with language model from array string
+isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+    print("Vocabulary updated!")
+}
+
+// Update vocabulary with JSGF Grammar from string
+isphinx.updateGrammar(text: "YOUR GRAMMAR", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+    print("Grammar updated!")
 }
 ```
 
@@ -110,11 +131,19 @@ isphinx.updateVocabulary(text: "YOUR TEXT HERE!") {
 isphinx.startISphinx(timeoutInSec: 10)
 ```
 
-## Note : Please look at iSphinxDemo for detail usage.
+## Play Audio Record
+Make sure play the audio record after speech recognizer is done.
+```swift
+isphinx.getRecorder().play {
+    print("Play audio finish!")
+}
+```
+
+### Note : Please take a look at iSphinxDemo for detail usage.
 
 ## MIT License
 ```
-Copyright (c) 2017 Saiful Irham Wicaksana
+Copyright (c) 2018 Saiful Irham Wicaksana
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
