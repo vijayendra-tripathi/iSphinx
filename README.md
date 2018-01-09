@@ -21,7 +21,7 @@ I have tried to speak in different word order:
 </p>
 
 ## Cocoapods
-Add to build.gradle :
+Add to `Podfile` :
 ```groovy
 pod 'iSphinx', '~> 1.1.2'
 ```
