@@ -11,6 +11,25 @@ import AVFoundation
 
 internal class Utilities {
     
+    internal static func removePunctuation(words: String) -> String {
+        let punctuations = [".",",","?","!","_","-","\\",":"]
+        var newWords = words
+        for punctuation in punctuations {
+            if punctuation == "-" {
+                newWords = newWords.replacingOccurrences(of: punctuation, with: " ")
+            } else {
+                newWords = newWords.replacingOccurrences(of: punctuation, with: "")
+            }
+        }
+        return newWords.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    internal static func removePunctuationArr(words: inout [String]) {
+        for i in 0 ..< words.count {
+            words[i] = Utilities.removePunctuation(words: words[i])
+        }
+    }
+    
     internal static func getAssetPath() -> String? {
         let bundle = Bundle(for: iSphinx.self).url(forResource: "Assets", withExtension: "bundle")
         return Bundle(url: bundle!)?.bundlePath.appending("/")

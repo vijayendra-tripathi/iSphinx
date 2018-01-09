@@ -75,8 +75,12 @@ public class Decoder {
         config.setString(key: "-dict", value: filePath)
     }
     
-    open func lookupWord(word: String) -> String {
-        return String.init(cString: ps_lookup_word(pointer, word))
+    open func lookupWord(word: String) -> String? {
+        if let pronoun = ps_lookup_word(pointer, word) {
+            return String.init(cString: pronoun)
+        } else {
+            return nil
+        }
     }
     
     open func getLattice() -> Lattice {
@@ -102,8 +106,8 @@ public class Decoder {
     }
     
     open func processRaw(data: AVAudioPCMBuffer) {
-        let length = data.frameLength
-        if ps_process_raw(pointer, data.int16ChannelData?.pointee, Int(length), 0, 0) < 0 {
+        let mBuffers = data.audioBufferList.pointee.mBuffers
+        if ps_process_raw(pointer, mBuffers.mData?.assumingMemoryBound(to: int16.self), Int(mBuffers.mDataByteSize/2), 0, 0) < 0 {
             print("Cannot process raw data")
         }
     }

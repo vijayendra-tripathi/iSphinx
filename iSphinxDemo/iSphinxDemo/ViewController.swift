@@ -25,34 +25,41 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupProgress()
         self.txtVocabularies.delegate = self
         self.txtWordDistractor.delegate = self
         self.isphinx.delegete = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.setupProgress()
         self.indicator.startAnimating()
         self.isphinx.prepareISphinx(onPreExecute: { (config) in
-            
+            // You can add new parameter pocketshinx here
+            // isphinx.setSilentToDetect(seconds: 1)
+            // config.setString(key: "-parameter", value: "value")
         }) { (isSuccess) in
-            print("Preparation success!")
             if isSuccess {
                 self.indicator.stopAnimating()
+                print("Preparation success!")
             }
         }
     }
     
     fileprivate func setupProgress() {
-        indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
-        indicator.frame = CGRect(x: 0.0, y: 0.0, width: 40, height: 40)
-        indicator.center = view.center
-        view.addSubview(indicator)
+        indicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        indicator.frame = self.view.frame
+        indicator.center = self.view.center
+        self.navigationController?.view.addSubview(indicator)
+        indicator.backgroundColor = .black
         indicator.alpha = 0.5
-        indicator.bringSubview(toFront: view)
+        indicator.bringSubview(toFront: (self.navigationController?.view)!)
+        indicator.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin, .flexibleTopMargin]
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
     
     @IBAction func btnUpdateVocabularyOnTouch(_ sender: Any) {
         indicator.startAnimating()
-        isphinx.updateVocabulary(text: txtVocabularies.text!) {
+        isphinx.updateVocabulary(text: txtVocabularies.text!, oovWords: txtWordDistractor.text!.components(separatedBy: " ")) {
             self.indicator.stopAnimating()
         }
     }
@@ -65,7 +72,9 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
     }
     
     @IBAction func btnPlayAudioOnTouch(_ sender: Any) {
-        
+        isphinx.getRecorder().play {
+            print("Play audio finished!")
+        }
     }
     
 
@@ -81,6 +90,9 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
     
     func iSphinxFinalResult(result: String, hypArr: [String], scores: [Double]) {
         lblFinalResult.text = result
+        for score in scores {
+            print("score: \(score)")
+        }
     }
     
     func iSphinxPartialResult(partialResult: String) {
@@ -90,7 +102,7 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
     func iSphinxUnsupportedWords(words: [String]) {
         var unsuportedWords: String = ""
         for word in words {
-            unsuportedWords += "\(word) "
+            unsuportedWords += "\(word), "
         }
         lblUnsupportedWords.text = unsuportedWords
     }

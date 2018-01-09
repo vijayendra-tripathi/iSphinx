@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://www.facebook.com/icaksama.fanpage'
   s.authors = { 'icaksama' => 'icaksama@gmail.org' }
   s.source = { :git => 'https://github.com/icaksama/iSphinx.git', :tag => s.version }
-  s.platform = :ios, '8.0'
-  s.ios.deployment_target = '8.0'
+  s.platform = :ios, '9.0'
+  s.ios.deployment_target = '9.0'
   s.requires_arc = true
   s.frameworks = 'Foundation', 'CoreAudio', 'AVFoundation', 'CoreMedia'
   s.preserve_paths = 'iSphinx/Sphinx/include/**/*.{h}', 'iSphinx/Sphinx/include/*.{modulemap}'

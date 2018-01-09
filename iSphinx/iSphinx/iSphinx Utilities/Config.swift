@@ -8,6 +8,7 @@
 
 import Foundation
 import Sphinx.Base
+import Sphinx.Pocket
 
 open class Config {
     
@@ -15,32 +16,9 @@ open class Config {
     fileprivate var cArgs: [UnsafeMutablePointer<Int8>]!
     
     public init?() {
-        //        config.setString(key: "-beam", value: "1.000000e-80")
-        //        config.setString(key: "-wbeam", value: "1.000000e-40")
-        //        config.setInteger(key: "-ds", value: 2)
-        //        config.setBoolean(key: "-fwdflat", value: true)
-        //        config.setBoolean(key: "-bestpath", value: true)
-        //        config.setInteger(key: "-topn", value: 2)
-        //        config.setInteger(key: "-maxwpf", value: 5)
-        //        config.setInteger(key: "-maxhmmpf", value: 3000)
-        //        config.setFloat(key: "-vad_threshold", value: 3);
-        //        config.setFloat(key: "-lw", value: 6.5);
-        let args = [("-hmm", Utilities.getAcousticPath()),
-//                    ("-dict", Utilities.getAssetPath()?.appending("\(SEARCH_ID).txt")),
-//                    ("-compallsen", "yes"),
-                    ("-backtrace", "yes"),
-                    ("-compallsen", "yes")
-//                    ("-beam", "1.000000e-80"),
-//                    ("-wbeam", "1.000000e-40"),
-//                    ("-maxwpf", "5"),
-//                    ("-maxhmmpf", "3000"),
-//                    ("-vad_threshold", "3"),
-//                    ("-lw", "6.5"),
-//                    ("-samprate", "16000")
-        ]
+        let args = [("-hmm", Utilities.getAcousticPath())]
         cArgs = args.flatMap { (name, value) -> [UnsafeMutablePointer<Int8>] in
-            //strdup move the strings to the heap and return a UnsageMutablePointer<Int8>
-            return [strdup(name),strdup(value)]
+            return [strdup(name), strdup(value)]
         }
         let count = CInt(cArgs.count)
         cArgs.withUnsafeMutableBytes { (p) -> () in
@@ -53,9 +31,7 @@ open class Config {
     }
     
     public init?(args: (String, String)...) {
-        // Create [UnsafeMutablePointer<Int8>]
         cArgs = args.flatMap { (name, value) -> [UnsafeMutablePointer<Int8>] in
-            //strdup move the strings to the heap and return a UnsageMutablePointer<Int8>
             return [strdup(name),strdup(value)]
         }
         let count = CInt(cArgs.count)

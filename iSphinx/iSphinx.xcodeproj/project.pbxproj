@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1982791FFF89230063DB8B /* iSphinxRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1982781FFF89230063DB8B /* iSphinxRecorder.swift */; };
 		6F6D324B1FE8CC860088E895 /* iSphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6D32491FE8CC860088E895 /* iSphinx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F8772261FE8CD2F000D6791 /* iSphinx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8772251FE8CD2F000D6791 /* iSphinx.swift */; };
 		6F8772281FE8CD57000D6791 /* iSphinxDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8772271FE8CD57000D6791 /* iSphinxDelegete.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F1982781FFF89230063DB8B /* iSphinxRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSphinxRecorder.swift; sourceTree = "<group>"; };
 		6F6D32461FE8CC860088E895 /* iSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6D32491FE8CC860088E895 /* iSphinx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSphinx.h; sourceTree = "<group>"; };
 		6F6D324A1FE8CC860088E895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				6F6D324A1FE8CC860088E895 /* Info.plist */,
 				6F8772251FE8CD2F000D6791 /* iSphinx.swift */,
 				6F8772271FE8CD57000D6791 /* iSphinxDelegete.swift */,
+				6F1982781FFF89230063DB8B /* iSphinxRecorder.swift */,
 			);
 			path = iSphinx;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				6F8773241FEA39C4000D6791 /* LogMath.swift in Sources */,
 				6F8773361FECB41F000D6791 /* Lattice.swift in Sources */,
 				6F87733A1FECC480000D6791 /* FrontEnd.swift in Sources */,
+				6F1982791FFF89230063DB8B /* iSphinxRecorder.swift in Sources */,
 				6F8773301FEB8AFA000D6791 /* Utilities.swift in Sources */,
 				6F8773261FEA432A000D6791 /* SegmentIterator.swift in Sources */,
 				6F8773221FEA3584000D6791 /* iRecognizer.swift in Sources */,

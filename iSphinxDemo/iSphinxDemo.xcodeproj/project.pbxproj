@@ -405,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icaksama.iSphinxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(inherited) ${PODS_ROOT}/iSphinx/Sphinx/Include";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
