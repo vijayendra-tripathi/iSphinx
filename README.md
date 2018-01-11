@@ -1,6 +1,12 @@
 # iSphinx
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE)
-[![GitHub release](https://img.shields.io/badge/style-plastic-green.svg?release=1.1.3)](https://github.com/icaksama/iSphinx/releases)
+[![Creator](https://img.shields.io/badge/creator-icaksama-green.svg)](https://www.linkedin.com/in/icaksama/)
+[![GitHub license](https://img.shields.io/github/license/icaksama/iSphinx.svg)](https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE)
+[![Code Size](https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg)](https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg)
+[![Pod Version](https://img.shields.io/cocoapods/v/iSphinx.svg)](https://img.shields.io/cocoapods/v/iSphinx.svg)
+[![Platform](https://img.shields.io/cocoapods/p/iSphinx.svg)](https://img.shields.io/cocoapods/p/iSphinx.svg)
+[![Download Total](https://img.shields.io/cocoapods/dt/iSphinx.svg)](https://img.shields.io/cocoapods/dt/iSphinx.svg)
+[![GitHub release](https://img.shields.io/github/release/icaksama/iSphinx.svg)](https://github.com/icaksama/iSphinx/releases)
+<br>
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
 ## Features
