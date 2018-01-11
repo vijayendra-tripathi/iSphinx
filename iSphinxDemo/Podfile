@@ -2,5 +2,5 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'iSphinxDemo' do
-    pod 'iSphinx', '~> 1.1.1'
+    pod 'iSphinx', '~> 1.1.3'
 end

@@ -11,35 +11,32 @@ import Foundation
 open class SegmentIterator {
     
     fileprivate var pointer: OpaquePointer!
-    fileprivate var iterCount: Int = 0
-    fileprivate var currentIter: Int = 0
-    fileprivate var bestScore: CInt = 0
     
     internal init() {}
     
     public init(decoder: Decoder) {
-        self.pointer = ps_seg_iter(decoder.getPointer(), &bestScore)
+        self.pointer = ps_seg_iter(decoder.getPointer())
+        if pointer == nil {
+            print("seg pointer is nil")
+        }
     }
     
     internal func getPointer() -> OpaquePointer {
         return pointer
     }
     
-    open func getBestScore() -> Int {
-        return Int(bestScore)
-    }
-    
     open func hasNext() -> Bool {
-        if (currentIter + 1) <= iterCount {
+        if pointer == nil {
+            return false
+        } else if let pSeg = ps_seg_next(pointer) {
+            self.pointer = pSeg
             return true
         } else {
-            currentIter = 0
             return false
         }
     }
     
     open func next() -> Segment {
-        currentIter += 1
-        return Segment(pointer: ps_seg_next(pointer))
+        return Segment(pointer: pointer)
     }
 }

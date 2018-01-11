@@ -30,7 +30,7 @@ I have tried to speak in different word order:
 ## Cocoapods
 Add to `Podfile` :
 ```text
-pod 'iSphinx', '~> 1.1.2'
+pod 'iSphinx', '~> 1.1.3'
 ```
 
 # How to Use

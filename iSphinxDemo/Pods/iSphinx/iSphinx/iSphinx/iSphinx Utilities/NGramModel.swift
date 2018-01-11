@@ -11,7 +11,6 @@ import Foundation
 open class NGramModel {
     
     fileprivate var pointer: OpaquePointer!
-    fileprivate var nGramSetPointer: OpaquePointer!
     
     internal init() {}
     
@@ -20,7 +19,7 @@ open class NGramModel {
     }
     
     public init(config: Config, logMath: LogMath, lmFile: String) {
-        self.pointer = ngram_model_read(config.getPointer(), lmFile, ngram_file_name_to_type(lmFile), logMath.getPointer())
+        self.pointer = ngram_model_read(config.getPointer(), lmFile, NGRAM_AUTO, logMath.getPointer())
     }
     
     internal func getPointer() -> OpaquePointer {
@@ -28,7 +27,7 @@ open class NGramModel {
     }
     
     open func delete() {
-        if ngram_model_free(pointer) == 0 {
+        if ngram_model_free(pointer) < 0 {
             print("Cannot delete ngram model")
         }
     }

@@ -19,7 +19,7 @@ open class LogMath {
     }
     
     open func delete() {
-        if logmath_free(pointer) == 0 {
+        if logmath_free(pointer) < 0 {
             print("Cannot delete logmath")
         }
     }

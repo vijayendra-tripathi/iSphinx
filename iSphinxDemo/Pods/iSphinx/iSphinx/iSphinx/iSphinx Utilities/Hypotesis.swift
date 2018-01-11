@@ -14,57 +14,24 @@ open class Hypothesis {
     fileprivate var hypString: String = ""
     fileprivate var bestScore: CInt = 0
     
-    internal init(decoder: Decoder, isFinal: Bool) {
+    internal init(decoder: Decoder) {
         self.decoder = decoder
-        if isFinal {
-            hypString = String.init(describing: ps_get_hyp_final(decoder.getPointer(), &bestScore))
-        } else {
-            hypString = String.init(cString: ps_get_hyp(decoder.getPointer(), &bestScore))
-        }
     }
     
-    open func getFinalHypotesis() {
+    internal func setHypString(hyp: String) {
+        self.hypString = hyp
     }
     
     open func getHypString() -> String {
-        return hypString
+        return hypString.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    internal func setBestScore(bScore: Int) {
+        self.bestScore = CInt(bScore)
     }
     
     open func getBestScore() -> Int {
         return Int(bestScore)
     }
-    
-    open func getProb() -> Int {
-        return Int(ps_get_prob(decoder.getPointer()))
-    }
 }
-
-//public struct Hypothesis {
-//    public let text: String
-//    public let score: Int
-//}
-
-//extension Hypothesis : CustomStringConvertible {
-//    public var description: String {
-//        get {
-//            return "Text: \(text) - Score: \(score)"
-//        }
-//    }
-//}
-
-//func +(lhs: Hypothesis, rhs: Hypothesis) -> Hypothesis {
-//    return Hypothesis(text: lhs.text + " " + rhs.text, score: (lhs.score + rhs.score) / 2)
-//}
-//
-//func +(lhs: Hypothesis?, rhs: Hypothesis?) -> Hypothesis? {
-//    if let _lhs = lhs, let _rhs = rhs {
-//        return _lhs + _rhs
-//    } else {
-//        if let _lhs = lhs {
-//            return _lhs
-//        } else {
-//            return rhs
-//        }
-//    }
-//}
 

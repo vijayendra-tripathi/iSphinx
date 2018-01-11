@@ -31,7 +31,7 @@ open class FsgModel {
     }
     
     open func delete() {
-        if fsg_model_free(pointer) == 0 {
+        if fsg_model_free(pointer) < 0 {
             print("Delete fsg model failed!")
         }
     }
@@ -41,7 +41,7 @@ open class FsgModel {
     }
     
     open func wordAdd(word: String) {
-        if fsg_model_word_add(pointer, word) == 0 {
+        if fsg_model_word_add(pointer, word) < 0 {
             print("Word add failed!")
         }
     }

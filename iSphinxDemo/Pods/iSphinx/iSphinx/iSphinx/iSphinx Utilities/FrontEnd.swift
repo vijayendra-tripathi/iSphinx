@@ -31,7 +31,7 @@ open class FrontEnd {
     }
     
     open func delete() {
-        if fe_free(pointer) == 0 {
+        if fe_free(pointer) < 0 {
             print("Delete FrontEnd failed!")
         }
     }
@@ -41,13 +41,13 @@ open class FrontEnd {
     }
     
     open func startUtt() {
-        if fe_start_utt(pointer) == 0 {
+        if fe_start_utt(pointer) < 0 {
             print("Start FE UTT failed!")
         }
     }
     
     open func endUtt() {
-        if fe_end_utt(pointer, &outCepVector, &nFrames) == 0 {
+        if fe_end_utt(pointer, &outCepVector, &nFrames) < 0 {
             print("End FE UTT failed!")
         }
     }

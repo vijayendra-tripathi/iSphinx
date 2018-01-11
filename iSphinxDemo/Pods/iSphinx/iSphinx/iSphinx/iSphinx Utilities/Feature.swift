@@ -23,7 +23,7 @@ open class Feature {
     }
     
     open func delete() {
-        if feat_free(pointer) == 0 {
+        if feat_free(pointer) < 0 {
             print("Delete feature failed!")
         }
     }

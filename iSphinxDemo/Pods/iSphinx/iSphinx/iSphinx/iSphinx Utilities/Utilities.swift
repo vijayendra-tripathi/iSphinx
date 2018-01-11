@@ -11,6 +11,39 @@ import AVFoundation
 
 internal class Utilities {
     
+    internal static func removePunctuation(words: String) -> String {
+        let punctuations = [".",",","?","!","_","-","\\",":"]
+        var newWords = words
+        for punctuation in punctuations {
+            if punctuation == "-" {
+                newWords = newWords.replacingOccurrences(of: punctuation, with: " ")
+            } else {
+                newWords = newWords.replacingOccurrences(of: punctuation, with: "")
+            }
+        }
+        return newWords.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    internal static func removePunctuationArr(words: inout [String]) {
+        for i in 0 ..< words.count {
+            words[i] = Utilities.removePunctuation(words: words[i])
+        }
+    }
+    
+    internal static func getAssetPath() -> String? {
+        let bundle = Bundle(for: iSphinx.self).url(forResource: "Assets", withExtension: "bundle")
+        return Bundle(url: bundle!)?.bundlePath.appending("/")
+    }
+    
+    internal static func getAcousticPath() -> String? {
+        let bundle = Bundle(for: iSphinx.self).url(forResource: "AcousticModel", withExtension: "bundle")
+        return Bundle(url: bundle!)?.bundlePath
+    }
+    
+    internal static func getWavURL() -> URL? {
+        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("\(SEARCH_ID).wav")
+    }
+    
     internal static func getPointers(stringN: [String]) -> UnsafePointer<UnsafePointer<Int8>?>! {
         var unsafeM: UnsafePointer<UnsafePointer<Int8>?>!
         let cArgs = stringN.map { (name) -> UnsafeMutablePointer<Int8>? in

@@ -8,39 +8,32 @@
 
 import Foundation
 import AVFoundation
-
-internal enum SpeechStateEnum : CustomStringConvertible {
-    case Silence
-    case Speech
-    case Utterance
-    var description: String {
-        get {
-            switch(self) {
-            case .Silence:
-                return "Silence"
-            case .Speech:
-                return "Speech"
-            case .Utterance:
-                return "Utterance"
-            }
-        }
-    }
-}
+import AudioToolbox
 
 open class iRecognizer {
     
     fileprivate var decoder: Decoder!
-    fileprivate var engine: AVAudioEngine!
-    fileprivate var speechState: SpeechStateEnum = .Silence
-    fileprivate var bufferSize: Int = 2048
+    fileprivate var engine: AVAudioEngine?
+    fileprivate var sampRate: Double = 16000.0
+    fileprivate var bufferSize: AVAudioFrameCount = 512
     fileprivate var curSpeechTime: Int = 0
     fileprivate var maxSpeechTime: Int = 0
+    fileprivate var timer: Timer!
+    fileprivate var hypotesis: String = ""
+    fileprivate var bScore: CInt = 0
+    fileprivate var endSpeechTimer: Timer!
+    fileprivate var silentToDetect: Float = 1.0
+    fileprivate var currentSilent: Float = 0
+    fileprivate var beginSpeech: Bool = true
+    fileprivate var minVoiceVolume: Float = 25.0
+    fileprivate var recorder: iSphinxRecorder!
     internal var delegete: iRecognizerDelegete!
     
     internal init() {}
     
     public init(config: Config) {
         self.decoder = Decoder(config: config)
+        self.sampRate = Double(config.getFloat(key: "-samprate"))
     }
     
     open func getDecoder() -> Decoder {
@@ -50,50 +43,57 @@ open class iRecognizer {
     open func startIRecognizer() {
         self.curSpeechTime = 0
         self.maxSpeechTime = 0
-        self.startSpeech()
+        self.startListening()
     }
     
     open func startIRecognizer(timeoutInSec: Int) {
         self.curSpeechTime = 0
         self.maxSpeechTime = timeoutInSec
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.speechTimer), userInfo: nil, repeats: true)
-        self.startSpeech()
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.speechTimer), userInfo: nil, repeats: true)
+        self.startListening()
     }
     
     open func startIRecognizer(file: String) {
         DispatchQueue.global(qos: .default).async {
             self.hypotesisFor(filePath: file, completion: {
                 DispatchQueue.main.async {
-                    self.delegete.onResult(hyp: self.decoder.getHypotesis(isFinal: true))
+                    self.delegete.onResult(hyp: self.decoder.getHypotesis())
+                    self.hypotesis = ""
+                    self.decoder.getHypotesis().setHypString(hyp: "")
+                    self.decoder.getHypotesis().setBestScore(bScore: 0)
                 }
             })
         }
     }
     
-    private func process_raw(data: NSData) {
-        var _ = decoder.processRaw(data: data)
-        let hasSpeech = decoder.isInSpeech()
-        switch (speechState) {
-        case .Silence where hasSpeech:
+    private func processRaw(data: AVAudioPCMBuffer) {
+        decoder.processRaw(data: data)
+        if decoder.isInSpeech() {
+            print("Inspeech")
             self.delegete.onBeginningOfSpeech()
-            self.delegete.onPartialResult(hyp: self.decoder.getHypotesis(isFinal: false))
-            speechState = .Speech
-        case .Speech where !hasSpeech:
-            self.delegete.onEndOfSpeech()
-            speechState = .Utterance
-        case .Utterance where !hasSpeech:
-            self.delegete.onSilent()
-            speechState = .Silence
-        default:
-            break
+        } else {
+//            self.delegete.onEndOfSpeech()
+            print("Endspeech")
         }
     }
     
     private func hypotesisFor(filePath: String, completion: @escaping() -> ()) {
         if let fileHandle = FileHandle(forReadingAtPath: filePath) {
             decoder.startUtt()
-            fileHandle.reduceChunks(size: bufferSize, reducer: { [unowned self] (data: NSData) in
-                self.process_raw(data: data)
+            fileHandle.reduceChunks(size: Int(bufferSize), reducer: { (data) in
+                self.processRaw(data: Utilities.toPCMBuffer(data: data))
+                if let hyp = ps_get_hyp(self.decoder.getPointer(), &self.bScore) {
+                    if !String.init(cString: hyp).isEmpty {
+                        self.hypotesis += "\(String.init(cString: hyp)) "
+                        self.decoder.endUtt()
+                        self.decoder.getHypotesis().setBestScore(bScore: Int(self.bScore))
+                        self.decoder.getHypotesis().setHypString(hyp: self.hypotesis)
+                        DispatchQueue.main.async {
+                            self.delegete.onPartialResult(hyp: self.decoder.getHypotesis())
+                        }
+                        self.decoder.startUtt()
+                    }
+                }
             })
             decoder.endUtt()
             fileHandle.closeFile()
@@ -103,49 +103,100 @@ open class iRecognizer {
         }
     }
     
-    private func startSpeech() {
+    internal func startListening() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryRecord)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try AVAudioSession.sharedInstance().setMode(AVAudioSessionModeMeasurement)
+            try AVAudioSession.sharedInstance().setActive(true, with: .notifyOthersOnDeactivation)
+            decoder.setSearch(searchName: SEARCH_ID)
+            self.engine = AVAudioEngine()
+            let input = engine!.inputNode
+            let inFormat = input.inputFormat(forBus: 0)
+            let formatIn = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: inFormat.sampleRate, channels: 1, interleaved: true)
+            engine!.connect(input, to: engine!.outputNode, format: formatIn)
+            self.bufferSize = AVAudioFrameCount((inFormat.sampleRate * 0.4).rounded())
+            print("buffSize: \(bufferSize)")
+            let sphinxFormat = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: sampRate, channels: 1, interleaved: true)
+            let fCapacity = UInt32((Float(sphinxFormat!.sampleRate) * 0.4))
+            self.recorder = iSphinxRecorder(audioFormat: sphinxFormat!)
+            input.installTap(onBus: 0, bufferSize: 20000, format: formatIn, block: { (buffer: AVAudioPCMBuffer!, time: AVAudioTime!) -> Void in
+                if #available(iOS 9.0, *) {
+                    let converter = AVAudioConverter.init(from: buffer.format, to: sphinxFormat!)
+                    let newbuffer = AVAudioPCMBuffer(pcmFormat: sphinxFormat!,
+                                                     frameCapacity: fCapacity)
+                    let inputBlock : AVAudioConverterInputBlock = { (inNumPackets, outStatus) -> AVAudioBuffer? in
+                        outStatus.pointee = AVAudioConverterInputStatus.haveData
+                        let audioBuffer : AVAudioBuffer = buffer
+                        return audioBuffer
+                    }
+                    var error : NSError?
+                    converter!.convert(to: newbuffer!, error: &error, withInputFrom: inputBlock)
+                    self.recorder.writeBuffer(pcmBuffer: newbuffer!)
+                    self.processRaw(data: newbuffer!)
+                }
+                if let hyp = ps_get_hyp(self.decoder.getPointer(), &self.bScore) {
+                    if !String.init(cString: hyp).isEmpty {
+                        self.hypotesis = "\(String.init(cString: hyp))"
+                        DispatchQueue.main.async {
+                            self.decoder.getHypotesis().setBestScore(bScore: Int(self.bScore))
+                            self.decoder.getHypotesis().setHypString(hyp: self.hypotesis)
+                            self.delegete.onPartialResult(hyp: self.decoder.getHypotesis())
+                        }
+                    }
+                }
+            })
+            engine!.mainMixerNode.outputVolume = 0.0
+            engine!.prepare()
+            decoder.startUtt()
+            try engine!.start()
         } catch let error as NSError {
+            decoder.endUtt()
             delegete.onError(errorDesc: error.localizedDescription)
             return
         }
-        self.engine = AVAudioEngine()
-        guard let input = engine?.inputNode else {
-            delegete.onError(errorDesc: "Can't get input node")
-            return
+    }
+    
+    @objc func endSpeechCheck() {
+        if currentSilent == silentToDetect {
+            self.beginSpeech = true
+            self.delegete.onEndOfSpeech()
         }
-        let formatIn = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: 44100, channels: 1, interleaved: false)
-        engine?.connect(input, to: (engine?.outputNode)!, format: formatIn)
-        input.installTap(onBus: 0, bufferSize: 4096, format: formatIn,
-                         block: { (buffer: AVAudioPCMBuffer!, time: AVAudioTime!) -> Void in
-            let audioData = Utilities.toNSData(PCMBuffer: buffer)
-            self.process_raw(data: audioData)
-        })
-        engine.mainMixerNode.outputVolume = 0.0
-        engine.prepare()
-        decoder.startUtt()
-        do {
-            try engine?.start()
-        } catch let error as NSError {
-            decoder.endUtt()
-            self.delegete.onError(errorDesc: error.localizedDescription)
-        }
+        currentSilent += 0.1
     }
     
     @objc func speechTimer() {
         curSpeechTime += 1
         if curSpeechTime == maxSpeechTime {
+            timer.invalidate()
             delegete.onTimeout()
         }
     }
     
     open func stopSpeech() {
-        decoder.endUtt()
-        engine.stop()
-        engine.mainMixerNode.removeTap(onBus: 0)
-        engine.reset()
-        engine = nil
-        delegete.onResult(hyp: decoder.getHypotesis(isFinal: true))
+        if engine != nil {
+            engine!.stop()
+            engine!.mainMixerNode.removeTap(onBus: 0)
+            engine!.reset()
+            engine = nil
+            decoder.endUtt()
+            DispatchQueue.main.async {
+                self.delegete.onResult(hyp: self.decoder.getHypotesis())
+                self.hypotesis = ""
+                self.decoder.getHypotesis().setHypString(hyp: "")
+                self.decoder.getHypotesis().setBestScore(bScore: 0)
+            }
+        }
+    }
+    
+    open func getISphinxRecorder() -> iSphinxRecorder {
+        return recorder
+    }
+    
+    open func getSilentToDetect() -> Float {
+        return silentToDetect
+    }
+    
+    open func setSilentToDetect(seconds: Float) {
+        self.silentToDetect = seconds
     }
 }
