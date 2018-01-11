@@ -1,0 +1,3 @@
+language: swift
+xcode_project: iSphinx/iSphinx.xcodeproj
+xcode_scheme: iSphinx
