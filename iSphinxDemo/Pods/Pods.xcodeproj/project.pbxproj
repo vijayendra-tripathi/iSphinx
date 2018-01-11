@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -84,20 +84,20 @@
 		03247B8D6C83FB9E742199863B060479 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CBADF8526746BF4AFBFBE12CA3CD36 /* iSphinx-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-prefix.pch"; sourceTree = "<group>"; };
 		0AB8B01D6C5FB535FD690C530B6590B3 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libsphinxbase.a; path = iSphinx/Sphinx/lib/sphinxbase/libsphinxbase.a; sourceTree = "<group>"; };
-		0DA298CA1ECE677CC68FE3663F7B0783 /* Pods_iSphinxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iSphinxDemo.framework; path = "Pods-iSphinxDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA298CA1ECE677CC68FE3663F7B0783 /* Pods_iSphinxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSphinxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F6496F2D26C88CF492EF9172AA0C3F /* Pods-iSphinxDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iSphinxDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1A123A58EEAF907005B2D2A3FD0009D1 /* Pods-iSphinxDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iSphinxDemo-frameworks.sh"; sourceTree = "<group>"; };
 		1A2B381570F0021CD2484E30C64A2E07 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Utilities.swift"; sourceTree = "<group>"; };
 		1C07B2F46E469FEFCC303471021F14DD /* Lattice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lattice.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Lattice.swift"; sourceTree = "<group>"; };
-		22137A89CA6F1F7433776CC43977AA60 /* Pods-iSphinxDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iSphinxDemo.modulemap"; sourceTree = "<group>"; };
+		22137A89CA6F1F7433776CC43977AA60 /* Pods-iSphinxDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iSphinxDemo.modulemap"; sourceTree = "<group>"; };
 		2335A2F5B70805C2FA01A34D7659FD07 /* iSphinx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iSphinx.h; path = iSphinx/iSphinx/iSphinx.h; sourceTree = "<group>"; };
-		25404310C220BCBB6E11417B799C0AB4 /* mdef */ = {isa = PBXFileReference; includeInIndex = 1; name = mdef; path = "iSphinx/iSphinx/Assets/en-us-ptm/mdef"; sourceTree = "<group>"; };
+		25404310C220BCBB6E11417B799C0AB4 /* mdef */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = mdef; path = "iSphinx/iSphinx/Assets/en-us-ptm/mdef"; sourceTree = "<group>"; };
 		27CC2726D3DFD0B82EF845F0E6844D1F /* iSphinxRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinxRecorder.swift; path = iSphinx/iSphinx/iSphinxRecorder.swift; sourceTree = "<group>"; };
 		2B6FB090F3B5AB48C572B8FCA563E5D4 /* Segment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Segment.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Segment.swift"; sourceTree = "<group>"; };
-		2FA64D671D3C92BA46CADCCEB5DD4395 /* transition_matrices */ = {isa = PBXFileReference; includeInIndex = 1; name = transition_matrices; path = "iSphinx/iSphinx/Assets/en-us-ptm/transition_matrices"; sourceTree = "<group>"; };
-		367A5D31C25E473429D839BA0252ABAE /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Assets.bundle; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		37070E7F74647F0D972053D787518E86 /* means */ = {isa = PBXFileReference; includeInIndex = 1; name = means; path = "iSphinx/iSphinx/Assets/en-us-ptm/means"; sourceTree = "<group>"; };
-		4EAC59F0041D843EA807E0A205540934 /* iSphinx.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = iSphinx.modulemap; sourceTree = "<group>"; };
+		2FA64D671D3C92BA46CADCCEB5DD4395 /* transition_matrices */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = transition_matrices; path = "iSphinx/iSphinx/Assets/en-us-ptm/transition_matrices"; sourceTree = "<group>"; };
+		367A5D31C25E473429D839BA0252ABAE /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		37070E7F74647F0D972053D787518E86 /* means */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = means; path = "iSphinx/iSphinx/Assets/en-us-ptm/means"; sourceTree = "<group>"; };
+		4EAC59F0041D843EA807E0A205540934 /* iSphinx.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iSphinx.modulemap; sourceTree = "<group>"; };
 		50299840FB163020120902ABB427AB4F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		596F2D63DB133B8FC6B1B81BDF98BDFE /* ResourceBundle-AcousticModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AcousticModel-Info.plist"; sourceTree = "<group>"; };
 		64DAC5DE7EC6E836ADADB537CCD09444 /* iSphinxDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinxDelegete.swift; path = iSphinx/iSphinx/iSphinxDelegete.swift; sourceTree = "<group>"; };
@@ -106,12 +106,12 @@
 		6DD611E30A73250CD1147788946C6206 /* Pods-iSphinxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iSphinxDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2C451D3FBDE4D3AA50AB2C7DFE1EE8 /* NBestIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NBestIterator.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NBestIterator.swift"; sourceTree = "<group>"; };
 		7353E7CC6D7E5667E794BFB6DAFC92F2 /* iSphinx-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iSphinx-dummy.m"; sourceTree = "<group>"; };
-		846F4D384411902CF2821AA3A2C89FC9 /* icaksama.arpa */ = {isa = PBXFileReference; includeInIndex = 1; name = icaksama.arpa; path = iSphinx/iSphinx/Assets/icaksama.arpa; sourceTree = "<group>"; };
-		85C3A9F53A2648E69E910136366CB755 /* sendump */ = {isa = PBXFileReference; includeInIndex = 1; name = sendump; path = "iSphinx/iSphinx/Assets/en-us-ptm/sendump"; sourceTree = "<group>"; };
-		87B3F5226409DEEA8756513815F2696A /* README */ = {isa = PBXFileReference; includeInIndex = 1; name = README; path = "iSphinx/iSphinx/Assets/en-us-ptm/README"; sourceTree = "<group>"; };
+		846F4D384411902CF2821AA3A2C89FC9 /* icaksama.arpa */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = icaksama.arpa; path = iSphinx/iSphinx/Assets/icaksama.arpa; sourceTree = "<group>"; };
+		85C3A9F53A2648E69E910136366CB755 /* sendump */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = sendump; path = "iSphinx/iSphinx/Assets/en-us-ptm/sendump"; sourceTree = "<group>"; };
+		87B3F5226409DEEA8756513815F2696A /* README */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README; path = "iSphinx/iSphinx/Assets/en-us-ptm/README"; sourceTree = "<group>"; };
 		882D13AEBC26F2B77F30DB4061678521 /* NGramModelSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NGramModelSet.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NGramModelSet.swift"; sourceTree = "<group>"; };
-		8E5510AD1DD23691E40B427A76472EBC /* AcousticModel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AcousticModel.bundle; path = AcousticModel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E5510AD1DD23691E40B427A76472EBC /* AcousticModel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcousticModel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95CA3FB3B2A80318308E249B32D56368 /* iSphinx-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-umbrella.h"; sourceTree = "<group>"; };
 		96045BE7A800A40D853D1162171BD43A /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libpocketsphinx.a; path = iSphinx/Sphinx/lib/pocketsphinx/libpocketsphinx.a; sourceTree = "<group>"; };
 		96FBA90EB43737657D0C2F072972676A /* ResourceBundle-Assets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-Info.plist"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		9D12AE041507B76318797FF97FB18A0D /* iSphinx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinx.swift; path = iSphinx/iSphinx/iSphinx.swift; sourceTree = "<group>"; };
 		A0CA574F50517199491F14DE81B04DB6 /* NGramModelSetIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NGramModelSetIterator.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NGramModelSetIterator.swift"; sourceTree = "<group>"; };
 		A0FBDC7601A1727AB9D35D046A14F6D9 /* FrontEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrontEnd.swift; path = "iSphinx/iSphinx/iSphinx Utilities/FrontEnd.swift"; sourceTree = "<group>"; };
-		ACB190A8720B3EF776EF78CE0DAD8CC9 /* iSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iSphinx.framework; path = iSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB190A8720B3EF776EF78CE0DAD8CC9 /* iSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC1CE8002CF89AF10F6DC4F5850336D /* Hypotesis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hypotesis.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Hypotesis.swift"; sourceTree = "<group>"; };
 		AEDAD8884E1088AABB3DF4BAC9E37C20 /* SegmentIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentIterator.swift; path = "iSphinx/iSphinx/iSphinx Utilities/SegmentIterator.swift"; sourceTree = "<group>"; };
 		AFA6D5190774C795C49723A2D0E41598 /* Pods-iSphinxDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iSphinxDemo-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -128,20 +128,20 @@
 		BD0431A8771F6C6854C2F35857B82526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C169F1E24DA46E09B06564E273AFE6FE /* Feature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Feature.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Feature.swift"; sourceTree = "<group>"; };
 		C61AE17B82A2AA7D8E16D356659367E0 /* Pods-iSphinxDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iSphinxDemo-resources.sh"; sourceTree = "<group>"; };
-		C71473DCB9FECCFD4A660D96370C281D /* feat.params */ = {isa = PBXFileReference; includeInIndex = 1; name = feat.params; path = "iSphinx/iSphinx/Assets/en-us-ptm/feat.params"; sourceTree = "<group>"; };
+		C71473DCB9FECCFD4A660D96370C281D /* feat.params */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = feat.params; path = "iSphinx/iSphinx/Assets/en-us-ptm/feat.params"; sourceTree = "<group>"; };
 		CF51680BEB692456DC0FA6A014D62F7C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		CFFBBFAECDD72D54717C5F713D8B87A9 /* Pods-iSphinxDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iSphinxDemo-dummy.m"; sourceTree = "<group>"; };
 		D0C89EADE4855046840E501F4481A1DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D817BAA798B751E24E16AF7B10D5FC4F /* icaksama.wav */ = {isa = PBXFileReference; includeInIndex = 1; name = icaksama.wav; path = iSphinx/iSphinx/Assets/icaksama.wav; sourceTree = "<group>"; };
-		DA3FA8FA5C3E4FB81531DDF218033E1A /* icaksama.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = icaksama.txt; path = iSphinx/iSphinx/Assets/icaksama.txt; sourceTree = "<group>"; };
-		DB8FBC0E918B652F403950864EA788EB /* variances */ = {isa = PBXFileReference; includeInIndex = 1; name = variances; path = "iSphinx/iSphinx/Assets/en-us-ptm/variances"; sourceTree = "<group>"; };
+		D817BAA798B751E24E16AF7B10D5FC4F /* icaksama.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = icaksama.wav; path = iSphinx/iSphinx/Assets/icaksama.wav; sourceTree = "<group>"; };
+		DA3FA8FA5C3E4FB81531DDF218033E1A /* icaksama.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = icaksama.txt; path = iSphinx/iSphinx/Assets/icaksama.txt; sourceTree = "<group>"; };
+		DB8FBC0E918B652F403950864EA788EB /* variances */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = variances; path = "iSphinx/iSphinx/Assets/en-us-ptm/variances"; sourceTree = "<group>"; };
 		E03B1D010A7665449FF2869416F86123 /* Pods-iSphinxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iSphinxDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E267BC07D8D0B39C0D7A39B6BE798CC6 /* LogMath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogMath.swift; path = "iSphinx/iSphinx/iSphinx Utilities/LogMath.swift"; sourceTree = "<group>"; };
 		E9634719B681864028B1918A1B224075 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Decoder.swift"; sourceTree = "<group>"; };
 		E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iSphinx.xcconfig; sourceTree = "<group>"; };
 		EB9EABBBC2B9C0C7839D7C859B0DE37B /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Globals.swift"; sourceTree = "<group>"; };
 		EBF0020E7C57DB6E558E22B0E035FC92 /* FsgModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FsgModel.swift; path = "iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift"; sourceTree = "<group>"; };
-		F544658C279AE5200E4A02CE51D1DA25 /* noisedict */ = {isa = PBXFileReference; includeInIndex = 1; name = noisedict; path = "iSphinx/iSphinx/Assets/en-us-ptm/noisedict"; sourceTree = "<group>"; };
+		F544658C279AE5200E4A02CE51D1DA25 /* noisedict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = noisedict; path = "iSphinx/iSphinx/Assets/en-us-ptm/noisedict"; sourceTree = "<group>"; };
 		F8B074498853E0E3030FF766AC4DB941 /* NGramModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NGramModel.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NGramModel.swift"; sourceTree = "<group>"; };
 		FE542C2E950E8B272668D36CDC737732 /* iRecognizerDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iRecognizerDelegete.swift; path = "iSphinx/iSphinx/iSphinx Utilities/iRecognizerDelegete.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,7 +256,6 @@
 				5B5711B6762EC150E6AB4DAF2DF2DDFA /* Resources */,
 				B7FE4A0F3726F4F32F4C5FD75B92B53E /* Support Files */,
 			);
-			name = iSphinx;
 			path = iSphinx;
 			sourceTree = "<group>";
 		};
@@ -438,7 +437,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -708,6 +707,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
