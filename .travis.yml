@@ -1,3 +1,5 @@
-language: swift
-xcode_project: iSphinx/iSphinx.xcodeproj
-xcode_scheme: iSphinx
+language: swift  #1
+osx_image: xcode9.2 #2
+xcode_project: iSphinx/iSphinx.xcodeproj #3
+xcode_scheme: iSphinx #4
+xcode_sdk: iphonesimulator11.2 #5
