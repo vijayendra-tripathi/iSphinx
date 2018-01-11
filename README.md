@@ -1,5 +1,6 @@
 # iSphinx
 [![Creator](https://img.shields.io/badge/creator-icaksama-green.svg)](https://www.linkedin.com/in/icaksama/)
+[![Travis](https://img.shields.io/travis/icaksama/iSphinx.svg)](https://travis-ci.org/icaksama/iSphinx)
 [![GitHub license](https://img.shields.io/github/license/icaksama/iSphinx.svg)](https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE)
 [![Code Size](https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg)](https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg)
 [![Pod Version](https://img.shields.io/cocoapods/v/iSphinx.svg)](https://img.shields.io/cocoapods/v/iSphinx.svg)
