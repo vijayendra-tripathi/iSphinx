@@ -1,4 +1,6 @@
 # iSphinx
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE)
+[![GitHub release](https://img.shields.io/badge/style-plastic-green.svg?release=1.1.3)](https://github.com/icaksama/iSphinx/releases)
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
 ## Features
