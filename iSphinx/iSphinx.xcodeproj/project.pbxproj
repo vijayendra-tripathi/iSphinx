@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F1982791FFF89230063DB8B /* iSphinxRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1982781FFF89230063DB8B /* iSphinxRecorder.swift */; };
+		6F19827D2004C5490063DB8B /* icaksama.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6F19827C2004C5490063DB8B /* icaksama.txt */; };
 		6F6D324B1FE8CC860088E895 /* iSphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6D32491FE8CC860088E895 /* iSphinx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F8772261FE8CD2F000D6791 /* iSphinx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8772251FE8CD2F000D6791 /* iSphinx.swift */; };
 		6F8772281FE8CD57000D6791 /* iSphinxDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8772271FE8CD57000D6791 /* iSphinxDelegete.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		6F1982781FFF89230063DB8B /* iSphinxRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSphinxRecorder.swift; sourceTree = "<group>"; };
+		6F19827C2004C5490063DB8B /* icaksama.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icaksama.txt; sourceTree = "<group>"; };
 		6F6D32461FE8CC860088E895 /* iSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6D32491FE8CC860088E895 /* iSphinx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSphinx.h; sourceTree = "<group>"; };
 		6F6D324A1FE8CC860088E895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +48,6 @@
 		6F8772E41FE91A56000D6791 /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		6F8772E51FE91A56000D6791 /* Hypotesis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hypotesis.swift; sourceTree = "<group>"; };
 		6F8772EC1FE9329F000D6791 /* icaksama.arpa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icaksama.arpa; sourceTree = "<group>"; };
-		6F8772EE1FE9329F000D6791 /* icaksama.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = icaksama.txt; sourceTree = "<group>"; };
 		6F8772F01FE9329F000D6791 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
 		6F8772F11FE9329F000D6791 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
 		6F8772F31FE9329F000D6791 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
@@ -144,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				6F8772EF1FE9329F000D6791 /* en-us-ptm */,
-				6F8772EE1FE9329F000D6791 /* icaksama.txt */,
+				6F19827C2004C5490063DB8B /* icaksama.txt */,
 				6F8773051FE932A0000D6791 /* icaksama.wav */,
 				6F8772EC1FE9329F000D6791 /* icaksama.arpa */,
 			);
@@ -235,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F19827D2004C5490063DB8B /* icaksama.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,16 +1,12 @@
 PODS:
-  - iSphinx (1.1.2)
+  - iSphinx (1.1.1)
 
 DEPENDENCIES:
-  - iSphinx (from `~/Documents/icaksama/GIT/iSphinx`)
-
-EXTERNAL SOURCES:
-  iSphinx:
-    :path: ~/Documents/icaksama/GIT/iSphinx
+  - iSphinx (~> 1.1.1)
 
 SPEC CHECKSUMS:
-  iSphinx: d35d31fb10a269814c7bf0606b4a67f95953dd77
+  iSphinx: 0305734651a9dba0eb2dbc5e43b28a4c3c0e0d92
 
-PODFILE CHECKSUM: 923023b0ff8fb99ae8ceb588d68e2084d42216b0
+PODFILE CHECKSUM: 6f65f1187e88bdcde14f835888bd17e4102a9f9c
 
 COCOAPODS: 1.3.1

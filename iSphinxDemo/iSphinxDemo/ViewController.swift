@@ -58,10 +58,13 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
     }
     
     @IBAction func btnUpdateVocabularyOnTouch(_ sender: Any) {
+        lblPartialResult.text = ""
+        lblFinalResult.text = ""
+        lblUnsupportedWords.text = ""
         indicator.startAnimating()
-        isphinx.updateVocabulary(text: txtVocabularies.text!, oovWords: txtWordDistractor.text!.components(separatedBy: " ")) {
-            self.indicator.stopAnimating()
-        }
+//        isphinx.updateVocabulary(text: txtVocabularies.text!, oovWords: txtWordDistractor.text!.components(separatedBy: " ")) {
+//            self.indicator.stopAnimating()
+//        }
     }
     
     @IBAction func btnStartRecognizerOnTouch(_ sender: Any) {
@@ -72,9 +75,9 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
     }
     
     @IBAction func btnPlayAudioOnTouch(_ sender: Any) {
-        isphinx.getRecorder().play {
-            print("Play audio finished!")
-        }
+//        isphinx.getRecorder().play {
+//            print("Play audio finished!")
+//        }
     }
     
 

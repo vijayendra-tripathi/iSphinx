@@ -22,7 +22,7 @@ I have tried to speak in different word order:
 
 ## Cocoapods
 Add to `Podfile` :
-```groovy
+```text
 pod 'iSphinx', '~> 1.1.2'
 ```
 
@@ -142,7 +142,7 @@ isphinx.getRecorder().play {
 ### Note : Please take a look at iSphinxDemo for detail usage.
 
 ## MIT License
-```
+```text
 Copyright (c) 2018 Saiful Irham Wicaksana
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'iSphinx'
-  s.version = '1.1.2'
+  s.version = '1.1.3'
   s.license = 'MIT'
   s.summary = 'iOS library with swift for offline speech recognition base on Pocketsphinx engine.'
   s.homepage = 'https://github.com/icaksama/iSphinx'
@@ -30,5 +30,4 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
                  'ENABLE_BITCODE' => 'NO'
                }
-  # PODS_ROOT, PODS_TARGET_SRCROOT
 end
