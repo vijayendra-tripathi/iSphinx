@@ -114,7 +114,7 @@ isphinx.prepareISphinx(onPreExecute: { (config) in
 ```
 
 ## Update Language Model / Grammar
-You can update the vocabulary with language model or JSGF Grammar on the fly. Make sure to remove the punctuation before update vocabulary/grammar. Default punctuation will be remove in iSphinx are `[".",",","?","!","_","-","\\",":"]`
+You can update the vocabulary with language model or JSGF Grammar on the fly. Make sure to remove the punctuation before update vocabulary/grammar. Default punctuation will be remove in iSphinx are `(.), (,) ,(?), (!), (_), (-), (\), (:)`
 ```swift
 // Update vocabulary with language model from single string
 isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["WORDS DISTRUBER", ...]) {
