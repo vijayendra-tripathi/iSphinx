@@ -22,6 +22,7 @@ open class Hypothesis {
         self.hypString = hyp
     }
     
+    /** Get the hypotesis string. */
     open func getHypString() -> String {
         return hypString.trimmingCharacters(in: .whitespacesAndNewlines)
     }
@@ -30,6 +31,7 @@ open class Hypothesis {
         self.bestScore = CInt(bScore)
     }
     
+    /** Get the best score of hypotesis. */
     open func getBestScore() -> Int {
         return Int(bestScore)
     }

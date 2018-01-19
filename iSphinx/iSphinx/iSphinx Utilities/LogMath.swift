@@ -14,16 +14,19 @@ open class LogMath {
     
     internal init() {}
     
+    /** Init LogMath with current decoder. */
     public init(decoder: Decoder) {
         pointer = ps_get_logmath(decoder.getPointer())
     }
     
+    /** Delete LogMath from memory. */
     open func delete() {
         if logmath_free(pointer) < 0 {
             print("Cannot delete logmath")
         }
     }
     
+    /** Get score of each word from segment prob. */
     open func score(prob: Int) -> Double {
         return logmath_exp(pointer, Int32(prob))
     }

@@ -33,14 +33,17 @@ open class iSphinxRecorder: NSObject, AVAudioPlayerDelegate {
         }
     }
     
+    /** Get audio record file url. */
     open func getAudioFileURL() -> URL {
         return audioFileURL!
     }
     
+    /** Check if audio still playing. */
     open func isPlaying() -> Bool {
         return audioPlayer.isPlaying
     }
     
+    /** Play the audio record. */
     open func play(completion: @escaping() -> ()) {
         self.didFinishPlaying = completion
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -53,6 +56,7 @@ open class iSphinxRecorder: NSObject, AVAudioPlayerDelegate {
         audioPlayer.play()
     }
     
+    /** Stop play audio record. */
     open func stop() {
         audioPlayer.stop()
     }

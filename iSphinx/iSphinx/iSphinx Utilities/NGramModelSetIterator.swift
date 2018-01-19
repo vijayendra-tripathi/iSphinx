@@ -16,15 +16,18 @@ open class NGramModelSetIterator {
     
     internal init() {}
     
+    /** Attach NGramModelSet to NGramModelSetIterator */
     public init(nGramSet: NGramModelSet) {
         self.pointer = ngram_model_set_iter(nGramSet.getPointer())
         self.iterCount = Int(ngram_model_set_count(nGramSet.getPointer()))
     }
     
+    /** Delete NGramModel iterator from memory. */
     open func delete() {
         ngram_model_set_iter_free(pointer)
     }
     
+    /** Check next NGramModel still exist in iterator. */
     open func hasNext() -> Bool {
         if (currentIter + 1) <= iterCount {
             return true
@@ -34,6 +37,7 @@ open class NGramModelSetIterator {
         }
     }
     
+    /** Get next NGramModel from iterator. */
     open func next() -> NGramModel {
         currentIter += 1
         return NGramModel(pointer: ngram_model_set_iter_next(pointer))

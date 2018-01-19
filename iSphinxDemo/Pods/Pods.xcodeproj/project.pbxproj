@@ -3,56 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B9FBAB739E4A2159E43E1D1FCBDD8F /* NGramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B074498853E0E3030FF766AC4DB941 /* NGramModel.swift */; };
-		074BC82B8B26955B93D922D8E30FF319 /* NGramModelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D13AEBC26F2B77F30DB4061678521 /* NGramModelSet.swift */; };
 		0AB33477562DA781FEDD93EEFAA4D815 /* Pods-iSphinxDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFBBFAECDD72D54717C5F713D8B87A9 /* Pods-iSphinxDemo-dummy.m */; };
-		11F78A16AE6584B008E55560C558A7F6 /* iSphinxDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAC5DE7EC6E836ADADB537CCD09444 /* iSphinxDelegete.swift */; };
-		17EE858362387551FB16E42A0EA15448 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 2FA64D671D3C92BA46CADCCEB5DD4395 /* transition_matrices */; };
+		0AF66B5F77FD9A821FEDBC2F801EE411 /* SegmentIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42B339C35C07A9CF86E24E6D8994DD /* SegmentIterator.swift */; };
+		17AD398730B7576D343A1DB2E583F64F /* means in Resources */ = {isa = PBXBuildFile; fileRef = 79CAD6D79D4EFF9B66A3C273080EDD88 /* means */; };
+		1F203E52CD71D104AD5E8CF4CD03BDA1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECAE5010146888EAA5EF5B9CFA46C9 /* Config.swift */; };
+		1F6A2B2547E84DE7771E23DD16427C06 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 730E4AA4578252F503B3A7637D09632B /* noisedict */; };
+		2283F08B05F814D404CECBDC3DA701FB /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DBD0404419A5D0F9637ADD5BD03A78 /* Decoder.swift */; };
+		234E0B61CA9B8BE06E0BBDF3A21CE09D /* iSphinx-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D52725D513866A3A0F8FF2B4BB0CE3F8 /* iSphinx-dummy.m */; };
+		2DA99367C77F1281F54932B67B36C122 /* NBest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0891C6FF2D05CE8375C955AD0B994873 /* NBest.swift */; };
 		34E4658CE6627B0894F38A2AADC403A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0431A8771F6C6854C2F35857B82526 /* Foundation.framework */; };
 		368186238C5CC888A77774AA53DB300A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0431A8771F6C6854C2F35857B82526 /* Foundation.framework */; };
 		3B653D30215CF6667CD987B20A2B333B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF51680BEB692456DC0FA6A014D62F7C /* CoreAudio.framework */; };
 		3C0D6C5C5A96FA9A3B1BB18DDCE5172F /* AcousticModel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E5510AD1DD23691E40B427A76472EBC /* AcousticModel.bundle */; };
-		3ECD6CC9F71167035694168A1C46CE1C /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9634719B681864028B1918A1B224075 /* Decoder.swift */; };
-		46594C97BFBB6E5E6872D4250E3F791C /* SegmentIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDAD8884E1088AABB3DF4BAC9E37C20 /* SegmentIterator.swift */; };
-		4A5D3A68A6EFDCEC0FB534C2F3F2591F /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6FB090F3B5AB48C572B8FCA563E5D4 /* Segment.swift */; };
-		4CB988A581517062FBFEA7142DBA0714 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = DB8FBC0E918B652F403950864EA788EB /* variances */; };
-		56A949DA85885DA2407394E889631F1B /* iRecognizerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0D6F20D7454F10EDB6AA038349961 /* iRecognizerSetup.swift */; };
-		588D3D8838590578B16D929F632061D6 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 85C3A9F53A2648E69E910136366CB755 /* sendump */; };
-		5C5B9BC4F357CC96A070BAF82039FECD /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = F544658C279AE5200E4A02CE51D1DA25 /* noisedict */; };
-		5E74EF182A2C270E36F6028D01E3C1F8 /* means in Resources */ = {isa = PBXBuildFile; fileRef = 37070E7F74647F0D972053D787518E86 /* means */; };
-		5FBD9D25FC9E33DC6C6A413126EA8277 /* icaksama.wav in Resources */ = {isa = PBXBuildFile; fileRef = D817BAA798B751E24E16AF7B10D5FC4F /* icaksama.wav */; };
-		600AFC9EF03CCB0C5046CDF2448EAACF /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C169F1E24DA46E09B06564E273AFE6FE /* Feature.swift */; };
-		6266A8568D204726FE2FBABB580C1E1C /* icaksama.arpa in Resources */ = {isa = PBXBuildFile; fileRef = 846F4D384411902CF2821AA3A2C89FC9 /* icaksama.arpa */; };
+		4E98F965BB9FC9C010686DD7732ABCE7 /* iSphinxRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DA41B77D033764CDDB1964A9A8E18D /* iSphinxRecorder.swift */; };
+		55A1115C3120B4E72C8203D571DD1142 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398A426A2D5C1A15CD0A7A901D68C6 /* Segment.swift */; };
+		59622E43F45DD807B358CA549C8B2229 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CC3A3B3A307BD3071C11BB015FAA8 /* Utilities.swift */; };
+		5A174FAF0E432787730D486609218012 /* FrontEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDB1615FA97A67BBBDA54DB19B3E6D /* FrontEnd.swift */; };
+		5F0E93FC383E253983124500CE0C3F38 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = 814613E647039B3AA60D1CF54FBFB58C /* variances */; };
+		5FBD9D25FC9E33DC6C6A413126EA8277 /* icaksama.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EF55FB2F6A29563370DB58D5DB6DCC6 /* icaksama.wav */; };
+		6210F6D1AE23A325F4D13797868390BD /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = C74AEFB11340FEEA3CA0371E2B144F50 /* mdef */; };
+		6266A8568D204726FE2FBABB580C1E1C /* icaksama.arpa in Resources */ = {isa = PBXBuildFile; fileRef = D1B564A2B02B190EEFEEC031BFAF786A /* icaksama.arpa */; };
+		6573C3AFFD3962DF33DA969050505A03 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 6241E92A67EC1EE76F146BB81488E782 /* README */; };
 		6651476CE6BDFC877A3C40547EA96468 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50299840FB163020120902ABB427AB4F /* CoreMedia.framework */; };
-		66FF434ABEE6174528A08F97B51609EF /* iRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D1AB9BA8105189682A05C792B944 /* iRecognizer.swift */; };
-		6BC7CE4F2ED384A04BF6B0D739E9B1CF /* icaksama.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA3FA8FA5C3E4FB81531DDF218033E1A /* icaksama.txt */; };
-		6C49D8A4A1AE99115EB591B01326A1F7 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = C71473DCB9FECCFD4A660D96370C281D /* feat.params */; };
+		67DEAA732AEE6B58B51730FDECDF6D9D /* iRecognizerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919552C2CD2C728095DC24E1AB2E2C4 /* iRecognizerSetup.swift */; };
+		681B6F73EE71B2B64877B26D74538CF6 /* LogMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AC75080191A5F4501B3D0E58D425F9 /* LogMath.swift */; };
+		68890D38B8D02188CA4B50991099B784 /* NGramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EEB1F4FBBA3A8026FFCC18D1AF5A7 /* NGramModel.swift */; };
+		6B56E8F923DCC4AD96FDF455FAB19F73 /* FsgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA48214BC8275F1A288C229BDB34261 /* FsgModel.swift */; };
+		6BC7CE4F2ED384A04BF6B0D739E9B1CF /* icaksama.txt in Resources */ = {isa = PBXBuildFile; fileRef = DCB845AFA743F946EA05A6588D37FE23 /* icaksama.txt */; };
+		6F50739BC0E101CFE49BE77F3F56BC6F /* NGramModelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A275493DE3F67D24D271F6F69CF24B /* NGramModelSet.swift */; };
 		6F8FE1F9CEE4376BA7453E7DECA97941 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F2CEEE0810FC40E9845D1FBE42FBE6 /* AVFoundation.framework */; };
 		6FF5D7D34391D40DA1822AD54A31F967 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 367A5D31C25E473429D839BA0252ABAE /* Assets.bundle */; };
-		73C3FCF58D4995304C052FF0DB78FB26 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9F060C9C0DC900F713B85565B6CEA3 /* Config.swift */; };
-		77B239E17E7FEB6F09AC21DB6584E5BA /* iSphinx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12AE041507B76318797FF97FB18A0D /* iSphinx.swift */; };
-		8932D563E16BC9FFEBD9CEFAD85BC99B /* LogMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267BC07D8D0B39C0D7A39B6BE798CC6 /* LogMath.swift */; };
-		93A6C19833C58CB987EBBB6A85F4CBD2 /* iSphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = 2335A2F5B70805C2FA01A34D7659FD07 /* iSphinx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E6FC988991B68B3C9073CAE5F0CF0C3 /* iRecognizerDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE542C2E950E8B272668D36CDC737732 /* iRecognizerDelegete.swift */; };
-		A4D0E9C94D3C882D4A31D94410DFC1C4 /* iSphinxRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CC2726D3DFD0B82EF845F0E6844D1F /* iSphinxRecorder.swift */; };
-		A54A0F70F96417FD46DDFAA4A3E2E2F4 /* NBest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A08F841DF6E36B159FB6A1EB985A5 /* NBest.swift */; };
-		AFC475583F4DD6C518C87B4AFEF597B7 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EABBBC2B9C0C7839D7C859B0DE37B /* Globals.swift */; };
+		93A6C19833C58CB987EBBB6A85F4CBD2 /* iSphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = 77195B514B18E835EF611619723D10C0 /* iSphinx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		962B68F03939A91BDB371279C57B691E /* iSphinxDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28605CBC11F15FFCC213C129B9B8A3E1 /* iSphinxDelegete.swift */; };
+		9DDCE3944EC8D8BB95D8A89A46A0BA5E /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 8B4B8C28926EEC4B839A5781A6B99FFE /* transition_matrices */; };
+		A813792A2BE7725DE1CB5B4566353983 /* Hypotesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D2BBE269B0F4AA165089E8921F5CB /* Hypotesis.swift */; };
+		AD2540D3F8D55DF8653CD2ADFF03BF7D /* NGramModelSetIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC59C797727ACE7AC44D6DDEB0ABC44 /* NGramModelSetIterator.swift */; };
+		AD6EDC8738899BB0FBB3240BC0745861 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = 2848392D649EF4DA21CE3840C253AD11 /* feat.params */; };
 		B1377985FE97204F6102E74075E02B31 /* Pods-iSphinxDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 993C0574C1D6CF6588376717E7B98A9C /* Pods-iSphinxDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B837E9807B6BC4D238EBEC3272FFC6D7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B381570F0021CD2484E30C64A2E07 /* Utilities.swift */; };
-		BDDE5970373CF19D45E00DB822461055 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 87B3F5226409DEEA8756513815F2696A /* README */; };
-		C6287757BD4B6E949E5903C3C892F665 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 25404310C220BCBB6E11417B799C0AB4 /* mdef */; };
-		CEA95ADD02D1D5584A6793E24B210CA0 /* Lattice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07B2F46E469FEFCC303471021F14DD /* Lattice.swift */; };
-		D30DA797916593224CEA87FA0A6CDC48 /* iSphinx-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353E7CC6D7E5667E794BFB6DAFC92F2 /* iSphinx-dummy.m */; };
-		D8D728E98F90D9DEEAB4F7F7A31D164B /* Hypotesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1CE8002CF89AF10F6DC4F5850336D /* Hypotesis.swift */; };
-		DC96FF50953B36CBC6BFBC57FCB29582 /* NBestIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2C451D3FBDE4D3AA50AB2C7DFE1EE8 /* NBestIterator.swift */; };
-		E600D980C253AEA3090E9EA35D6F8B42 /* FsgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0020E7C57DB6E558E22B0E035FC92 /* FsgModel.swift */; };
-		EBACEC90BC1C978EBB924374D948DD6C /* NGramModelSetIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA574F50517199491F14DE81B04DB6 /* NGramModelSetIterator.swift */; };
-		F13CA5DE359644092C23EF66C9365514 /* iSphinx-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95CA3FB3B2A80318308E249B32D56368 /* iSphinx-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA276EFB407ADA92C82AF4C19B709DA6 /* FrontEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDC7601A1727AB9D35D046A14F6D9 /* FrontEnd.swift */; };
+		B2FA3DD591E08948D738ECA40907A311 /* iRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0C342B84F7380950A5035A6A4ADE /* iRecognizer.swift */; };
+		B6F3DBB984BB7E707C79BA9967C8F84D /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55075313B044142721CA69E1E7C7B606 /* Globals.swift */; };
+		B9535578EF82C5C4AEB3EFBB4D5375CC /* Lattice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5056CD74C900AC645388EEC2D6F954 /* Lattice.swift */; };
+		BCA38A4FEEB0A8B6C316DE87F3F3C600 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A86ED29BEB7A5DD9CDA65D55F9F0F /* Feature.swift */; };
+		CF04584DF532177FB5C38BDAD7601CB4 /* iRecognizerDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2DA0A450663D188616010E118781 /* iRecognizerDelegete.swift */; };
+		E096DF0B0BA72B557FCD12FD3A82F091 /* NBestIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CFCA798D1EB03DD7F013C7812F147 /* NBestIterator.swift */; };
+		E7D82C46164524FFEC695AC8232373EA /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D61D5DB7A8F01B6775C7330A0427 /* sendump */; };
+		F13CA5DE359644092C23EF66C9365514 /* iSphinx-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B327570151B448CC3A627AF58A94FC5C /* iSphinx-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDCE54B2A72A8B09D00C778825BAE0A8 /* iSphinx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564049F77E1DD6420042B13640EFC59 /* iSphinx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,70 +80,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B0D6F20D7454F10EDB6AA038349961 /* iRecognizerSetup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iRecognizerSetup.swift; path = "iSphinx/iSphinx/iSphinx Utilities/iRecognizerSetup.swift"; sourceTree = "<group>"; };
-		03247B8D6C83FB9E742199863B060479 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04CBADF8526746BF4AFBFBE12CA3CD36 /* iSphinx-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-prefix.pch"; sourceTree = "<group>"; };
-		0AB8B01D6C5FB535FD690C530B6590B3 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libsphinxbase.a; path = iSphinx/Sphinx/lib/sphinxbase/libsphinxbase.a; sourceTree = "<group>"; };
-		0DA298CA1ECE677CC68FE3663F7B0783 /* Pods_iSphinxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSphinxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BC0421C85CC008BC05D01CC59EF2FB /* ResourceBundle-AcousticModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AcousticModel-Info.plist"; sourceTree = "<group>"; };
+		03AC75080191A5F4501B3D0E58D425F9 /* LogMath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogMath.swift; sourceTree = "<group>"; };
+		082CFCA798D1EB03DD7F013C7812F147 /* NBestIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBestIterator.swift; sourceTree = "<group>"; };
+		0891C6FF2D05CE8375C955AD0B994873 /* NBest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBest.swift; sourceTree = "<group>"; };
+		0AECAE5010146888EAA5EF5B9CFA46C9 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0DA298CA1ECE677CC68FE3663F7B0783 /* Pods_iSphinxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iSphinxDemo.framework; path = "Pods-iSphinxDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F6496F2D26C88CF492EF9172AA0C3F /* Pods-iSphinxDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iSphinxDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1A123A58EEAF907005B2D2A3FD0009D1 /* Pods-iSphinxDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iSphinxDemo-frameworks.sh"; sourceTree = "<group>"; };
-		1A2B381570F0021CD2484E30C64A2E07 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Utilities.swift"; sourceTree = "<group>"; };
-		1C07B2F46E469FEFCC303471021F14DD /* Lattice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lattice.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Lattice.swift"; sourceTree = "<group>"; };
-		22137A89CA6F1F7433776CC43977AA60 /* Pods-iSphinxDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iSphinxDemo.modulemap"; sourceTree = "<group>"; };
-		2335A2F5B70805C2FA01A34D7659FD07 /* iSphinx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iSphinx.h; path = iSphinx/iSphinx/iSphinx.h; sourceTree = "<group>"; };
-		25404310C220BCBB6E11417B799C0AB4 /* mdef */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = mdef; path = "iSphinx/iSphinx/Assets/en-us-ptm/mdef"; sourceTree = "<group>"; };
-		27CC2726D3DFD0B82EF845F0E6844D1F /* iSphinxRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinxRecorder.swift; path = iSphinx/iSphinx/iSphinxRecorder.swift; sourceTree = "<group>"; };
-		2B6FB090F3B5AB48C572B8FCA563E5D4 /* Segment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Segment.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Segment.swift"; sourceTree = "<group>"; };
-		2FA64D671D3C92BA46CADCCEB5DD4395 /* transition_matrices */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = transition_matrices; path = "iSphinx/iSphinx/Assets/en-us-ptm/transition_matrices"; sourceTree = "<group>"; };
-		367A5D31C25E473429D839BA0252ABAE /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		37070E7F74647F0D972053D787518E86 /* means */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = means; path = "iSphinx/iSphinx/Assets/en-us-ptm/means"; sourceTree = "<group>"; };
-		4EAC59F0041D843EA807E0A205540934 /* iSphinx.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iSphinx.modulemap; sourceTree = "<group>"; };
+		22137A89CA6F1F7433776CC43977AA60 /* Pods-iSphinxDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iSphinxDemo.modulemap"; sourceTree = "<group>"; };
+		2848392D649EF4DA21CE3840C253AD11 /* feat.params */ = {isa = PBXFileReference; includeInIndex = 1; path = feat.params; sourceTree = "<group>"; };
+		28605CBC11F15FFCC213C129B9B8A3E1 /* iSphinxDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinxDelegete.swift; path = iSphinx/iSphinx/iSphinxDelegete.swift; sourceTree = "<group>"; };
+		2EF55FB2F6A29563370DB58D5DB6DCC6 /* icaksama.wav */ = {isa = PBXFileReference; includeInIndex = 1; name = icaksama.wav; path = iSphinx/iSphinx/Assets/icaksama.wav; sourceTree = "<group>"; };
+		324CC3A3B3A307BD3071C11BB015FAA8 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		367A5D31C25E473429D839BA0252ABAE /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Assets.bundle; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABDB1615FA97A67BBBDA54DB19B3E6D /* FrontEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrontEnd.swift; sourceTree = "<group>"; };
+		3B5056CD74C900AC645388EEC2D6F954 /* Lattice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Lattice.swift; sourceTree = "<group>"; };
+		3D42B339C35C07A9CF86E24E6D8994DD /* SegmentIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentIterator.swift; sourceTree = "<group>"; };
+		40A275493DE3F67D24D271F6F69CF24B /* NGramModelSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NGramModelSet.swift; sourceTree = "<group>"; };
 		50299840FB163020120902ABB427AB4F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
-		596F2D63DB133B8FC6B1B81BDF98BDFE /* ResourceBundle-AcousticModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AcousticModel-Info.plist"; sourceTree = "<group>"; };
-		64DAC5DE7EC6E836ADADB537CCD09444 /* iSphinxDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinxDelegete.swift; path = iSphinx/iSphinx/iSphinxDelegete.swift; sourceTree = "<group>"; };
+		514780ADEF102266B92C409D81CA0B41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55075313B044142721CA69E1E7C7B606 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		55183A8763AE5980334189A4729A4039 /* iSphinx.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = iSphinx.modulemap; sourceTree = "<group>"; };
+		562E70C9208B9D47FAABD940F3D98C0F /* ResourceBundle-Assets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-Info.plist"; sourceTree = "<group>"; };
+		5D9A86ED29BEB7A5DD9CDA65D55F9F0F /* Feature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		6241E92A67EC1EE76F146BB81488E782 /* README */ = {isa = PBXFileReference; includeInIndex = 1; path = README; sourceTree = "<group>"; };
 		64F2CEEE0810FC40E9845D1FBE42FBE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		6C9F060C9C0DC900F713B85565B6CEA3 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Config.swift"; sourceTree = "<group>"; };
+		67398A426A2D5C1A15CD0A7A901D68C6 /* Segment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		6DD611E30A73250CD1147788946C6206 /* Pods-iSphinxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iSphinxDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		6E2C451D3FBDE4D3AA50AB2C7DFE1EE8 /* NBestIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NBestIterator.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NBestIterator.swift"; sourceTree = "<group>"; };
-		7353E7CC6D7E5667E794BFB6DAFC92F2 /* iSphinx-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iSphinx-dummy.m"; sourceTree = "<group>"; };
-		846F4D384411902CF2821AA3A2C89FC9 /* icaksama.arpa */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = icaksama.arpa; path = iSphinx/iSphinx/Assets/icaksama.arpa; sourceTree = "<group>"; };
-		85C3A9F53A2648E69E910136366CB755 /* sendump */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = sendump; path = "iSphinx/iSphinx/Assets/en-us-ptm/sendump"; sourceTree = "<group>"; };
-		87B3F5226409DEEA8756513815F2696A /* README */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README; path = "iSphinx/iSphinx/Assets/en-us-ptm/README"; sourceTree = "<group>"; };
-		882D13AEBC26F2B77F30DB4061678521 /* NGramModelSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NGramModelSet.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NGramModelSet.swift"; sourceTree = "<group>"; };
-		8E5510AD1DD23691E40B427A76472EBC /* AcousticModel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcousticModel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95CA3FB3B2A80318308E249B32D56368 /* iSphinx-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-umbrella.h"; sourceTree = "<group>"; };
-		96045BE7A800A40D853D1162171BD43A /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libpocketsphinx.a; path = iSphinx/Sphinx/lib/pocketsphinx/libpocketsphinx.a; sourceTree = "<group>"; };
-		96FBA90EB43737657D0C2F072972676A /* ResourceBundle-Assets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-Info.plist"; sourceTree = "<group>"; };
+		730E4AA4578252F503B3A7637D09632B /* noisedict */ = {isa = PBXFileReference; includeInIndex = 1; path = noisedict; sourceTree = "<group>"; };
+		77195B514B18E835EF611619723D10C0 /* iSphinx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iSphinx.h; path = iSphinx/iSphinx/iSphinx.h; sourceTree = "<group>"; };
+		77CA0C342B84F7380950A5035A6A4ADE /* iRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iRecognizer.swift; sourceTree = "<group>"; };
+		795EEB1F4FBBA3A8026FFCC18D1AF5A7 /* NGramModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NGramModel.swift; sourceTree = "<group>"; };
+		79CAD6D79D4EFF9B66A3C273080EDD88 /* means */ = {isa = PBXFileReference; includeInIndex = 1; path = means; sourceTree = "<group>"; };
+		7BC59C797727ACE7AC44D6DDEB0ABC44 /* NGramModelSetIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NGramModelSetIterator.swift; sourceTree = "<group>"; };
+		814613E647039B3AA60D1CF54FBFB58C /* variances */ = {isa = PBXFileReference; includeInIndex = 1; path = variances; sourceTree = "<group>"; };
+		8B4B8C28926EEC4B839A5781A6B99FFE /* transition_matrices */ = {isa = PBXFileReference; includeInIndex = 1; path = transition_matrices; sourceTree = "<group>"; };
+		8E5510AD1DD23691E40B427A76472EBC /* AcousticModel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AcousticModel.bundle; path = AcousticModel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97841F35D26329A6DF5CAC4811671733 /* iSphinx-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-prefix.pch"; sourceTree = "<group>"; };
 		993C0574C1D6CF6588376717E7B98A9C /* Pods-iSphinxDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iSphinxDemo-umbrella.h"; sourceTree = "<group>"; };
-		9D12AE041507B76318797FF97FB18A0D /* iSphinx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinx.swift; path = iSphinx/iSphinx/iSphinx.swift; sourceTree = "<group>"; };
-		A0CA574F50517199491F14DE81B04DB6 /* NGramModelSetIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NGramModelSetIterator.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NGramModelSetIterator.swift"; sourceTree = "<group>"; };
-		A0FBDC7601A1727AB9D35D046A14F6D9 /* FrontEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrontEnd.swift; path = "iSphinx/iSphinx/iSphinx Utilities/FrontEnd.swift"; sourceTree = "<group>"; };
-		ACB190A8720B3EF776EF78CE0DAD8CC9 /* iSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC1CE8002CF89AF10F6DC4F5850336D /* Hypotesis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hypotesis.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Hypotesis.swift"; sourceTree = "<group>"; };
-		AEDAD8884E1088AABB3DF4BAC9E37C20 /* SegmentIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentIterator.swift; path = "iSphinx/iSphinx/iSphinx Utilities/SegmentIterator.swift"; sourceTree = "<group>"; };
+		A564049F77E1DD6420042B13640EFC59 /* iSphinx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinx.swift; path = iSphinx/iSphinx/iSphinx.swift; sourceTree = "<group>"; };
+		ACB190A8720B3EF776EF78CE0DAD8CC9 /* iSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iSphinx.framework; path = iSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA6D5190774C795C49723A2D0E41598 /* Pods-iSphinxDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iSphinxDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		B0E7D1AB9BA8105189682A05C792B944 /* iRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iRecognizer.swift; path = "iSphinx/iSphinx/iSphinx Utilities/iRecognizer.swift"; sourceTree = "<group>"; };
-		B31A08F841DF6E36B159FB6A1EB985A5 /* NBest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NBest.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NBest.swift"; sourceTree = "<group>"; };
+		B327570151B448CC3A627AF58A94FC5C /* iSphinx-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iSphinx-umbrella.h"; sourceTree = "<group>"; };
+		B8DA41B77D033764CDDB1964A9A8E18D /* iSphinxRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iSphinxRecorder.swift; path = iSphinx/iSphinx/iSphinxRecorder.swift; sourceTree = "<group>"; };
+		BA7D2BBE269B0F4AA165089E8921F5CB /* Hypotesis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hypotesis.swift; sourceTree = "<group>"; };
 		BD0431A8771F6C6854C2F35857B82526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C169F1E24DA46E09B06564E273AFE6FE /* Feature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Feature.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Feature.swift"; sourceTree = "<group>"; };
 		C61AE17B82A2AA7D8E16D356659367E0 /* Pods-iSphinxDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iSphinxDemo-resources.sh"; sourceTree = "<group>"; };
-		C71473DCB9FECCFD4A660D96370C281D /* feat.params */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = feat.params; path = "iSphinx/iSphinx/Assets/en-us-ptm/feat.params"; sourceTree = "<group>"; };
+		C74AEFB11340FEEA3CA0371E2B144F50 /* mdef */ = {isa = PBXFileReference; includeInIndex = 1; path = mdef; sourceTree = "<group>"; };
+		C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iSphinx.xcconfig; sourceTree = "<group>"; };
+		CB2C2DA0A450663D188616010E118781 /* iRecognizerDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iRecognizerDelegete.swift; sourceTree = "<group>"; };
 		CF51680BEB692456DC0FA6A014D62F7C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		CFFBBFAECDD72D54717C5F713D8B87A9 /* Pods-iSphinxDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iSphinxDemo-dummy.m"; sourceTree = "<group>"; };
 		D0C89EADE4855046840E501F4481A1DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D817BAA798B751E24E16AF7B10D5FC4F /* icaksama.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = icaksama.wav; path = iSphinx/iSphinx/Assets/icaksama.wav; sourceTree = "<group>"; };
-		DA3FA8FA5C3E4FB81531DDF218033E1A /* icaksama.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = icaksama.txt; path = iSphinx/iSphinx/Assets/icaksama.txt; sourceTree = "<group>"; };
-		DB8FBC0E918B652F403950864EA788EB /* variances */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = variances; path = "iSphinx/iSphinx/Assets/en-us-ptm/variances"; sourceTree = "<group>"; };
+		D1B564A2B02B190EEFEEC031BFAF786A /* icaksama.arpa */ = {isa = PBXFileReference; includeInIndex = 1; name = icaksama.arpa; path = iSphinx/iSphinx/Assets/icaksama.arpa; sourceTree = "<group>"; };
+		D52725D513866A3A0F8FF2B4BB0CE3F8 /* iSphinx-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iSphinx-dummy.m"; sourceTree = "<group>"; };
+		DCB845AFA743F946EA05A6588D37FE23 /* icaksama.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = icaksama.txt; path = iSphinx/iSphinx/Assets/icaksama.txt; sourceTree = "<group>"; };
 		E03B1D010A7665449FF2869416F86123 /* Pods-iSphinxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iSphinxDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E267BC07D8D0B39C0D7A39B6BE798CC6 /* LogMath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogMath.swift; path = "iSphinx/iSphinx/iSphinx Utilities/LogMath.swift"; sourceTree = "<group>"; };
-		E9634719B681864028B1918A1B224075 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Decoder.swift"; sourceTree = "<group>"; };
-		E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iSphinx.xcconfig; sourceTree = "<group>"; };
-		EB9EABBBC2B9C0C7839D7C859B0DE37B /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = "iSphinx/iSphinx/iSphinx Utilities/Globals.swift"; sourceTree = "<group>"; };
-		EBF0020E7C57DB6E558E22B0E035FC92 /* FsgModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FsgModel.swift; path = "iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift"; sourceTree = "<group>"; };
-		F544658C279AE5200E4A02CE51D1DA25 /* noisedict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = noisedict; path = "iSphinx/iSphinx/Assets/en-us-ptm/noisedict"; sourceTree = "<group>"; };
-		F8B074498853E0E3030FF766AC4DB941 /* NGramModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NGramModel.swift; path = "iSphinx/iSphinx/iSphinx Utilities/NGramModel.swift"; sourceTree = "<group>"; };
-		FE542C2E950E8B272668D36CDC737732 /* iRecognizerDelegete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iRecognizerDelegete.swift; path = "iSphinx/iSphinx/iSphinx Utilities/iRecognizerDelegete.swift"; sourceTree = "<group>"; };
+		E7C0D61D5DB7A8F01B6775C7330A0427 /* sendump */ = {isa = PBXFileReference; includeInIndex = 1; path = sendump; sourceTree = "<group>"; };
+		E8BA97E2787D8C8022134102B260EB7B /* libpocketsphinx.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libpocketsphinx.a; path = iSphinx/Sphinx/lib/pocketsphinx/libpocketsphinx.a; sourceTree = "<group>"; };
+		E919552C2CD2C728095DC24E1AB2E2C4 /* iRecognizerSetup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iRecognizerSetup.swift; sourceTree = "<group>"; };
+		F7DBD0404419A5D0F9637ADD5BD03A78 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		F9D7ABC62E2533B8F530D2DA02FB1985 /* libsphinxbase.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libsphinxbase.a; path = iSphinx/Sphinx/lib/sphinxbase/libsphinxbase.a; sourceTree = "<group>"; };
+		FAA48214BC8275F1A288C229BDB34261 /* FsgModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FsgModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,72 +199,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23B990F16C482D6070B8663CC2A62D3A /* Pods */ = {
+		6317A6FB9B2A440A0CF9C13F5356F021 /* iSphinx */ = {
 			isa = PBXGroup;
 			children = (
-				78CF1573CC16491A8D4FFF0F2E5574AF /* iSphinx */,
+				77195B514B18E835EF611619723D10C0 /* iSphinx.h */,
+				A564049F77E1DD6420042B13640EFC59 /* iSphinx.swift */,
+				28605CBC11F15FFCC213C129B9B8A3E1 /* iSphinxDelegete.swift */,
+				B8DA41B77D033764CDDB1964A9A8E18D /* iSphinxRecorder.swift */,
+				B4BFEEA65246023D5D1B12FF23036ED9 /* Frameworks */,
+				EC37E7746F443A990F41216736DADF09 /* iSphinx Utilities */,
+				A95B65615A4B7BB3A9AE493DA1A72621 /* Resources */,
+				C9DA75BAECEBC02FA3C5EB2AC5A46AAB /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5B5711B6762EC150E6AB4DAF2DF2DDFA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C71473DCB9FECCFD4A660D96370C281D /* feat.params */,
-				846F4D384411902CF2821AA3A2C89FC9 /* icaksama.arpa */,
-				DA3FA8FA5C3E4FB81531DDF218033E1A /* icaksama.txt */,
-				D817BAA798B751E24E16AF7B10D5FC4F /* icaksama.wav */,
-				25404310C220BCBB6E11417B799C0AB4 /* mdef */,
-				37070E7F74647F0D972053D787518E86 /* means */,
-				F544658C279AE5200E4A02CE51D1DA25 /* noisedict */,
-				87B3F5226409DEEA8756513815F2696A /* README */,
-				85C3A9F53A2648E69E910136366CB755 /* sendump */,
-				2FA64D671D3C92BA46CADCCEB5DD4395 /* transition_matrices */,
-				DB8FBC0E918B652F403950864EA788EB /* variances */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		78CF1573CC16491A8D4FFF0F2E5574AF /* iSphinx */ = {
-			isa = PBXGroup;
-			children = (
-				6C9F060C9C0DC900F713B85565B6CEA3 /* Config.swift */,
-				E9634719B681864028B1918A1B224075 /* Decoder.swift */,
-				C169F1E24DA46E09B06564E273AFE6FE /* Feature.swift */,
-				A0FBDC7601A1727AB9D35D046A14F6D9 /* FrontEnd.swift */,
-				EBF0020E7C57DB6E558E22B0E035FC92 /* FsgModel.swift */,
-				EB9EABBBC2B9C0C7839D7C859B0DE37B /* Globals.swift */,
-				ACC1CE8002CF89AF10F6DC4F5850336D /* Hypotesis.swift */,
-				B0E7D1AB9BA8105189682A05C792B944 /* iRecognizer.swift */,
-				FE542C2E950E8B272668D36CDC737732 /* iRecognizerDelegete.swift */,
-				01B0D6F20D7454F10EDB6AA038349961 /* iRecognizerSetup.swift */,
-				2335A2F5B70805C2FA01A34D7659FD07 /* iSphinx.h */,
-				9D12AE041507B76318797FF97FB18A0D /* iSphinx.swift */,
-				64DAC5DE7EC6E836ADADB537CCD09444 /* iSphinxDelegete.swift */,
-				27CC2726D3DFD0B82EF845F0E6844D1F /* iSphinxRecorder.swift */,
-				1C07B2F46E469FEFCC303471021F14DD /* Lattice.swift */,
-				E267BC07D8D0B39C0D7A39B6BE798CC6 /* LogMath.swift */,
-				B31A08F841DF6E36B159FB6A1EB985A5 /* NBest.swift */,
-				6E2C451D3FBDE4D3AA50AB2C7DFE1EE8 /* NBestIterator.swift */,
-				F8B074498853E0E3030FF766AC4DB941 /* NGramModel.swift */,
-				882D13AEBC26F2B77F30DB4061678521 /* NGramModelSet.swift */,
-				A0CA574F50517199491F14DE81B04DB6 /* NGramModelSetIterator.swift */,
-				2B6FB090F3B5AB48C572B8FCA563E5D4 /* Segment.swift */,
-				AEDAD8884E1088AABB3DF4BAC9E37C20 /* SegmentIterator.swift */,
-				1A2B381570F0021CD2484E30C64A2E07 /* Utilities.swift */,
-				8FC5978F31DDE203150A614D84CF8D43 /* Frameworks */,
-				5B5711B6762EC150E6AB4DAF2DF2DDFA /* Resources */,
-				B7FE4A0F3726F4F32F4C5FD75B92B53E /* Support Files */,
-			);
-			path = iSphinx;
-			sourceTree = "<group>";
+			name = iSphinx;
+			path = /Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx;
+			sourceTree = "<absolute>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BF715C983399753A86EAC9E490974F64 /* Development Pods */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				23B990F16C482D6070B8663CC2A62D3A /* Pods */,
 				8E0E840A412D63CD9B16D915E83BAE3B /* Products */,
 				0321F0EB36E355C164CD56A159EF082E /* Targets Support Files */,
 			);
@@ -310,29 +266,92 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8FC5978F31DDE203150A614D84CF8D43 /* Frameworks */ = {
+		A8496E6739DE179857A3A88E8F543AC0 /* en-us-ptm */ = {
 			isa = PBXGroup;
 			children = (
-				96045BE7A800A40D853D1162171BD43A /* libpocketsphinx.a */,
-				0AB8B01D6C5FB535FD690C530B6590B3 /* libsphinxbase.a */,
+				2848392D649EF4DA21CE3840C253AD11 /* feat.params */,
+				C74AEFB11340FEEA3CA0371E2B144F50 /* mdef */,
+				79CAD6D79D4EFF9B66A3C273080EDD88 /* means */,
+				730E4AA4578252F503B3A7637D09632B /* noisedict */,
+				6241E92A67EC1EE76F146BB81488E782 /* README */,
+				E7C0D61D5DB7A8F01B6775C7330A0427 /* sendump */,
+				8B4B8C28926EEC4B839A5781A6B99FFE /* transition_matrices */,
+				814613E647039B3AA60D1CF54FBFB58C /* variances */,
+			);
+			name = "en-us-ptm";
+			path = "iSphinx/iSphinx/Assets/en-us-ptm";
+			sourceTree = "<group>";
+		};
+		A95B65615A4B7BB3A9AE493DA1A72621 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1B564A2B02B190EEFEEC031BFAF786A /* icaksama.arpa */,
+				DCB845AFA743F946EA05A6588D37FE23 /* icaksama.txt */,
+				2EF55FB2F6A29563370DB58D5DB6DCC6 /* icaksama.wav */,
+				A8496E6739DE179857A3A88E8F543AC0 /* en-us-ptm */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B4BFEEA65246023D5D1B12FF23036ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8BA97E2787D8C8022134102B260EB7B /* libpocketsphinx.a */,
+				F9D7ABC62E2533B8F530D2DA02FB1985 /* libsphinxbase.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B7FE4A0F3726F4F32F4C5FD75B92B53E /* Support Files */ = {
+		BF715C983399753A86EAC9E490974F64 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03247B8D6C83FB9E742199863B060479 /* Info.plist */,
-				4EAC59F0041D843EA807E0A205540934 /* iSphinx.modulemap */,
-				E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */,
-				7353E7CC6D7E5667E794BFB6DAFC92F2 /* iSphinx-dummy.m */,
-				04CBADF8526746BF4AFBFBE12CA3CD36 /* iSphinx-prefix.pch */,
-				95CA3FB3B2A80318308E249B32D56368 /* iSphinx-umbrella.h */,
-				596F2D63DB133B8FC6B1B81BDF98BDFE /* ResourceBundle-AcousticModel-Info.plist */,
-				96FBA90EB43737657D0C2F072972676A /* ResourceBundle-Assets-Info.plist */,
+				6317A6FB9B2A440A0CF9C13F5356F021 /* iSphinx */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C9DA75BAECEBC02FA3C5EB2AC5A46AAB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				514780ADEF102266B92C409D81CA0B41 /* Info.plist */,
+				55183A8763AE5980334189A4729A4039 /* iSphinx.modulemap */,
+				C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */,
+				D52725D513866A3A0F8FF2B4BB0CE3F8 /* iSphinx-dummy.m */,
+				97841F35D26329A6DF5CAC4811671733 /* iSphinx-prefix.pch */,
+				B327570151B448CC3A627AF58A94FC5C /* iSphinx-umbrella.h */,
+				01BC0421C85CC008BC05D01CC59EF2FB /* ResourceBundle-AcousticModel-Info.plist */,
+				562E70C9208B9D47FAABD940F3D98C0F /* ResourceBundle-Assets-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/iSphinx";
+			path = "iSphinxDemo/Pods/Target Support Files/iSphinx";
+			sourceTree = "<group>";
+		};
+		EC37E7746F443A990F41216736DADF09 /* iSphinx Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0AECAE5010146888EAA5EF5B9CFA46C9 /* Config.swift */,
+				F7DBD0404419A5D0F9637ADD5BD03A78 /* Decoder.swift */,
+				5D9A86ED29BEB7A5DD9CDA65D55F9F0F /* Feature.swift */,
+				3ABDB1615FA97A67BBBDA54DB19B3E6D /* FrontEnd.swift */,
+				FAA48214BC8275F1A288C229BDB34261 /* FsgModel.swift */,
+				55075313B044142721CA69E1E7C7B606 /* Globals.swift */,
+				BA7D2BBE269B0F4AA165089E8921F5CB /* Hypotesis.swift */,
+				77CA0C342B84F7380950A5035A6A4ADE /* iRecognizer.swift */,
+				CB2C2DA0A450663D188616010E118781 /* iRecognizerDelegete.swift */,
+				E919552C2CD2C728095DC24E1AB2E2C4 /* iRecognizerSetup.swift */,
+				3B5056CD74C900AC645388EEC2D6F954 /* Lattice.swift */,
+				03AC75080191A5F4501B3D0E58D425F9 /* LogMath.swift */,
+				0891C6FF2D05CE8375C955AD0B994873 /* NBest.swift */,
+				082CFCA798D1EB03DD7F013C7812F147 /* NBestIterator.swift */,
+				795EEB1F4FBBA3A8026FFCC18D1AF5A7 /* NGramModel.swift */,
+				40A275493DE3F67D24D271F6F69CF24B /* NGramModelSet.swift */,
+				7BC59C797727ACE7AC44D6DDEB0ABC44 /* NGramModelSetIterator.swift */,
+				67398A426A2D5C1A15CD0A7A901D68C6 /* Segment.swift */,
+				3D42B339C35C07A9CF86E24E6D8994DD /* SegmentIterator.swift */,
+				324CC3A3B3A307BD3071C11BB015FAA8 /* Utilities.swift */,
+			);
+			name = "iSphinx Utilities";
+			path = "iSphinx/iSphinx/iSphinx Utilities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +398,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B476F20A709DB65C4752C617AD59D5A5 /* Build configuration list for PBXNativeTarget "iSphinx" */;
 			buildPhases = (
-				74A923A8CFE62D94FF5C9090C010C69E /* Sources */,
+				674F6BE228B5BEAE474F70E5C4E81A54 /* Sources */,
 				0EC80A237779631F0113E49BB803350B /* Frameworks */,
 				F477C7EA175228C6FA79D1E8A2FC449F /* Resources */,
 				4595309C1BC9F145FAC41752BFCBB02E /* Headers */,
@@ -419,7 +438,7 @@
 			buildPhases = (
 				3C5A1746FCDB60F433112B2D6DEFCAB6 /* Sources */,
 				BF25FF44C62C1F3FDAE6DAF49043C4F7 /* Frameworks */,
-				C2667128AC80A957DCC6FE82A156E041 /* Resources */,
+				92235A7842411A009F5728A9948FCCA2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -437,7 +456,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -460,6 +479,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		92235A7842411A009F5728A9948FCCA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6EDC8738899BB0FBB3240BC0745861 /* feat.params in Resources */,
+				6210F6D1AE23A325F4D13797868390BD /* mdef in Resources */,
+				17AD398730B7576D343A1DB2E583F64F /* means in Resources */,
+				1F6A2B2547E84DE7771E23DD16427C06 /* noisedict in Resources */,
+				6573C3AFFD3962DF33DA969050505A03 /* README in Resources */,
+				E7D82C46164524FFEC695AC8232373EA /* sendump in Resources */,
+				9DDCE3944EC8D8BB95D8A89A46A0BA5E /* transition_matrices in Resources */,
+				5F0E93FC383E253983124500CE0C3F38 /* variances in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A8035C90B8460C1A8661B8447BA190A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,21 +501,6 @@
 				6266A8568D204726FE2FBABB580C1E1C /* icaksama.arpa in Resources */,
 				6BC7CE4F2ED384A04BF6B0D739E9B1CF /* icaksama.txt in Resources */,
 				5FBD9D25FC9E33DC6C6A413126EA8277 /* icaksama.wav in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2667128AC80A957DCC6FE82A156E041 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C49D8A4A1AE99115EB591B01326A1F7 /* feat.params in Resources */,
-				C6287757BD4B6E949E5903C3C892F665 /* mdef in Resources */,
-				5E74EF182A2C270E36F6028D01E3C1F8 /* means in Resources */,
-				5C5B9BC4F357CC96A070BAF82039FECD /* noisedict in Resources */,
-				BDDE5970373CF19D45E00DB822461055 /* README in Resources */,
-				588D3D8838590578B16D929F632061D6 /* sendump in Resources */,
-				17EE858362387551FB16E42A0EA15448 /* transition_matrices in Resources */,
-				4CB988A581517062FBFEA7142DBA0714 /* variances in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,34 +530,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74A923A8CFE62D94FF5C9090C010C69E /* Sources */ = {
+		674F6BE228B5BEAE474F70E5C4E81A54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73C3FCF58D4995304C052FF0DB78FB26 /* Config.swift in Sources */,
-				3ECD6CC9F71167035694168A1C46CE1C /* Decoder.swift in Sources */,
-				600AFC9EF03CCB0C5046CDF2448EAACF /* Feature.swift in Sources */,
-				FA276EFB407ADA92C82AF4C19B709DA6 /* FrontEnd.swift in Sources */,
-				E600D980C253AEA3090E9EA35D6F8B42 /* FsgModel.swift in Sources */,
-				AFC475583F4DD6C518C87B4AFEF597B7 /* Globals.swift in Sources */,
-				D8D728E98F90D9DEEAB4F7F7A31D164B /* Hypotesis.swift in Sources */,
-				66FF434ABEE6174528A08F97B51609EF /* iRecognizer.swift in Sources */,
-				9E6FC988991B68B3C9073CAE5F0CF0C3 /* iRecognizerDelegete.swift in Sources */,
-				56A949DA85885DA2407394E889631F1B /* iRecognizerSetup.swift in Sources */,
-				D30DA797916593224CEA87FA0A6CDC48 /* iSphinx-dummy.m in Sources */,
-				77B239E17E7FEB6F09AC21DB6584E5BA /* iSphinx.swift in Sources */,
-				11F78A16AE6584B008E55560C558A7F6 /* iSphinxDelegete.swift in Sources */,
-				A4D0E9C94D3C882D4A31D94410DFC1C4 /* iSphinxRecorder.swift in Sources */,
-				CEA95ADD02D1D5584A6793E24B210CA0 /* Lattice.swift in Sources */,
-				8932D563E16BC9FFEBD9CEFAD85BC99B /* LogMath.swift in Sources */,
-				A54A0F70F96417FD46DDFAA4A3E2E2F4 /* NBest.swift in Sources */,
-				DC96FF50953B36CBC6BFBC57FCB29582 /* NBestIterator.swift in Sources */,
-				05B9FBAB739E4A2159E43E1D1FCBDD8F /* NGramModel.swift in Sources */,
-				074BC82B8B26955B93D922D8E30FF319 /* NGramModelSet.swift in Sources */,
-				EBACEC90BC1C978EBB924374D948DD6C /* NGramModelSetIterator.swift in Sources */,
-				4A5D3A68A6EFDCEC0FB534C2F3F2591F /* Segment.swift in Sources */,
-				46594C97BFBB6E5E6872D4250E3F791C /* SegmentIterator.swift in Sources */,
-				B837E9807B6BC4D238EBEC3272FFC6D7 /* Utilities.swift in Sources */,
+				1F203E52CD71D104AD5E8CF4CD03BDA1 /* Config.swift in Sources */,
+				2283F08B05F814D404CECBDC3DA701FB /* Decoder.swift in Sources */,
+				BCA38A4FEEB0A8B6C316DE87F3F3C600 /* Feature.swift in Sources */,
+				5A174FAF0E432787730D486609218012 /* FrontEnd.swift in Sources */,
+				6B56E8F923DCC4AD96FDF455FAB19F73 /* FsgModel.swift in Sources */,
+				B6F3DBB984BB7E707C79BA9967C8F84D /* Globals.swift in Sources */,
+				A813792A2BE7725DE1CB5B4566353983 /* Hypotesis.swift in Sources */,
+				B2FA3DD591E08948D738ECA40907A311 /* iRecognizer.swift in Sources */,
+				CF04584DF532177FB5C38BDAD7601CB4 /* iRecognizerDelegete.swift in Sources */,
+				67DEAA732AEE6B58B51730FDECDF6D9D /* iRecognizerSetup.swift in Sources */,
+				234E0B61CA9B8BE06E0BBDF3A21CE09D /* iSphinx-dummy.m in Sources */,
+				FDCE54B2A72A8B09D00C778825BAE0A8 /* iSphinx.swift in Sources */,
+				962B68F03939A91BDB371279C57B691E /* iSphinxDelegete.swift in Sources */,
+				4E98F965BB9FC9C010686DD7732ABCE7 /* iSphinxRecorder.swift in Sources */,
+				B9535578EF82C5C4AEB3EFBB4D5375CC /* Lattice.swift in Sources */,
+				681B6F73EE71B2B64877B26D74538CF6 /* LogMath.swift in Sources */,
+				2DA99367C77F1281F54932B67B36C122 /* NBest.swift in Sources */,
+				E096DF0B0BA72B557FCD12FD3A82F091 /* NBestIterator.swift in Sources */,
+				68890D38B8D02188CA4B50991099B784 /* NGramModel.swift in Sources */,
+				6F50739BC0E101CFE49BE77F3F56BC6F /* NGramModelSet.swift in Sources */,
+				AD2540D3F8D55DF8653CD2ADFF03BF7D /* NGramModelSetIterator.swift in Sources */,
+				55A1115C3120B4E72C8203D571DD1142 /* Segment.swift in Sources */,
+				0AF66B5F77FD9A821FEDBC2F801EE411 /* SegmentIterator.swift in Sources */,
+				59622E43F45DD807B358CA549C8B2229 /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +629,7 @@
 		};
 		2036408CE7754235DBB46478C39BC1BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */;
+			baseConfigurationReference = C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/iSphinx";
@@ -626,7 +645,7 @@
 		};
 		251F2A05512A015A3926CCAC0BBCC6BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */;
+			baseConfigurationReference = C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/iSphinx";
@@ -642,7 +661,7 @@
 		};
 		4EBFD0E0D00815E445AD707EC80CEF56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */;
+			baseConfigurationReference = C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/iSphinx";
@@ -707,7 +726,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -748,7 +766,7 @@
 		};
 		B0FCFC56ACFCB5DE54009AE3B8EE214A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */;
+			baseConfigurationReference = C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -840,7 +858,7 @@
 		};
 		B5EF739E84D26B5D8BCD896A2B082984 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */;
+			baseConfigurationReference = C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -871,7 +889,7 @@
 		};
 		F87FCC5A9316A044A3E770E67C36144B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DDCCD42152EB9C831C9153E3301989 /* iSphinx.xcconfig */;
+			baseConfigurationReference = C99B2A3A1D8386EE104F55E71683B700 /* iSphinx.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/iSphinx";

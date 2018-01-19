@@ -1,16 +1,16 @@
 {
   "name": "iSphinx",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "license": "MIT",
   "summary": "iOS library with swift for offline speech recognition base on Pocketsphinx engine.",
   "homepage": "https://github.com/icaksama/iSphinx",
   "social_media_url": "https://www.facebook.com/icaksama.fanpage",
   "authors": {
-    "icaksama": "icaksama@gmail.org"
+    "icaksama": "icaksama@gmail.com"
   },
   "source": {
     "git": "https://github.com/icaksama/iSphinx.git",
-    "tag": "1.1.2"
+    "tag": "1.1.4"
   },
   "platforms": {
     "ios": "9.0"
@@ -47,6 +47,7 @@
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "4.0",
     "ENABLE_BITCODE": "NO",
+    "SWIFT_OPTIMIZATION_LEVEL": "-Onone",
     "EXCLUDED_SOURCE_FILE_NAMES": "cmudict-en-us.dict",
     "HEADER_SEARCH_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
     "SWIFT_INCLUDE_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include",
@@ -55,6 +56,7 @@
   },
   "xcconfig": {
     "HEADER_SEARCH_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
-    "ENABLE_BITCODE": "NO"
+    "SWIFT_OPTIMIZATION_LEVEL": "$(inherited)",
+    "ENABLE_BITCODE": "$(inherited)"
   }
 }

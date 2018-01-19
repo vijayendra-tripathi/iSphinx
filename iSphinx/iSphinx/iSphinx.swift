@@ -22,18 +22,22 @@ open class iSphinx: iRecognizerDelegete {
     fileprivate let fullDictionary = Utilities.getAssetPath()?.appending("\(SEARCH_ID).txt")
     fileprivate let dictPathTemp = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("\(SEARCH_ID)-dict.txt")
     
+    /** Set the delegete from your class. */
     open var delegete: iSphinxDelegete!
     
     public init() {}
     
+    /** Start speech recognition without timeout. */
     open func startISphinx() {
         recognizer.startIRecognizer()
     }
     
+    /** Start speech recognition with timeout. */
     open func startISphinx(timeoutInSec: Int) {
         recognizer.startIRecognizer(timeoutInSec: timeoutInSec)
     }
     
+    /** Prepare iSphinx with default acoustic model and dictionary. You need to set the language model with other method. */
     open func prepareISphinx(onPreExecute: @escaping(_ config: Config) -> (),
                              onPostExecute: @escaping(_ isSuccess: Bool) -> ()) {
         self.unSupportedWords.removeAll()
@@ -50,10 +54,11 @@ open class iSphinx: iRecognizerDelegete {
         onPostExecute(true)
     }
     
-    open func prepareISphinx(lmFile: String, aModelPath: String, dictFile: String?, onPreExecute: @escaping(_ config: Config) -> (),
+    /** Prepare iSphinx with custom setting. You can add your own language model, acoustic model and dictionary. Set aModelPath or dictFile to nil if you want to use the default file. */
+    open func prepareISphinx(lmFile: String, aModelPath: String?, dictFile: String?, onPreExecute: @escaping(_ config: Config) -> (),
                              onPostExecute: @escaping(_ isSuccess: Bool) -> ()) {
         self.unSupportedWords.removeAll()
-        self.config = Config(args: ("-hmm", aModelPath))
+        self.config = Config(args: ("-hmm", aModelPath == nil ? Utilities.getAcousticPath()! : aModelPath!))
         config.setString(key: "-dict", value: dictFile == nil ? fullDictionary : dictFile)
         config.setString(key: "-lm", value: lmFile)
         config.setFloat(key: "-vad_threshold", value: 3.5);
@@ -61,12 +66,12 @@ open class iSphinx: iRecognizerDelegete {
         onPreExecute(config)
         recognizer = iRecognizer(config: config)
         recognizer.setSilentToDetect(seconds: silentToDetect)
-        
         recognizerTemp = iRecognizer(config: config)
         recognizer.delegete = self
         onPostExecute(true)
     }
     
+    /** Prepare iSphinx with custom setting. You can add your own acoustic model and dictionary. Set dictFile to nil if you want to use the default file. */
     open func prepareISphinx(aModelPath: String, dictFile: String?, onPreExecute: @escaping(_ config: Config) -> (),
                              onPostExecute: @escaping(_ isSuccess: Bool) -> ()) {
         self.unSupportedWords.removeAll()
@@ -77,7 +82,6 @@ open class iSphinx: iRecognizerDelegete {
         onPreExecute(config)
         recognizer = iRecognizer(config: config)
         recognizer.setSilentToDetect(seconds: silentToDetect)
-        
         recognizerTemp = iRecognizer(config: config)
         recognizer.delegete = self
         onPostExecute(true)
@@ -113,6 +117,7 @@ open class iSphinx: iRecognizerDelegete {
         recognizer.getDecoder().setJsgfString(name: SEARCH_ID, gramStr: grammarStr)
     }
     
+    /** Get the dictionary path with words from array string. */
     open func getDictionary(words: [String]) -> String {
         var text = ""
         let dictPath = dictPathTemp!.absoluteString.replacingOccurrences(of: "file://", with: "")
@@ -128,6 +133,7 @@ open class iSphinx: iRecognizerDelegete {
         return dictPath
     }
     
+    /** Get the language model path with words from array string. */
     open func getNGramModel(words: [String]) -> NGramModel {
         let nGramModel = NGramModel(config: config, logMath: recognizer.getDecoder().getLogMath(), lmFile: arpaFile)
         for word in words {
@@ -136,6 +142,7 @@ open class iSphinx: iRecognizerDelegete {
         return nGramModel
     }
     
+    /** Update language model from a string. oovWords is word disturber so if the user says a word from oovWords the hypothesis will be ???. This function will repleace old language model already set. */
     open func updateVocabulary(text: String, oovWords: [String], completion: @escaping() -> ()) {
         self.originalWords = Utilities.removePunctuation(words: text).components(separatedBy: " ").removeDuplicates()
         self.oovWords = oovWords.removeDuplicates()
@@ -148,6 +155,7 @@ open class iSphinx: iRecognizerDelegete {
         completion()
     }
     
+    /** Update language model from an array string. oovWords is word disturber so if the user says a word from oovWords the hypothesis will be ???. This function will repleace old language model already set. */
     open func updateVocabulary(words: [String], oovWords: [String], completion: @escaping() -> ()) {
         self.originalWords = words.removeDuplicates()
         self.oovWords = oovWords.removeDuplicates()
@@ -161,9 +169,10 @@ open class iSphinx: iRecognizerDelegete {
         completion()
     }
     
-    open func updateGrammar(text: String, oovWords: [String], completion: @escaping() -> ()) {
+    /** Update JSGF grammar from a string. oogWords is word disturber so if the user says a word from oogWords the hypothesis will be ???. This function will repleace old JSGF grammar already set. */
+    open func updateGrammar(text: String, oogWords: [String], completion: @escaping() -> ()) {
         self.originalWords = Utilities.removePunctuation(words: text).components(separatedBy: " ").removeDuplicates()
-        self.oovWords = oovWords.removeDuplicates()
+        self.oovWords = oogWords.removeDuplicates()
         Utilities.removePunctuationArr(words: &self.oovWords)
         var words: [String] = [String]()
         words.append(contentsOf: self.originalWords)
@@ -173,36 +182,53 @@ open class iSphinx: iRecognizerDelegete {
         completion()
     }
     
+    /** Update JSGF grammar from a file. Set nil the dictFile if you sure already set the dictionary before. This function will repleace old JSGF grammar already set. */
     open func updateGrammar(file: String, dictFile: String?, completion: @escaping() -> ()) {
-        let dictC = dictFile == nil ? fullDictionary : dictFile
-        recognizer.getDecoder().loadDict(dictFile: dictC!, fFilter: nil, format: "dict")
+        if dictFile != nil {
+            if FileManager.default.fileExists(atPath: dictFile!) {
+                recognizer.getDecoder().loadDict(dictFile: dictFile!, fFilter: nil, format: "dict")
+            } else {
+                print("\(String(describing: dictFile)) doesn't exist.")
+            }
+        }
         recognizer.getDecoder().setJsgfFile(name: SEARCH_ID, filePath: file)
         completion()
     }
     
+    /** Update language model from a file. Set nil the dictFile if you sure already set the dictionary before. This function will repleace old language model already set. */
     open func updateLanguageModel(file: String, dictFile: String?, completion: @escaping() -> ()) {
-        let dictC = dictFile == nil ? fullDictionary : dictFile
-        recognizer.getDecoder().loadDict(dictFile: dictC!, fFilter: nil, format: "dict")
+        if dictFile != nil {
+            if FileManager.default.fileExists(atPath: dictFile!) {
+                recognizer.getDecoder().loadDict(dictFile: dictFile!, fFilter: nil, format: "dict")
+            } else {
+                print("\(String(describing: dictFile)) doesn't exist.")
+            }
+        }
         recognizer.getDecoder().setLanguageModelFile(name: SEARCH_ID, lmPath: file)
         completion()
     }
     
+    /** Get the decoder. */
     open func getDecoder() -> Decoder {
         return recognizer.getDecoder()
     }
     
+    /** Get the recognizer class. */
     open func getRecognizer() -> iRecognizer {
         return recognizer
     }
     
+    /** Get the recorder class. You can control audio record from this class. */
     open func getRecorder() -> iSphinxRecorder {
         return recognizer.getISphinxRecorder()
     }
     
+    /** Set the silent to detect in seconds. Silent to detect is delaying before speech considered as silent. */
     open func setSilentToDetect(seconds: Float) {
         self.silentToDetect = seconds
     }
     
+    /** Get the silent to detect in seconds. */
     open func getSilentToDetect() -> Float {
         return silentToDetect
     }
