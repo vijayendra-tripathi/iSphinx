@@ -31,7 +31,7 @@ I have tried to speak in different word order:
 ## Cocoapods
 Add to `Podfile` :
 ```text
-pod 'iSphinx', '~> 1.1.3'
+pod 'iSphinx', '~> 1.1.4'
 ```
 
 # How to Use
@@ -104,7 +104,7 @@ You need to prepare speech recognition before use that. You can add new paramete
 ```swift
 isphinx.prepareISphinx(onPreExecute: { (config) in
     // You can add new parameter pocketshinx here
-    isphinx.setSilentToDetect(seconds: 1)
+    self.isphinx.setSilentToDetect(seconds: 2)
     config.setString(key: "-parameter", value: "value")
 }) { (isSuccess) in
     if isSuccess {
@@ -114,21 +114,20 @@ isphinx.prepareISphinx(onPreExecute: { (config) in
 ```
 
 ## Update Language Model / Grammar
-You can update the vocabulary with language model or JSGF Grammar on the fly.
-Make sure to remove the punctuation before update vocabulary/grammar.
+You can update the vocabulary with language model or JSGF Grammar on the fly. Make sure to remove the punctuation before update vocabulary/grammar. Default punctuation will be remove in iSphinx are `[".",",","?","!","_","-","\\",":"]`
 ```swift
 // Update vocabulary with language model from single string
-isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["WORDS DISTRUBER", ...]) {
     print("Vocabulary updated!")
 }
 
 // Update vocabulary with language model from array string
-isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["WORDS DISTRUBER", ...]) {
     print("Vocabulary updated!")
 }
 
 // Update vocabulary with JSGF Grammar from string
-isphinx.updateGrammar(text: "YOUR GRAMMAR", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+isphinx.updateGrammar(text: "YOUR GRAMMAR", oogWords: ["WORDS DISTRUBER", ...]) {
     print("Grammar updated!")
 }
 ```
