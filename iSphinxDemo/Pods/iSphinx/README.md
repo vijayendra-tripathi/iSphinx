@@ -1,4 +1,12 @@
 # iSphinx
+[![Creator](https://img.shields.io/badge/creator-icaksama-green.svg)](https://www.linkedin.com/in/icaksama/)
+[![Travis](https://img.shields.io/travis/icaksama/iSphinx.svg)](https://travis-ci.org/icaksama/iSphinx)
+[![GitHub license](https://img.shields.io/github/license/icaksama/iSphinx.svg)](https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE)
+[![Code Size](https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg)](https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg)
+[![Pod Version](https://img.shields.io/cocoapods/v/iSphinx.svg)](https://img.shields.io/cocoapods/v/iSphinx.svg)
+[![Platform](https://img.shields.io/cocoapods/p/iSphinx.svg)](https://img.shields.io/cocoapods/p/iSphinx.svg)
+[![Download Total](https://img.shields.io/cocoapods/dt/iSphinx.svg)](https://img.shields.io/cocoapods/dt/iSphinx.svg)
+<br>
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
 ## Features
@@ -23,7 +31,7 @@ I have tried to speak in different word order:
 ## Cocoapods
 Add to `Podfile` :
 ```text
-pod 'iSphinx', '~> 1.1.2'
+pod 'iSphinx', '~> 1.1.4'
 ```
 
 # How to Use
@@ -96,7 +104,7 @@ You need to prepare speech recognition before use that. You can add new paramete
 ```swift
 isphinx.prepareISphinx(onPreExecute: { (config) in
     // You can add new parameter pocketshinx here
-    isphinx.setSilentToDetect(seconds: 1)
+    self.isphinx.setSilentToDetect(seconds: 2)
     config.setString(key: "-parameter", value: "value")
 }) { (isSuccess) in
     if isSuccess {
@@ -106,21 +114,20 @@ isphinx.prepareISphinx(onPreExecute: { (config) in
 ```
 
 ## Update Language Model / Grammar
-You can update the vocabulary with language model or JSGF Grammar on the fly.
-Make sure to remove the punctuation before update vocabulary/grammar.
+You can update the vocabulary with language model or JSGF Grammar on the fly. Make sure to remove the punctuation before update vocabulary/grammar. Default punctuation will be remove in iSphinx are `(.), (,) ,(?), (!), (_), (-), (\), (:)`
 ```swift
 // Update vocabulary with language model from single string
-isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["WORDS DISTRUBER", ...]) {
     print("Vocabulary updated!")
 }
 
 // Update vocabulary with language model from array string
-isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+isphinx.updateVocabulary(text: "YOUR VOCABULARIES!", oovWords: ["WORDS DISTRUBER", ...]) {
     print("Vocabulary updated!")
 }
 
 // Update vocabulary with JSGF Grammar from string
-isphinx.updateGrammar(text: "YOUR GRAMMAR", oovWords: ["KEYWORD SPOTTING FOR OOV", ...]) {
+isphinx.updateGrammar(text: "YOUR GRAMMAR", oogWords: ["WORDS DISTRUBER", ...]) {
     print("Grammar updated!")
 }
 ```

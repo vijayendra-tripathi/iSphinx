@@ -85,7 +85,9 @@ open class iRecognizer {
             if !utilities.isDelaying && isAlreadySpeech {
                 self.isAlreadySpeech = false
                 utilities.startDelay(delayTime: Double(silentToDetect), action: {
-                    self.timer.invalidate()
+                    if self.timer != nil {
+                        self.timer.invalidate()
+                    }
                     self.delegete.onEndOfSpeech()
                 })
             }
@@ -130,7 +132,6 @@ open class iRecognizer {
             let formatIn = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: inFormat.sampleRate, channels: 1, interleaved: true)
             engine!.connect(input, to: engine!.outputNode, format: formatIn)
             self.bufferSize = AVAudioFrameCount((inFormat.sampleRate * 0.4).rounded())
-            print("buffSize: \(bufferSize)")
             let sphinxFormat = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: sampRate, channels: 1, interleaved: true)
             let fCapacity = UInt32((Float(sphinxFormat!.sampleRate) * 0.4))
             self.recorder = iSphinxRecorder(audioFormat: sphinxFormat!)
@@ -146,7 +147,9 @@ open class iRecognizer {
                     }
                     var error : NSError?
                     converter!.convert(to: newbuffer!, error: &error, withInputFrom: inputBlock)
-                    self.recorder.writeBuffer(pcmBuffer: newbuffer!)
+                    if self.isAlreadySpeech {
+                        self.recorder.writeBuffer(pcmBuffer: newbuffer!)
+                    }
                     self.processRaw(data: newbuffer!)
                 }
                 if let hyp = ps_get_hyp(self.decoder.getPointer(), &self.bScore) {

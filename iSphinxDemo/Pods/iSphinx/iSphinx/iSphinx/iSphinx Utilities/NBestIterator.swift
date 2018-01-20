@@ -17,6 +17,7 @@ open class NBestIterator {
     
     internal init() {}
     
+    /** Init NBestIterator from current decoder. */
     public init(decoder: Decoder) {
         self.pointer = ps_nbest(decoder.getPointer())
     }
@@ -25,6 +26,7 @@ open class NBestIterator {
         return pointer
     }
     
+    /** Check NBest still exist in next iterator. */
     open func hasNext() -> Bool {
         if (currentIter + 1) <= iterCount {
             return true
@@ -34,6 +36,7 @@ open class NBestIterator {
         }
     }
     
+    /** Get next NBest from iterator. */
     open func next() -> NBest {
         currentIter += 1
         return NBest(pointer: ps_nbest_next(pointer))

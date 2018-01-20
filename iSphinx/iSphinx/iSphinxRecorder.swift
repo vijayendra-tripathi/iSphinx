@@ -14,7 +14,6 @@ open class iSphinxRecorder: NSObject, AVAudioPlayerDelegate {
     fileprivate var audioFile: AVAudioFile!
     fileprivate var didFinishPlaying: (() -> ())!
     fileprivate let audioFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("\(SEARCH_ID).caf")
-//    fileprivate let avAudioPlayerNode: AVAudioPlayerNode = AVAudioPlayerNode()
     fileprivate var audioPlayer: AVAudioPlayer!
     
     internal init(audioFormat: AVAudioFormat) {

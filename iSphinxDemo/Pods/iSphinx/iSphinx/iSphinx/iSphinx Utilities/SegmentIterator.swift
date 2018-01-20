@@ -14,6 +14,7 @@ open class SegmentIterator {
     
     internal init() {}
     
+    /** Init SegmentIterator from current decoder */
     public init(decoder: Decoder) {
         self.pointer = ps_seg_iter(decoder.getPointer())
         if pointer == nil {
@@ -25,6 +26,7 @@ open class SegmentIterator {
         return pointer
     }
     
+    /** Check segment still exist in next iterator. */
     open func hasNext() -> Bool {
         if pointer == nil {
             return false
@@ -36,6 +38,7 @@ open class SegmentIterator {
         }
     }
     
+    /** Get next segment from iterator. */
     open func next() -> Segment {
         return Segment(pointer: pointer)
     }

@@ -31,7 +31,7 @@ I have tried to speak in different word order:
 ## Cocoapods
 Add to `Podfile` :
 ```text
-pod 'iSphinx', '~> 1.1.5'
+pod 'iSphinx', '~> 1.1.6'
 ```
 
 # How to Use
@@ -133,9 +133,13 @@ isphinx.updateGrammar(text: "YOUR GRAMMAR", oogWords: ["WORDS DISTRUBER", ...]) 
 ```
 
 ## Start The Speech Recognition
+You can start speech recognition with timout or not.
 ```swift
-// Set the Timeout in seconds
+// Start speech recognition with Timeout in seconds
 isphinx.startISphinx(timeoutInSec: 10)
+
+// Start speech recognition without Timeout
+isphinx.startISphinx()
 ```
 
 ## Play Audio Record

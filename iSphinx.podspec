@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'iSphinx'
-  s.version = '1.1.5'
+  s.version = '1.1.6'
   s.license = 'MIT'
   s.summary = 'iOS library with swift for offline speech recognition base on Pocketsphinx engine.'
   s.homepage = 'https://github.com/icaksama/iSphinx'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
                             'HEADER_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**',
                             'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include',
                             'LIBRARY_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/pocketsphinx ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/sphinxbase',
-                            'OTHER_LDFLAGS' => '-lObjC -lC -lsphinxbase -lpocketsphinx'
+                            'OTHER_LDFLAGS' => '-lsphinxbase -lpocketsphinx'
                           }
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
                  'SWIFT_OPTIMIZATION_LEVEL' => '$(inherited)',

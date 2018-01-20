@@ -9,7 +9,44 @@
 import Foundation
 import AVFoundation
 
-internal class Utilities {
+class Utilities {
+    
+    var timerSilent: Timer?
+    var action: () -> () = {
+        print("Nothing happend!")
+    }
+    var delayTime: Int = 0
+    var currentTime: Int = 0
+    internal var isDelaying: Bool = false
+    
+    init() {}
+    
+    func startDelay(delayTime: Double, action: @escaping () -> ()) {
+        self.isDelaying = true
+        self.action = action
+        self.delayTime = Int(delayTime * Double(10))
+        DispatchQueue.main.async {
+            self.timerSilent = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.checkTime), userInfo: nil, repeats: true)
+        }
+    }
+    
+    internal func cancelDelay() {
+        self.isDelaying = false
+        if timerSilent != nil {
+            timerSilent!.invalidate()
+            timerSilent = nil
+        }
+        delayTime = 0
+        currentTime = 0
+    }
+    
+    @objc func checkTime() {
+        if currentTime == delayTime {
+            action()
+            cancelDelay()
+        }
+        currentTime = currentTime + 1
+    }
     
     internal static func removePunctuation(words: String) -> String {
         let punctuations = [".",",","?","!","_","-","\\",":"]

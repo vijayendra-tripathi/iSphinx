@@ -12,6 +12,7 @@ import AudioToolbox
 
 open class iRecognizer {
     
+    fileprivate var utilities: Utilities = Utilities()
     fileprivate var decoder: Decoder!
     fileprivate var engine: AVAudioEngine?
     fileprivate var sampRate: Double = 16000.0
@@ -27,25 +28,30 @@ open class iRecognizer {
     fileprivate var beginSpeech: Bool = true
     fileprivate var minVoiceVolume: Float = 25.0
     fileprivate var recorder: iSphinxRecorder!
+    fileprivate var isAlreadySpeech: Bool = false
     internal var delegete: iRecognizerDelegete!
     
     internal init() {}
     
+    /** Init iRecognizer with config only. */
     public init(config: Config) {
         self.decoder = Decoder(config: config)
         self.sampRate = Double(config.getFloat(key: "-samprate"))
     }
     
+    /** Get the decoder. */
     open func getDecoder() -> Decoder {
         return decoder
     }
     
+    /** Start recognizer without timeout. */
     open func startIRecognizer() {
         self.curSpeechTime = 0
         self.maxSpeechTime = 0
         self.startListening()
     }
     
+    /** Start recognizer with timeout. */
     open func startIRecognizer(timeoutInSec: Int) {
         self.curSpeechTime = 0
         self.maxSpeechTime = timeoutInSec
@@ -53,6 +59,7 @@ open class iRecognizer {
         self.startListening()
     }
     
+    /** Start recognizer from audio file 8000hz or 16000hz with single channel. */
     open func startIRecognizer(file: String) {
         DispatchQueue.global(qos: .default).async {
             self.hypotesisFor(filePath: file, completion: {
@@ -69,11 +76,19 @@ open class iRecognizer {
     private func processRaw(data: AVAudioPCMBuffer) {
         decoder.processRaw(data: data)
         if decoder.isInSpeech() {
-            print("Inspeech")
-            self.delegete.onBeginningOfSpeech()
+            if !isAlreadySpeech {
+                self.isAlreadySpeech = true
+                self.utilities.cancelDelay()
+                self.delegete.onBeginningOfSpeech()
+            }
         } else {
-//            self.delegete.onEndOfSpeech()
-            print("Endspeech")
+            if !utilities.isDelaying && isAlreadySpeech {
+                self.isAlreadySpeech = false
+                utilities.startDelay(delayTime: Double(silentToDetect), action: {
+                    self.timer.invalidate()
+                    self.delegete.onEndOfSpeech()
+                })
+            }
         }
     }
     
@@ -172,6 +187,7 @@ open class iRecognizer {
         }
     }
     
+    /** Stop speech recognition. */
     open func stopSpeech() {
         if engine != nil {
             engine!.stop()
@@ -188,14 +204,17 @@ open class iRecognizer {
         }
     }
     
+    /** Get the audio recorder. */
     open func getISphinxRecorder() -> iSphinxRecorder {
         return recorder
     }
     
+    /** Get the silent to detect. */
     open func getSilentToDetect() -> Float {
         return silentToDetect
     }
     
+    /** Set the silent to detect. */
     open func setSilentToDetect(seconds: Float) {
         self.silentToDetect = seconds
     }

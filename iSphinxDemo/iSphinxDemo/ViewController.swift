@@ -71,7 +71,10 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
         lblPartialResult.text = ""
         lblFinalResult.text = ""
         lblUnsupportedWords.text = ""
+        /** Start speech recognition with timeout */
         isphinx.startISphinx(timeoutInSec: 10)
+        /** Start speech recognition without timeout */
+//        isphinx.startISphinx()
     }
     
     @IBAction func btnPlayAudioOnTouch(_ sender: Any) {

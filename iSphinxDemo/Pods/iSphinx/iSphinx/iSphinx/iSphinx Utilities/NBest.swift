@@ -26,14 +26,17 @@ open class NBest {
         return pointer
     }
     
+    /** Delete NBest from memory. */
     open func delete() {
         ps_nbest_free(pointer)
     }
     
+    /** Get hypotesis score. */
     open func getHypotesisScore() -> Int {
         return Int(hypotesisScore)
     }
     
+    /** Get segment score. */
     open func getSegmentScore() -> Int {
         return Int(segmentScore)
     }
