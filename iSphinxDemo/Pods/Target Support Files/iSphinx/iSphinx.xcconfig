@@ -2,13 +2,13 @@ CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/iSphinx
 ENABLE_BITCODE = $(inherited) NO
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public" ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/** ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../iSphinx/Sphinx/lib/pocketsphinx" "${PODS_ROOT}/../../iSphinx/Sphinx/lib/sphinxbase" ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/pocketsphinx ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/sphinxbase
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/iSphinx/iSphinx/Sphinx/lib/pocketsphinx" "${PODS_ROOT}/iSphinx/iSphinx/Sphinx/lib/sphinxbase" ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/pocketsphinx ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/sphinxbase
 OTHER_LDFLAGS = -l"pocketsphinx" -l"sphinxbase" -framework "AVFoundation" -framework "CoreAudio" -framework "CoreMedia" -framework "Foundation"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
-PODS_TARGET_SRCROOT = ${PODS_ROOT}/../..
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/iSphinx
 PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
 SKIP_INSTALL = YES
 SWIFT_INCLUDE_PATHS = ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include
