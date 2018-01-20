@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'iSphinx'
   s.version = '1.1.7'
+  s.swift_version = '4.0'
   s.license = 'MIT'
   s.summary = 'iOS library with swift for offline speech recognition base on Pocketsphinx engine.'
   s.homepage = 'https://github.com/icaksama/iSphinx'
@@ -15,7 +16,7 @@ Pod::Spec.new do |s|
   s.vendored_libraries = 'iSphinx/Sphinx/lib/pocketsphinx/libpocketsphinx.a', 'iSphinx/Sphinx/lib/sphinxbase/libsphinxbase.a'
   s.libraries = 'pocketsphinx', 'sphinxbase'
   s.resource_bundles = { 'Assets' => ['iSphinx/iSphinx/Assets/*.{arpa,wav,txt}'],
-                         'AcousticModel' => 'iSphinx/iSphinx/Assets/en-us-ptm/*' }
+                         'AcousticModel' => ['iSphinx/iSphinx/Assets/en-us-ptm/*'] }
   s.source_files = 'iSphinx/iSphinx/*.{swift,h}',
                    'iSphinx/iSphinx/iSphinx Utilities/*.{swift}'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0',
