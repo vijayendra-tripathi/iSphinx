@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/icaksama/iSphinx.git', :tag => s.version }
   s.platform = :ios, '9.0'
   s.ios.deployment_target = '9.0'
+  s.module_name = 'iSphinx'
   s.frameworks = 'Foundation', 'CoreAudio', 'AVFoundation', 'CoreMedia'
   s.preserve_paths = 'iSphinx/Sphinx/include/**/*.{h}', 'iSphinx/Sphinx/include/*.{modulemap}'
   s.vendored_libraries = 'iSphinx/Sphinx/lib/pocketsphinx/libpocketsphinx.a', 'iSphinx/Sphinx/lib/sphinxbase/libsphinxbase.a'
@@ -26,7 +27,8 @@ Pod::Spec.new do |s|
                             'LIBRARY_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/pocketsphinx ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/sphinxbase',
                             'OTHER_LDFLAGS' => '-lsphinxbase -lpocketsphinx'
                           }
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
+  s.xcconfig = { 'SWIFT_VERSION' => '$(inherited)',
+                 'HEADER_SEARCH_PATHS' => "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
                  'SWIFT_OPTIMIZATION_LEVEL' => '$(inherited)',
                  'ENABLE_BITCODE' => '$(inherited)'
                }
