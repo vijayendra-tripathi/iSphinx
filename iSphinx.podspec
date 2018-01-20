@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'iSphinx'
   s.version = '1.1.7'
-  s.swift_version = '4.0'
   s.license = 'MIT'
   s.summary = 'iOS library with swift for offline speech recognition base on Pocketsphinx engine.'
   s.homepage = 'https://github.com/icaksama/iSphinx'
