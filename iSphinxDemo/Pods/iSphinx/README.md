@@ -6,12 +6,13 @@
 [![Pod Version](https://img.shields.io/cocoapods/v/iSphinx.svg)](https://img.shields.io/cocoapods/v/iSphinx.svg)
 [![Platform](https://img.shields.io/cocoapods/p/iSphinx.svg)](https://img.shields.io/cocoapods/p/iSphinx.svg)
 [![Download Total](https://img.shields.io/cocoapods/dt/iSphinx.svg)](https://img.shields.io/cocoapods/dt/iSphinx.svg)
+[![Docs](./docs/badge.svg)](./docs)
 <br>
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
 ## Features
-- [x] Support swift 4 and iOS 9 above
 - [x] High accuracy
+- [x] Support swift 4 and iOS 9 above
 - [x] Build dictionary on the fly
 - [x] Build language model (Arpa File) on the fly
 - [x] Build JSGF Grammar on the fly
@@ -31,7 +32,7 @@ I have tried to speak in different word order:
 ## Cocoapods
 Add to `Podfile` :
 ```text
-pod 'iSphinx', '~> 1.1.6'
+pod 'iSphinx', '~> 1.2.0'
 ```
 
 # How to Use
@@ -46,7 +47,7 @@ import iSphinx
 
 class ViewController: UIViewController, iSphinxDelegete {
     var isphinx: iSphinx = iSphinx()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         isphinx.delegete = self
@@ -104,8 +105,9 @@ You need to prepare speech recognition before use that. You can add new paramete
 ```swift
 isphinx.prepareISphinx(onPreExecute: { (config) in
     // You can add new parameter pocketshinx here
-    self.isphinx.setSilentToDetect(seconds: 2)
-    config.setString(key: "-parameter", value: "value")
+    self.isphinx.silentToDetect = 1.0
+    self.isphinx.isStopAtEndOfSpeech = true
+    // config.setString(key: "-parameter", value: "value")
 }) { (isSuccess) in
     if isSuccess {
         print("Preparation success!")
@@ -132,7 +134,7 @@ isphinx.updateGrammar(text: "YOUR GRAMMAR", oogWords: ["WORDS DISTRUBER", ...]) 
 }
 ```
 
-## Start The Speech Recognition
+## Start Speech Recognition
 You can start speech recognition with timout or not.
 ```swift
 // Start speech recognition with Timeout in seconds
@@ -140,6 +142,13 @@ isphinx.startISphinx(timeoutInSec: 10)
 
 // Start speech recognition without Timeout
 isphinx.startISphinx()
+```
+
+## Stop Speech Recognition
+You can stop speech recognition manually.
+```swift
+// Stop speech recognition manually.
+isphinx.stopISphinx()
 ```
 
 ## Play Audio Record

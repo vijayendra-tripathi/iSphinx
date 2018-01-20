@@ -14,13 +14,19 @@ open class iSphinx: iRecognizerDelegete {
     fileprivate var recognizerTemp: iRecognizer!
     fileprivate var config: Config!
     fileprivate var nGramModel: NGramModel?
-    fileprivate var silentToDetect: Float = 1.0
     fileprivate var unSupportedWords: [String] = [String]()
     fileprivate var originalWords: [String] = [String]()
     fileprivate var oovWords: [String] = [String]()
     fileprivate let arpaFile = Utilities.getAssetPath()!.appending("\(SEARCH_ID).arpa")
     fileprivate let fullDictionary = Utilities.getAssetPath()?.appending("\(SEARCH_ID).txt")
     fileprivate let dictPathTemp = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("\(SEARCH_ID)-dict.txt")
+    
+    /** Set the silent to detect in seconds. Silent to detect is delaying before speech considered as silent. Default is 1.0. */
+    open var silentToDetect: Float = 1.0
+    /** Enable or disable stop when iSphinx detect as silent. Default is true. */
+    open var isStopAtEndOfSpeech: Bool = true
+    /** Check the iSphinx isRunning. */
+    open var isRunning: Bool = false
     
     /** Set the delegete from your class. */
     open var delegete: iSphinxDelegete!
@@ -29,11 +35,13 @@ open class iSphinx: iRecognizerDelegete {
     
     /** Start speech recognition without timeout. */
     open func startISphinx() {
+        self.isRunning = true
         recognizer.startIRecognizer()
     }
     
     /** Start speech recognition with timeout. */
     open func startISphinx(timeoutInSec: Int) {
+        self.isRunning = true
         recognizer.startIRecognizer(timeoutInSec: timeoutInSec)
     }
     
@@ -223,14 +231,10 @@ open class iSphinx: iRecognizerDelegete {
         return recognizer.getISphinxRecorder()
     }
     
-    /** Set the silent to detect in seconds. Silent to detect is delaying before speech considered as silent. */
-    open func setSilentToDetect(seconds: Float) {
-        self.silentToDetect = seconds
-    }
-    
-    /** Get the silent to detect in seconds. */
-    open func getSilentToDetect() -> Float {
-        return silentToDetect
+    /** Stop speech recognition. Call this function when you sure speec recognition is running. */
+    open func stopISphinx() {
+        self.isRunning = false
+        recognizer.stopSpeech()
     }
     
     func onBeginningOfSpeech() {
@@ -238,9 +242,13 @@ open class iSphinx: iRecognizerDelegete {
     }
     
     func onEndOfSpeech() {
-        recognizer.stopSpeech()
+        if isStopAtEndOfSpeech {
+            self.isRunning = false
+            recognizer.stopSpeech()
+        }
         delegete.iSphinxDidStop(reason: "End of speech!", code: 200)
     }
+    
     
     func onPartialResult(hyp: Hypothesis?) {
         if hyp != nil {
@@ -277,11 +285,13 @@ open class iSphinx: iRecognizerDelegete {
     }
     
     func onError(errorDesc: String) {
+        self.isRunning = false
         recognizer.stopSpeech()
         delegete.iSphinxDidStop(reason: errorDesc, code: 500)
     }
     
     func onTimeout() {
+        self.isRunning = false
         recognizer.stopSpeech()
         delegete.iSphinxDidStop(reason: "Speech timeout!", code: 522)
     }
