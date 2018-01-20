@@ -15,7 +15,6 @@
   "platforms": {
     "ios": "9.0"
   },
-  "requires_arc": true,
   "frameworks": [
     "Foundation",
     "CoreAudio",
@@ -48,7 +47,6 @@
     "SWIFT_VERSION": "4.0",
     "ENABLE_BITCODE": "NO",
     "SWIFT_OPTIMIZATION_LEVEL": "-Onone",
-    "EXCLUDED_SOURCE_FILE_NAMES": "cmudict-en-us.dict",
     "HEADER_SEARCH_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include/**",
     "SWIFT_INCLUDE_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/Include",
     "LIBRARY_SEARCH_PATHS": "${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/pocketsphinx ${PODS_TARGET_SRCROOT}/iSphinx/Sphinx/lib/sphinxbase",
