@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>iSphinx  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="iSphinx  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          iSphinx Docs
+        </a>
+         (83% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/icaksama/iSphinx">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">iSphinx Reference</a>
+      <img class="carat" src="img/carat.png" />
+      iSphinx  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Config.html">Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Decoder.html">Decoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Feature.html">Feature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FrontEnd.html">FrontEnd</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FsgModel.html">FsgModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Hypothesis.html">Hypothesis</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lattice.html">Lattice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/LogMath.html">LogMath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NBest.html">NBest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NBestIterator.html">NBestIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NGramModel.html">NGramModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NGramModelSet.html">NGramModelSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NGramModelSetIterator.html">NGramModelSetIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Segment.html">Segment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SegmentIterator.html">SegmentIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/iRecognizer.html">iRecognizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/iRecognizerSetup.html">iRecognizerSetup</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/iSphinx.html">iSphinx</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/iSphinxRecorder.html">iSphinxRecorder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/iSphinxDelegete.html">iSphinxDelegete</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='isphinx' class='heading'>iSphinx</h1>
+
+<p><a href="https://www.linkedin.com/in/icaksama/"><img src="https://img.shields.io/badge/creator-icaksama-green.svg" alt="Creator"></a>
+<a href="https://travis-ci.org/icaksama/iSphinx"><img src="https://img.shields.io/travis/icaksama/iSphinx.svg" alt="Travis"></a>
+<a href="https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE"><img src="https://img.shields.io/github/license/icaksama/iSphinx.svg" alt="GitHub license"></a>
+<a href="https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg"><img src="https://img.shields.io/github/languages/code-size/icaksama/iSphinx.svg" alt="Code Size"></a>
+<a href="https://img.shields.io/cocoapods/v/iSphinx.svg"><img src="https://img.shields.io/cocoapods/v/iSphinx.svg" alt="Pod Version"></a>
+<a href="https://img.shields.io/cocoapods/p/iSphinx.svg"><img src="https://img.shields.io/cocoapods/p/iSphinx.svg" alt="Platform"></a>
+<a href="https://img.shields.io/cocoapods/dt/iSphinx.svg"><img src="https://img.shields.io/cocoapods/dt/iSphinx.svg" alt="Download Total"></a>
+<br>
+iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.</p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] Support swift 4 and iOS 9 above</li>
+<li>[x] High accuracy</li>
+<li>[x] Build dictionary on the fly</li>
+<li>[x] Build language model (Arpa File) on the fly</li>
+<li>[x] Build JSGF Grammar on the fly</li>
+<li>[x] Support PCM Recorder 16bits / mono little endian (wav file)</li>
+<li>[x] Scoring system every single word (range 0.0 - 1.0)</li>
+<li>[x] Detect unsupported words</li>
+<li>[x] Rejecting Out-Of-Vocabulary (OOV) based on keyword spotting</li>
+<li>[x] Speaker Adaptation (in progress)</li>
+<li>[x] SIMPLE TO USE &amp; FAST!</li>
+</ul>
+<h2 id='preview' class='heading'>Preview</h2>
+
+<p>I have tried to speak in different word order:</p>
+
+<p align="center">
+<img width="350" src="https://github.com/icaksama/iSphinx/blob/master/iSphinxPreview.gif?raw=true">
+</p>
+<h2 id='cocoapods' class='heading'>Cocoapods</h2>
+
+<p>Add to <code>Podfile</code> :</p>
+<pre class="highlight plaintext"><code>pod 'iSphinx', '~&gt; 1.1.6'
+</code></pre>
+<h1 id='how-to-use' class='heading'>How to Use</h1>
+<h2 id='add-request-permissions' class='heading'>Add Request Permissions</h2>
+
+<ul>
+<li>Add request permission for recording in your <code>Info.plist</code></li>
+</ul>
+<h2 id='add-the-listener' class='heading'>Add The Listener</h2>
+
+<p>First, impletent the iSphinxDelegete in your class/ViewController :</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="n">iSphinx</span>
+
+<span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nf">iSphinxDelegete</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">isphinx</span><span class="p">:</span> <span class="n">iSphinx</span> <span class="o">=</span> <span class="nf">iSphinx</span><span class="p">()</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+        <span class="n">isphinx</span><span class="o">.</span><span class="n">delegete</span> <span class="o">=</span> <span class="k">self</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>iSphinxDelegete have some methods must be implement in your class/ViewController :</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">iSphinxDidStop</span><span class="p">(</span><span class="nv">reason</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">code</span> <span class="o">==</span> <span class="mi">500</span> <span class="p">{</span> <span class="c1">// 500 code for error</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">code</span> <span class="o">==</span> <span class="mi">522</span> <span class="p">{</span> <span class="c1">// 522 code for timed out</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">code</span> <span class="o">==</span> <span class="mi">200</span> <span class="p">{</span> <span class="c1">// 200 code for finish speech</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">iSphinxFinalResult</span><span class="p">(</span><span class="nv">result</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hypArr</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">scores</span><span class="p">:</span> <span class="p">[</span><span class="kt">Double</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Full Result : </span><span class="se">\(</span><span class="n">result</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="c1">// NOTE :</span>
+    <span class="c1">// [x] parameter "result" : Give final response with ??? values when word out-of-vocabulary.</span>
+    <span class="c1">// [x] parameter "hypArr" : Give final response in original words without ??? values.</span>
+
+    <span class="c1">// Get score from every single word. hypArr length equal with scores length</span>
+    <span class="k">for</span> <span class="n">score</span> <span class="k">in</span> <span class="nf">scores</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Get array word</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="k">in</span> <span class="nf">hypArr</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">iSphinxPartialResult</span><span class="p">(</span><span class="nv">partialResult</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">partialResult</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">iSphinxUnsupportedWords</span><span class="p">(</span><span class="nv">words</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">unsupportedWords</span> <span class="o">=</span> <span class="s">""</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="k">in</span> <span class="nf">words</span> <span class="p">{</span>
+        <span class="n">unsupportedWords</span> <span class="o">+=</span> <span class="n">word</span> <span class="o">+</span> <span class="s">", "</span>
+    <span class="p">}</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Unsupported words : </span><span class="se">\(</span><span class="n">unsupportedWords</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">iSphinxDidSpeechDetected</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Speech detected!"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='prepare-speech-recognition' class='heading'>Prepare Speech Recognition</h2>
+
+<p>You need to prepare speech recognition before use that. You can add new parameters in onPreExecute to increase accuracy or performance.</p>
+<pre class="highlight swift"><code><span class="n">isphinx</span><span class="o">.</span><span class="nf">prepareISphinx</span><span class="p">(</span><span class="nv">onPreExecute</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">config</span><span class="p">)</span> <span class="k">in</span>
+    <span class="c1">// You can add new parameter pocketshinx here</span>
+    <span class="k">self</span><span class="o">.</span><span class="n">isphinx</span><span class="o">.</span><span class="nf">setSilentToDetect</span><span class="p">(</span><span class="nv">seconds</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">config</span><span class="o">.</span><span class="nf">setString</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="s">"-parameter"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="s">"value"</span><span class="p">)</span>
+<span class="p">})</span> <span class="p">{</span> <span class="p">(</span><span class="n">isSuccess</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="nf">isSuccess</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Preparation success!"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='update-language-model-grammar' class='heading'>Update Language Model / Grammar</h2>
+
+<p>You can update the vocabulary with language model or JSGF Grammar on the fly. Make sure to remove the punctuation before update vocabulary/grammar. Default punctuation will be remove in iSphinx are <code>(.), (,) ,(?), (!), (_), (-), (\), (:)</code></p>
+<pre class="highlight swift"><code><span class="c1">// Update vocabulary with language model from single string</span>
+<span class="n">isphinx</span><span class="o">.</span><span class="nf">updateVocabulary</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"YOUR VOCABULARIES!"</span><span class="p">,</span> <span class="nv">oovWords</span><span class="p">:</span> <span class="p">[</span><span class="s">"WORDS DISTRUBER"</span><span class="p">,</span> <span class="o">...</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Vocabulary updated!"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// Update vocabulary with language model from array string</span>
+<span class="n">isphinx</span><span class="o">.</span><span class="nf">updateVocabulary</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"YOUR VOCABULARIES!"</span><span class="p">,</span> <span class="nv">oovWords</span><span class="p">:</span> <span class="p">[</span><span class="s">"WORDS DISTRUBER"</span><span class="p">,</span> <span class="o">...</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Vocabulary updated!"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// Update vocabulary with JSGF Grammar from string</span>
+<span class="n">isphinx</span><span class="o">.</span><span class="nf">updateGrammar</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"YOUR GRAMMAR"</span><span class="p">,</span> <span class="nv">oogWords</span><span class="p">:</span> <span class="p">[</span><span class="s">"WORDS DISTRUBER"</span><span class="p">,</span> <span class="o">...</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Grammar updated!"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='start-the-speech-recognition' class='heading'>Start The Speech Recognition</h2>
+
+<p>You can start speech recognition with timout or not.</p>
+<pre class="highlight swift"><code><span class="c1">// Start speech recognition with Timeout in seconds</span>
+<span class="n">isphinx</span><span class="o">.</span><span class="nf">startISphinx</span><span class="p">(</span><span class="nv">timeoutInSec</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="c1">// Start speech recognition without Timeout</span>
+<span class="n">isphinx</span><span class="o">.</span><span class="nf">startISphinx</span><span class="p">()</span>
+</code></pre>
+<h2 id='play-audio-record' class='heading'>Play Audio Record</h2>
+
+<p>Make sure play the audio record after speech recognizer is done.</p>
+<pre class="highlight swift"><code><span class="n">isphinx</span><span class="o">.</span><span class="nf">getRecorder</span><span class="p">()</span><span class="o">.</span><span class="nf">play</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Play audio finish!"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='note-please-take-a-look-at-isphinxdemo-for-detail-usage' class='heading'>Note : Please take a look at iSphinxDemo for detail usage.</h3>
+<h2 id='mit-license' class='heading'>MIT License</h2>
+<pre class="highlight plaintext"><code>Copyright (c) 2018 Saiful Irham Wicaksana
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2018 <a class="link" href="http://www.icaksama.com" target="_blank" rel="external">icaksama</a> under <a class="link" href="https://github.com/icaksama/iSphinx/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

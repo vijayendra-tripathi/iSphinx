@@ -1,0 +1,229 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/Config.swift",
+      "line": 12,
+      "symbol": "Config",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/Decoder.swift",
+      "line": 13,
+      "symbol": "Decoder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/Feature.swift",
+      "line": 11,
+      "symbol": "Feature",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/FrontEnd.swift",
+      "line": 11,
+      "symbol": "FrontEnd",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift",
+      "line": 11,
+      "symbol": "FsgModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift",
+      "line": 54,
+      "symbol": "FsgModel.transAdd(from:to:logP:wid:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift",
+      "line": 58,
+      "symbol": "FsgModel.nullTransAdd(from:to:logP:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift",
+      "line": 62,
+      "symbol": "FsgModel.tagTransAdd(from:to:logP:wid:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift",
+      "line": 66,
+      "symbol": "FsgModel.addSilence(silWord:state:silProb:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/FsgModel.swift",
+      "line": 70,
+      "symbol": "FsgModel.addAlt(baseWord:altWord:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/Hypotesis.swift",
+      "line": 11,
+      "symbol": "Hypothesis",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/Lattice.swift",
+      "line": 11,
+      "symbol": "Lattice",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/LogMath.swift",
+      "line": 11,
+      "symbol": "LogMath",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/NBest.swift",
+      "line": 11,
+      "symbol": "NBest",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/NBestIterator.swift",
+      "line": 11,
+      "symbol": "NBestIterator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/NGramModel.swift",
+      "line": 11,
+      "symbol": "NGramModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/NGramModelSet.swift",
+      "line": 11,
+      "symbol": "NGramModelSet",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/NGramModelSetIterator.swift",
+      "line": 11,
+      "symbol": "NGramModelSetIterator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/Segment.swift",
+      "line": 11,
+      "symbol": "Segment",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/SegmentIterator.swift",
+      "line": 11,
+      "symbol": "SegmentIterator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/iRecognizer.swift",
+      "line": 13,
+      "symbol": "iRecognizer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx Utilities/iRecognizerSetup.swift",
+      "line": 11,
+      "symbol": "iRecognizerSetup",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx.swift",
+      "line": 11,
+      "symbol": "iSphinx",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinx.swift",
+      "line": 28,
+      "symbol": "iSphinx.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxDelegete.swift",
+      "line": 11,
+      "symbol": "iSphinxDelegete",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxDelegete.swift",
+      "line": 13,
+      "symbol": "iSphinxDelegete.iSphinxDidStop(reason:code:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxDelegete.swift",
+      "line": 14,
+      "symbol": "iSphinxDelegete.iSphinxFinalResult(result:hypArr:scores:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxDelegete.swift",
+      "line": 15,
+      "symbol": "iSphinxDelegete.iSphinxPartialResult(partialResult:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxDelegete.swift",
+      "line": 16,
+      "symbol": "iSphinxDelegete.iSphinxUnsupportedWords(words:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxDelegete.swift",
+      "line": 17,
+      "symbol": "iSphinxDelegete.iSphinxDidSpeechDetected()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxRecorder.swift",
+      "line": 12,
+      "symbol": "iSphinxRecorder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx/iSphinx/iSphinx/iSphinxRecorder.swift",
+      "line": 63,
+      "symbol": "iSphinxRecorder.audioPlayerDidFinishPlaying(_:successfully:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/pistarlabsfordyned/Documents/icaksama/GIT/iSphinx"
+}
