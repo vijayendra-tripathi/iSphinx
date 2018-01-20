@@ -1,0 +1,10 @@
+module: iSphinx
+author: icaksama
+author_url: http://www.icaksama.com
+github_url: https://github.com/icaksama/iSphinx
+
+copyright: '© 2018 [icaksama](http://www.icaksama.com) under [open source license](https://github.com/icaksama/iSphinx/blob/master/LICENSE).'
+
+swift_version: 4.0
+
+theme: fullwidth
