@@ -6,7 +6,7 @@
 [![Pod Version](https://img.shields.io/cocoapods/v/iSphinx.svg)](https://img.shields.io/cocoapods/v/iSphinx.svg)
 [![Platform](https://img.shields.io/cocoapods/p/iSphinx.svg)](https://img.shields.io/cocoapods/p/iSphinx.svg)
 [![Download Total](https://img.shields.io/cocoapods/dt/iSphinx.svg)](https://img.shields.io/cocoapods/dt/iSphinx.svg)
-<a hraf="https://github.com/icaksama/iSphinx/tree/master/docs"><img src="https://raw.githubusercontent.com/icaksama/iSphinx/master/docs/badge.svg"></a>
+![./docs/badge.svg](./docs)
 <br>
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
