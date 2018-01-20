@@ -35,7 +35,8 @@ class ViewController: UIViewController, iSphinxDelegete, UITextFieldDelegate {
         self.indicator.startAnimating()
         self.isphinx.prepareISphinx(onPreExecute: { (config) in
             // You can add new parameter pocketshinx here
-            self.isphinx.setSilentToDetect(seconds: 2)
+            self.isphinx.silentToDetect = 1.0
+            self.isphinx.isStopAtEndOfSpeech = false
             // config.setString(key: "-parameter", value: "value")
         }) { (isSuccess) in
             if isSuccess {

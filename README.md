@@ -32,7 +32,7 @@ I have tried to speak in different word order:
 ## Cocoapods
 Add to `Podfile` :
 ```text
-pod 'iSphinx', '~> 1.1.9'
+pod 'iSphinx', '~> 1.2.0'
 ```
 
 # How to Use
@@ -105,7 +105,8 @@ You need to prepare speech recognition before use that. You can add new paramete
 ```swift
 isphinx.prepareISphinx(onPreExecute: { (config) in
     // You can add new parameter pocketshinx here
-    self.isphinx.setSilentToDetect(seconds: 2)
+    self.isphinx.silentToDetect = 1.0
+    self.isphinx.isStopAtEndOfSpeech = true
     // config.setString(key: "-parameter", value: "value")
 }) { (isSuccess) in
     if isSuccess {
@@ -133,7 +134,7 @@ isphinx.updateGrammar(text: "YOUR GRAMMAR", oogWords: ["WORDS DISTRUBER", ...]) 
 }
 ```
 
-## Start The Speech Recognition
+## Start Speech Recognition
 You can start speech recognition with timout or not.
 ```swift
 // Start speech recognition with Timeout in seconds
@@ -141,6 +142,13 @@ isphinx.startISphinx(timeoutInSec: 10)
 
 // Start speech recognition without Timeout
 isphinx.startISphinx()
+```
+
+## Stop Speech Recognition
+You can stop speech recognition manually.
+```swift
+// Stop speech recognition manually.
+isphinx.stopISphinx()
 ```
 
 ## Play Audio Record

@@ -1,8 +1,8 @@
 {
   "name": "iSphinx",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "license": "MIT",
-  "summary": "iOS library with swift for offline speech recognition base on Pocketsphinx engine.",
+  "summary": "iSphinx is pocketsphinx in swift language for offline speech recognition, gives very simple configuration without dealing with assets.",
   "homepage": "https://github.com/icaksama/iSphinx",
   "social_media_url": "https://www.facebook.com/icaksama.fanpage",
   "authors": {
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/icaksama/iSphinx.git",
-    "tag": "1.1.7"
+    "tag": "1.2.0"
   },
   "platforms": {
     "ios": "9.0"
@@ -37,9 +37,7 @@
     "Assets": [
       "iSphinx/iSphinx/Assets/*.{arpa,wav,txt}"
     ],
-    "AcousticModel": [
-      "iSphinx/iSphinx/Assets/en-us-ptm/*"
-    ]
+    "AcousticModel": "iSphinx/iSphinx/Assets/en-us-ptm/*"
   },
   "source_files": [
     "iSphinx/iSphinx/*.{swift,h}",
