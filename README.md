@@ -158,8 +158,12 @@ isphinx.getRecorder().play {
     print("Play audio finish!")
 }
 ```
-#+ATTR_HTML: :style display:block; margin: 0 auto;
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif?style=centerme)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXJ3AHUB3KDQ4)
+
+<p align="center">
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXJ3AHUB3KDQ4" alt="Donate">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" />
+    </a>
+</p>
 
 ## MIT License
 ```text
