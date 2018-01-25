@@ -159,7 +159,7 @@ isphinx.getRecorder().play {
 }
 ```
 
-->[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXJ3AHUB3KDQ4)<-
+->[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif?style=centerme)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXJ3AHUB3KDQ4)<-
 
 ## MIT License
 ```text
@@ -183,3 +183,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+img[src$="centerme"] {
+    display:block;
+    margin: 0 auto;
+}
