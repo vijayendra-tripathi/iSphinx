@@ -1,4 +1,5 @@
 # iSphinx
+<center>
 [![Creator](https://img.shields.io/badge/creator-icaksama-green.svg)](https://www.linkedin.com/in/icaksama/)
 [![Travis](https://img.shields.io/travis/icaksama/iSphinx.svg)](https://travis-ci.org/icaksama/iSphinx)
 [![GitHub license](https://img.shields.io/github/license/icaksama/iSphinx.svg)](https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE)
@@ -7,6 +8,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/iSphinx.svg)](https://img.shields.io/cocoapods/p/iSphinx.svg)
 [![Download Total](https://img.shields.io/cocoapods/dt/iSphinx.svg)](https://img.shields.io/cocoapods/dt/iSphinx.svg)
 [![Docs](./docs/badge.svg)](./docs)
+</center>
 <br>
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
@@ -160,12 +162,7 @@ isphinx.getRecorder().play {
 ```
 
 <center>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="CXJ3AHUB3KDQ4">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/id_ID/i/scr/pixel.gif" width="1" height="1">
-</form>
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXJ3AHUB3KDQ4)
 </center>
 
 ## MIT License
