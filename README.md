@@ -1,5 +1,4 @@
 # iSphinx
-<center>
 [![Creator](https://img.shields.io/badge/creator-icaksama-green.svg)](https://www.linkedin.com/in/icaksama/)
 [![Travis](https://img.shields.io/travis/icaksama/iSphinx.svg)](https://travis-ci.org/icaksama/iSphinx)
 [![GitHub license](https://img.shields.io/github/license/icaksama/iSphinx.svg)](https://raw.githubusercontent.com/icaksama/iSphinx/master/LICENSE)
@@ -8,7 +7,6 @@
 [![Platform](https://img.shields.io/cocoapods/p/iSphinx.svg)](https://img.shields.io/cocoapods/p/iSphinx.svg)
 [![Download Total](https://img.shields.io/cocoapods/dt/iSphinx.svg)](https://img.shields.io/cocoapods/dt/iSphinx.svg)
 [![Docs](./docs/badge.svg)](./docs)
-</center>
 <br>
 iOS library for offline speech recognition base on Pocketsphinx engine. Add speech recognition feature into your iOS app with Cocoapods. iSphinx gives simple configuration and implementation for your app without dealing with Pocketsphinx assets and configuration.
 
@@ -161,9 +159,7 @@ isphinx.getRecorder().play {
 }
 ```
 
-<center>
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXJ3AHUB3KDQ4)
-</center>
 
 ## MIT License
 ```text
